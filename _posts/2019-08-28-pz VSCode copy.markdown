@@ -18,13 +18,13 @@ categories:
 <br><br>
 이 프로젝트는 5월 초부터 7월 초까지 <b>약 2달간</b> 제작하였으며 백엔드 프로젝트인 <b>Echo</b> 프로젝트와 프론트엔드 프로젝트인 <b>Charlie</b> 프로젝트를 동시 진행하였다.
 <br><br>
-<b>Echo</b> 프로젝트는 <b>Spring boot</b>를 사용하여 Charlie 프로젝트는 <b>Vue.js</b>를 사용하여 제작하였다. 이 프로젝트를 만들게된 계기는 팀장님께 다음 프로젝트에 대비하기 위해 다루어야 할 도구와 언어를 익히기 위해서이다. 
+<b>Echo</b> 프로젝트는 <b>Spring Boot</b>를 사용하여 Charlie 프로젝트는 <b>Vue.js</b>를 사용하여 제작하였다. 이 프로젝트를 만들게된 계기는 팀장님께 다음 프로젝트에 대비하기 위해 다루어야 할 도구와 언어를 익히기 위해서이다. 
 <br><br>
 그렇게 토이 프로젝트를 위한 Alpha,Beta,Delta 프로젝트들을 거쳐가며 연습하고 본격적으로 시작할려고 하였다. 시작하기 전에 한가지 고민에 빠졌는데 백엔드를 우선 만들어야 하는가 아니만 프론트엔드를 먼저 만들어야 하는가에 대한 것이다.
 <br><br>
 독자들은 어떻게 생각하는가. 고민에 대한 결론은 독자들 본인에게 맞기겠다. 나는 결국 백엔드부터 시작하였다. 왜냐고 묻는다면 당시에는 백엔드가 건축을 위해 땅을 다지는 작업이며 <b>지붕을 올리기 위해 기둥을 세우는 작업</b>이라고 생각했기 때문이다.
 <br><br>
-그렇다면 백엔드를 만들기 위한 환경설정을 무엇을 해야 하는가. 우선 구현하고자 하는 기능을 어떤 기술로 적용시킬 지를 정해야한다. 아래에 차례대로 설명하겠지만 간략하게 말하자면 전체적인 프레임워크는 <b>Spring boot</b>를 사용할 것이며, 로그인, 로그아웃과 같은 보안 기능은 <b>Spring Security</b>로 DB간 상호작용은 <b>JPA, Hibernate</b>, DB는 <b>MYSQL</b>를 사용하며, 빌드를 위한 프로젝트 관리 도구는 Maven이 아닌 <b>Gradle</b>를 사용해 보기로 하였다. 빌드 후 구동을 위한 WAS는 Tomcat이 아닌 <b>undertow</b>를 사용한다.
+그렇다면 백엔드를 만들기 위한 환경설정을 무엇을 해야 하는가. 우선 구현하고자 하는 기능을 어떤 기술로 적용시킬 지를 정해야한다. 아래에 차례대로 설명하겠지만 간략하게 말하자면 전체적인 프레임워크는 <b>Spring Boot</b>를 사용할 것이며, 로그인, 로그아웃과 같은 보안 기능은 <b>Spring Security</b>로 DB간 상호작용은 <b>JPA, Hibernate</b>, DB는 <b>MYSQL</b>를 사용하며, 빌드를 위한 프로젝트 관리 도구는 Maven이 아닌 <b>Gradle</b>를 사용해 보기로 하였다. 빌드 후 구동을 위한 WAS는 Tomcat이 아닌 <b>undertow</b>를 사용한다.
 <br><br>
 이전까지 나는 사용한 IDE는 <b>Eclipse</b>가 전무했으나 이제 실행하는 것만 5분이 걸리는 툴을 사용하기 싫어졌다. 그러다가 <b><a href="https://jojoldu.tistory.com">기억보다 기록을</a></b>이란 블로그를 참고하기 시작하면서 <b>IntelliJ</b>나 <b>VSCode</b>와 같은 도구를 사용하기 시작했고 지금은 거의 <b>Eclipse</b>를 대체할 수 있게 되었다. 그리고 위 블로그에서 나는 Spring Boot에 대해 많이 배울 수 있었다. 내가 이 프로젝트를 만드는데 사용한 것은 <b>VSCode</b>이니 이것에 대해 간단한 설명과 설치방법 그리고 사용방법에 대해 알려주도록 하겠다.
 <br><br>
@@ -42,7 +42,7 @@ categories:
 <br><br>
 ![InstallVSCode4](/files/VSCode/InstallVSCode4.png)
 <br><br>
-위 사항을 모두 체크하는 것을 추천한다. 탐색기에서 우클릭 시 Open with Code가 나오는데 이게 꽤 편리한 기능이기 때문이다.
+위 사항을 모두 체크하는 것을 추천한다. 탐색기에서 우클릭 시 <b>Open with Code</b>가 나오는데 이게 꽤 편리한 기능이기 때문이다.
 <br><br>
 ![InstallVSCode5](/files/VSCode/InstallVSCode5.png)
 <br><br>
@@ -54,7 +54,7 @@ categories:
 <br><br>
 ![InstallVSCodeComplete](/files/VSCode/InstallVSCodeComplete.png)
 <br><br>
-이제 Spring boot를 위한 확장 프로그램을 설치할 차례이다. <b><a href="https://code.visualstudio.com/docs/java/java-spring-boot">여기</a></b> 홈페이지에서 Spring boot를 사용하기 위한 방법이 적혀있다. 정리하자면
+이제 Spring Boot를 위한 확장 프로그램을 설치할 차례이다. <b><a href="https://code.visualstudio.com/docs/java/java-spring-boot">여기</a></b> 홈페이지에서 Spring Boot를 사용하기 위한 방법이 적혀있다. 정리하자면
 <br><br>
 <h2>미리 준비할 것</h2>
 <ul>
