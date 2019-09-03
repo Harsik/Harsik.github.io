@@ -80,7 +80,7 @@ categories:
 ![SpringBootRun](/files/VSCode/SpringBootRun.png)
 <br><br>
 
-확장 프로그램으로 인해 프로젝트를 간단하게 실행 할 수 있는 편의성이 제공되는 것을 볼 수 있다. 
+확장 프로그램으로 인해 프로젝트를 간단하게 실행 할 수 있도록 버튼이 추가되는 것을 볼 수 있다. 
 
 
 

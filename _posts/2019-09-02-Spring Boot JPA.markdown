@@ -4,7 +4,7 @@ title: "Spring Boot JPA"
 date: 2019-09-02
 categories:
 ---
-<div style="display:none;">
+<!-- <div style="display:none;">
 SPring security 설명을 위한 사전 작업 중 하나로 jpa를 통한 db 유저 정보 등록 및 조회로 login logout을 구현 할 수 있도록 설명
 초반 Spring Boot jpa에 대한 간략한 소개와 설명
 중반 jpa 사용방법 h2
@@ -13,7 +13,7 @@ SPring security 설명을 위한 사전 작업 중 하나로 jpa를 통한 db �
 <br><br>
 ![gitDownload](/files/git/gitDownload.png)
 <br><br>
-</div>
+</div> -->
 우선 <b>JPA</b>가 뭐지라는 생각과 함께 고개를 기울이는 독자들을 위해서 간략히 설명하면서 시작하겠다. 
 
 <br><br>
@@ -175,3 +175,9 @@ public interface AccountRepository extends JpaRepository<Account,Long>{
 ![comfirmInputingRequest](/files/jpa/comfirmInputingRequest.png)
 <br><br>
 요청한 대로 잘 입력된 것을 확인할 수 있다. 확인해 본 결과 값을 보면 비밀번호가 저렇게 들어가 있으면 안된다는 생각이 들 것이다. 그러므로 우리는 <b>Spring security</b>라는 Framwork기술을 적용 시켜 보안에 문제가 없도록 할 것이다. 다음 시간에
+<!-- <div style="display:none;">
+이 다음 할 것으로 가상머신의 소개와 CentOS소개 및 설치 Mysql 소개와 설치, 연결할까? -- 당장은 안필요할듯
+아니면 Spring security 소개와 적용 할까? -- 적용 한다고 해도 테스트할 페이지를 만들어야되, themeleaf로 샘플이 있긴 하지
+아니면 프론트 엔드 vuejs의 소개와 간단한 로그인 페이지 생성 할까?
+Spring security 먼저 themeleaf로 로그인 페이지 만들고 그걸 vuejs로 전환하는 방식으로
+</div> -->
