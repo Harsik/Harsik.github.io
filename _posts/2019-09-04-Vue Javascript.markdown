@@ -47,7 +47,7 @@ $ npm install @vue/cli -g
 $ vue create my-app
 $ cd my-app
 ```
-vue create 명령어를 실행 시 선택지가 나올텐데 <b>Default</b>로 고르면 된다. 설치가 완료되면 <i>cd my-app</i>으로 my-app 디렉토리에 들어가 아래의 명령어를 실행하면 웹어플리케이션이 실행된다.
+vue create 명령어를 실행 시 선택지가 나올텐데 <b>Default</b>로 고르면 된다. 설치가 완료되면 <br><i>cd my-app</i>으로 my-app 디렉토리에 들어가 아래의 명령어를 실행하면 웹어플리케이션이 실행된다.
 ```
 $ yarn serve
 // OR
@@ -69,4 +69,5 @@ $ vue add vuetify
 <br><br>
 생각보다 글이 길어져서 <b>Components</b>를 적용한 어플리케이션을 만드는 것은 다음 포스트로 미루겠다.
 <div style="display:none;">
+중요 문구에 굵게, 명령어에 이텔릭, 머릿말 활용하기, 슬슬 포스트가 많아진다. 카테고리 만들기
 </div>
