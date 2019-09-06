@@ -2,7 +2,8 @@
 layout: post
 title: "Formatting Samples"
 date: 2015-05-25
-categories:
+categories: Jekyll
+tags: Jekyll
 ---
 
 Arctic Fox supports GFM!

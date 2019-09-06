@@ -157,3 +157,19 @@
     .post-content {
         margin-bottom: $spacing-unit;
     }
+
+    .label {
+        display: inline;
+        padding: .2em .6em .3em;
+        font-size: 75%;
+        font-weight: bold;
+        line-height: 1;
+        color: #ffffff;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: baseline;
+        border-radius: 1em;
+    }
+    .label-success {
+        background-color: rgb(99, 193, 224);
+    }

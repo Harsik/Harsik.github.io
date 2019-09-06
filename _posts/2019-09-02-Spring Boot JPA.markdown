@@ -3,6 +3,7 @@ layout: post
 title: "Spring Boot JPA"
 date: 2019-09-02
 categories:
+tags: SpringFramework JPA Hibernate H2
 ---
 <!-- <div style="display:none;">
 SPring security 설명을 위한 사전 작업 중 하나로 jpa를 통한 db 유저 정보 등록 및 조회로 login logout을 구현 할 수 있도록 설명

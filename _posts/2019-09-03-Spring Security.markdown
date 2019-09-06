@@ -3,6 +3,7 @@ layout: post
 title: "Spring Security"
 date: 2019-09-03
 categories:
+tags: SpringBoot SpringSecurity Gradle
 ---
 <div style="display:none;">
 우선 spring security의 소개
