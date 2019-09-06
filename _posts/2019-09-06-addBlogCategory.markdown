@@ -29,10 +29,10 @@ tags: Diary
 <br><br>
 ![postTagPosition](/files/postTagPosition.png)
 <br><br>
-그 다음은 태그도 추가했겠다. 포스트에서 게시날짜 옆에 태그를 추가 시키고 싶다는 생각이 든다. 하지만 추가하면 지저분해질 것 같고 홈화면이 아니라 포스트 안 화면에 표시하기로 하였다.
+그 다음은 <b>Tag</b>도 추가했겠다. 포스트에서 게시날짜 옆에 <b>Tag</b>를 추가 시키고 싶다는 생각이 든다. 하지만 추가하면 지저분해질 것 같고 홈화면이 아니라 포스트 안 화면에 표시하기로 하였다.
 <br><br>
 ![addPostTag](/files/addPostTag.png)
 <br><br>
-만족스럽다. 
+만족스럽다. 카테고리 작업은 이정도로 마치려 한다.
 <div style="display:none;">
 </div>
