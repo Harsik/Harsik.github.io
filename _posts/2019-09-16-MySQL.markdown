@@ -1,0 +1,21 @@
+---
+layout: post
+title: "MySQL"
+date: 2019-09-10
+categories:
+tags: MySQL Linux PuTTY
+---
+<div style="display:none;">
+서버를 나누는 이유
+VMWare를 설치하는 이유
+CentOS를 고른 이유와 설명
+MySQL를 고른 이유와 설명
+CentOS 설치과정
+MySQL 설치과정
+MySQL 세팅
+PuTTY 사용법
+MySQL WorkBench 설치와 사용법
+</div>
+
+<div style="display:none;">
+</div>
