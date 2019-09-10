@@ -31,58 +31,58 @@ MySQL WorkBench 설치와 사용법
 <h3>CentOS 설치</h3>
 설치에 앞서 수많은 Linux OS 중 왜 CentOS를 골랐는지에 대해 설명하겠다. 아니 먼저 왜 Window를 설치 안하고 Linux를 설치하는지부터 말하겠다. <b>제일 큰 장점은 무료다</b>. Window도 무료던데요라고 하는 독자들은 잘못된 루트로 설치파일을 받은 것이다. Window는 기본적으로 유료정책을 유지하고 있다. 다른 세세한 이유가 있지만 위 장점 하나로 나머지를 언급할 필요가 없을 정도이다. 이 Linux OS 중 CentOS는 다른 Linux들 보다 서버환경에 특화 되으며 가볍고 리눅스 서버 시장 1위 <b>RHEL(Red Hat Enterprise Linux)</b>을 사용하기에 있기에 필자는 이 OS를 선택하였다. 일단 <b><a href="http://mirror.kakao.com/centos/7.6.1810/isos/x86_64/">다운로드</a></b> 링크를 남기겠다. 
 <br><br>
-![CentOSDownloadSiteKakao](/files/VMware/CentOSDownloadSiteKakao.png)
+![CentOSDownloadSiteKakao](/files/CentOS/CentOSDownloadSiteKakao.png)
 <br><br>
 Minimal을 설치해도 좋지만 설치하면 독자들을 반기는 건 언더바만 반짝이는 어두컴컴한 화면뿐이다. DVD를 다운 받길 바란다. 그리고 나서 VMware를 처음 실행하면 Home화면이 여러분을 반겨줄 것이다. 
 <br><br>
-![VMwareHome](/files/VMware/VMwareHome.png)
+![VMwareHome](/files/CentOS/VMwareHome.png)
 <br><br>
 Create버튼을 눌러 새로운 VM을 생성해보자.
 <br><br>
-![VMwareWizard1](/files/VMware/VMwareWizard1.png)
+![VMwareWizard1](/files/CentOS/VMwareWizard1.png)
 <br><br>
 되도록이면 Typical을 추천한다.
 <br><br>
-![VMwareWizard2](/files/VMware/VMwareWizard2.png)
+![VMwareWizard2](/files/CentOS/VMwareWizard2.png)
 <br><br>
 방금전 받았던 CentOS.iso를 등록한다.
 <br><br>
-![VMwareWizard3](/files/VMware/VMwareWizard3.png)
+![VMwareWizard3](/files/CentOS/VMwareWizard3.png)
 <br><br>
-![VMwareWizard4](/files/VMware/VMwareWizard4.png)
+![VMwareWizard4](/files/CentOS/VMwareWizard4.png)
 <br><br>
 필요에 따라 디스크 크기를 정하면 된다.
 <br><br>
-![VMwareWizard5](/files/VMware/VMwareWizard5.png)
+![VMwareWizard5](/files/CentOS/VMwareWizard5.png)
 <br><br>
 Customize Hardware 버튼을 눌러 가상 하드웨어 설정을 한다. 설정내에 추천해 주는 수치가 있으므로 그걸 선택해주면 된다. Finish를 누르면 바로 설치된 가상머신이 실행 되면서 Install CentOS로 자동 진입하게 된다. 그 이후 설치 과정을 아래 사진과 같다.
 <br><br>
-![CentOSInstall1](/files/VMware/CentOSInstall1.png)
+![CentOSInstall1](/files/CentOS/CentOSInstall1.png)
 <br><br>
-![CentOSInstall2](/files/VMware/CentOSInstall2.png)
+![CentOSInstall2](/files/CentOS/CentOSInstall2.png)
 <br><br>
-![CentOSInstall3](/files/VMware/CentOSInstall3.png)
+![CentOSInstall3](/files/CentOS/CentOSInstall3.png)
 <br><br>
-![CentOSInstall4](/files/VMware/CentOSInstall4.png)
+![CentOSInstall4](/files/CentOS/CentOSInstall4.png)
 <br><br>
-![CentOSInstall5](/files/VMware/CentOSInstall5.png)
+![CentOSInstall5](/files/CentOS/CentOSInstall5.png)
 <br><br>
 특별한 일 없이 위대로 설정한 후 설치하면 되며 임의의 루트암호와 사용자를 정하면 된다.
 <br><br>
-![CentOSInstall6](/files/VMware/CentOSInstall6.png)
+![CentOSInstall6](/files/CentOS/CentOSInstall6.png)
 <br><br>
 재부팅 후에 터미널 화면이 지나고 나면 아래의 화면들이 나온다. 네트워크는 나중에도 설정할 수 있으니 굳이 지금 할 필요는 없다.
 <br><br>
-![CentOSInstall7](/files/VMware/CentOSInstall7.png)
+![CentOSInstall7](/files/CentOS/CentOSInstall7.png)
 <br><br>
-![CentOSInstall8](/files/VMware/CentOSInstall8.png)
+![CentOSInstall8](/files/CentOS/CentOSInstall8.png)
 <br><br>
-![CentOSInstall9](/files/VMware/CentOSInstall9.png)
+![CentOSInstall9](/files/CentOS/CentOSInstall9.png)
 <br><br>
-![CentOSInstall10](/files/VMware/CentOSInstall10.png)
+![CentOSInstall10](/files/CentOS/CentOSInstall10.png)
 <br><br>
-![CentOSInstall11](/files/VMware/CentOSInstall11.png)
+![CentOSInstall11](/files/CentOS/CentOSInstall11.png)
 <br><br>
-이로써 CentOS 설치가 모두 완료되었다. 필요한 설정이나 부가적인 설치는 다음 MySQL 설치 포스트에서 다루도록 하겠다.
+이로써 CentOS 설치가 모두 완료되었다. 필요한 설정이나 부가적인 설치는 다음 MySQL 설치에서 다루도록 하겠다.
 <div style="display:none;">
 </div>
