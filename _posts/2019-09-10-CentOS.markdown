@@ -67,7 +67,7 @@ Customize Hardware 버튼을 눌러 가상 하드웨어 설정을 한다. 설정
 <br><br>
 ![CentOSInstall5](/files/VMware/CentOSInstall5.png)
 <br><br>
-특별한 일 없이 위대로 하면 되며 임의의 루트암호와 사용자를 정하면 된다.
+특별한 일 없이 위대로 설정한 후 설치하면 되며 임의의 루트암호와 사용자를 정하면 된다.
 <br><br>
 ![CentOSInstall6](/files/VMware/CentOSInstall6.png)
 <br><br>
@@ -83,6 +83,6 @@ Customize Hardware 버튼을 눌러 가상 하드웨어 설정을 한다. 설정
 <br><br>
 ![CentOSInstall11](/files/VMware/CentOSInstall11.png)
 <br><br>
-이로써 CentOS 설치가 모두 완료되었다. 필요한 설정이나 부가적인 설치는 다음 MySQL 설치에서 다루도록 하겠다.
+이로써 CentOS 설치가 모두 완료되었다. 필요한 설정이나 부가적인 설치는 다음 MySQL 설치 포스트에서 다루도록 하겠다.
 <div style="display:none;">
 </div>

@@ -91,9 +91,9 @@ Config Class에 WebSecurityConfigurerAdapter를 extend로 붙여 HttpSecurity객
 ```
 <br><br>
 
-필자는 전자의 방식이 이해가 안되다가 후자의 방식으로 보고 전자가 왜 이런 형태를 띄게 됬는지 이해했다. 독자들 중에 나의 같은 고민을 가지고 있었다면 이걸로 해결할 수 있길 바란다. 
+필자는 전자의 방식이 이해가 안되다가 후자의 방식으로 보고 전자가 왜 이런 형태를 띄게 됬는지 이해했다. 독자들 중에 필자와 같은 고민을 가지고 있었다면 이걸로 해결할 수 있길 바란다. 
 <br><br>
-그 다음 <b>UserDetails</b>은 <b>Spring Security</b>가 사용자의 정보를 담고 있는 객체이다. 기본적으로 제공하는 User 객체로 비밀번호 암호화기능이 있으며 사용자의 접근 제한을 설정할 수 있다. <b>Spring Security</b>가 사용자 정보를 처리 하는 <b>UserDetailsService</b> 메소드에 @Override 선언을 하여 InMemoryUserDetailsManager을 반환하도록 하면 서버 메모리 상에 위 사용자의 아이디와 비밀번호로 인증 할 수 있게 된다. 
+그 다음 <b>UserDetails</b>은 <b>Spring Security</b>가 사용자의 정보를 담고 있는 객체이다. 기본적으로 제공하는 User 객체로 비밀번호 암호화기능이 있으며 사용자의 접근 제한을 설정할 수 있다. <b>Spring Security</b>가 사용자 정보를 처리 하는 <b>UserDetailsService</b> 메소드에 @Override 선언을 하여 InMemoryUserDetailsManager을 반환하도록 하면 서버 메모리 상에 저장된 위 사용자의 아이디와 비밀번호로 인증 할 수 있게 된다. 
 <br><br>
 그 다음 로그인 할 수 있도록 로그인 페이지가 필요하기에 로그인 페이지를 아래와 같이 만든다.
 
