@@ -302,7 +302,7 @@ public class AuthController {
 Refused to display 'http://localhost:8080/h2-console/query.jsp?jsessionid=b634f61cbb6732c889d818464177bbf8' in a frame because it set 'X-Frame-Options' to 'deny'.
 ```
 <br><br>
-이 문제를 해결하기 위해 그리고 프로젝트의 진행을 위해 다음 포스트에서 DB를 <b>H2에서 MySQL로 전환</b>하는 법에 대해 다루겠다.
+이 문제를 해결하기 위해 그리고 프로젝트의 진행을 위해 다음 포스트에서 DB를 <b>H2에서 MySQL로 전환</b>하는 법에 대해 다루겠다. 그리고 위에 대한 좀 더 자세한 설명을 하겠다.
 
 
 <div style="display:none;">
