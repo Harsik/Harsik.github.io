@@ -182,12 +182,11 @@ export const ACCESS_TOKEN = 'accessToken'
 
 <br><br>
 ```javascript
+<script>
 import { login } from './APIUtils'
 
 export default {
   data: () => ({
-    valid: false,
-    firstname: '',
     password: '',
     passwordRules: [
       v => !!v || 'password is required',
@@ -211,13 +210,10 @@ export default {
         .then(response => {
           localStorage.accessToken = response.accessToken
         })
-        .catch((err) => {
-          /* eslint-disable */
-          console.log(err)
-        })
     }
   }
 }
+</script>
 ```
 <br><br>
 

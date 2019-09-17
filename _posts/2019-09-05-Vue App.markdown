@@ -31,25 +31,14 @@ tags: Javascript Vue Vuetify FetchAPi
 
 ```javascript
 <template>
-  <v-form v-model="valid">
+  <v-form>
     <v-container>
       <v-row>
-        <v-col
-          cols="12"
-          md="4"
-        >
-          <v-text-field
-            v-model="email"
-            :rules="emailRules"
-            label="E-mail"
-            required
-          ></v-text-field>
+        <v-col cols="12" md="4">
+          <v-text-field v-model="email" :rules="emailRules" label="E-mail" required></v-text-field>
         </v-col>
-        
-        <v-col
-          cols="12"
-          md="4"
-        >
+
+        <v-col cols="12" md="4">
           <v-text-field
             v-model="password"
             :rules="passwordRules"
@@ -58,6 +47,10 @@ tags: Javascript Vue Vuetify FetchAPi
             label="Password"
             required
           ></v-text-field>
+        </v-col>
+
+        <v-col cols="12" md="4">
+          <v-btn @click="onLogin">Login</v-btn>
         </v-col>
       </v-row>
     </v-container>
