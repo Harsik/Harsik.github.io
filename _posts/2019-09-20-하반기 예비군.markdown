@@ -1,0 +1,10 @@
+---
+layout: post
+title: "예비군 훈련 갔다오겠습니다."
+date: 2019-09-20
+categories:
+tags: Diary
+---
+<div style="display:none;">
+</div>
+그리고 다음주는 일이 밀려서 일처러 먼저 하고 포스트하겠습니다.
