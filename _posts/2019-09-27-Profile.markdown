@@ -1,0 +1,61 @@
+---
+layout: post
+title: "Profile"
+date: 2019-09-27
+categories:
+tags: Hibernate JPA
+---
+<div style="display:none;">
+프론트에서 v-toolbar-items로 로그인 전 후 버튼 및 메뉴 생성
+로그인 후 메뉴에서 프로파일 및 로그아웃 추가
+로그인 후 Inspire 화면 추가 및 이동
+첫 Welcome 화면과 Inspire으로 이동할 수 있도록 Navi 메뉴 생성 
+
+백엔드에서 Profile 기능 추가
+RDMS에서 관계를 JPA로 적용시키는 방법 
+AuthController 수정
+AccountController에 Profile service 제작 및 등록 
+</div>
+<h3>Profile</h3>
+독자들이라면 자기자신에 대해 적는다면 무엇을 적을 것인가? 이름? 주소? 회사? 등등 여러가지 있겠지만 필자는 간단하게 4개만 사용하겠다. 우선 Profile vue 파일을 간단하게 작성하고 바로 백엔드 구성으로 들어가겠다.
+
+<br><br>
+
+```javascript
+<template>
+  <v-layout align-start justify-center row wrap>
+    <v-flex xs12 sm6 md4>
+      <v-card class="pa-3 ma-1">
+        <div class="headline">
+          <v-layout align-center justify-start>{{ profileText }}</v-layout>
+          <v-divider></v-divider>
+        </div>
+        <v-form class="pa-3" ref="form" v-model="valid" lazy-validation>
+          <v-text-field label="Email" v-model="email" :disabled="true"></v-text-field>
+          <v-text-field label="Name" v-model="profile.name"></v-text-field>
+          <v-text-field label="Bio" v-model="profile.bio"></v-text-field>
+          <v-text-field label="Company" v-model="profile.company"></v-text-field>
+          <v-text-field label="Address" v-model="profile.address"></v-text-field>
+          <v-btn color="primary" :disabled="!valid" @click="onEditProfile">Edit</v-btn>
+        </v-form>
+      </v-card>
+    </v-flex>
+  </v-layout>
+</template>
+<script>
+export default {
+  mounted () {
+    this.logout()
+  },
+  methods: {
+    logout () {
+      localStorage.accessToken = null
+      this.$emit('sendAuthentication', false)
+      this.$router.push('/login')
+    }
+  }
+}
+</script>
+    
+```
+<br><br>

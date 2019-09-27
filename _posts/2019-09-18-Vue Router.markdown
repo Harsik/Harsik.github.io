@@ -45,7 +45,7 @@ yarn install vue-router
 ```
 <br><br>
 
-그 다음 <router-view>에 표시할 페이지들을 정의하고 그걸 목록으로 남겨야 한다. 테스트를 위해 기존 Helloworld.vue를 복사해 Login.vue와 Signup.vue로 만들자. 그리고 목록을 만들 차례이다.
+그 다음"<"router-view">"에 표시할 페이지들을 정의하고 그걸 목록으로 남겨야 한다. 테스트를 위해 기존 Helloworld.vue를 복사해 Login.vue와 Signup.vue로 만들자. 그리고 목록을 만들 차례이다.
 
 <br><br>
 ```javascript
