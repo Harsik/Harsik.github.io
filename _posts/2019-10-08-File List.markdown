@@ -20,7 +20,7 @@ tags: Vuetify
 Vuetify에서는 v-navigation-drawer라는 컴포넌트가 서랍기능을 제공한다. 우리는 이것을 이용하여 새로운 메뉴를 만들어 파일 리스트 화면을 띄울 수 있게 만들 것이다. 자세한 건 <b><a href="https://vuetifyjs.com/en/components/navigation-drawers#navigation-drawers">여기</a></b>를 참고하길 바라며 App 파일에 서랍기능을 추가해보자.
 
 <br>
-<h3>App.vue</h3>
+<h4>App.vue</h4>
 
 ```javascript
 <template>
@@ -114,7 +114,7 @@ export default {
 위와 같이 만들려면 어떻게 해야 할까? 우선 모양새부터 잡아보도록 하자. 
 
 <br>
-<h3>FileList.vue</h3>
+<h4>FileList.vue</h4>
 
 ```javascript
 <template>
@@ -176,7 +176,7 @@ export default {
 간단한 모양새와 더미 데이터를 넣어보았다. 우리는 서버에서 응답을 받으면 위와 같은 JSON 형태의 데이터를 받게 될 것이다. 서버에 요청하고 응답을 받고 files 변수에 입력시키는 메소드를 만들면 파일리스트가 불러와지는 기능을 만들 수 있을 것이다. 자 그렇다면 바로 만들어 보자.
 
 <br>
-<h3>APIUtills.js</h3>
+<h4>APIUtills.js</h4>
 
 ```javascript
 export function loadFiles() {
@@ -214,7 +214,7 @@ method:{
 앱에서 요청이 끝났으니 서버에서도 응답과 서비스를 만들어야 한다. 매우 간단하니 코드만 적어놓겠다.
 
 <br><br>
-<h3>FileController.java</h3>
+<h4>FileController.java</h4>
 
 ```java
     @PostMapping("/loadFiles")
@@ -224,7 +224,7 @@ method:{
 ```
 
 <br><br>
-<h3>FileStorageService.java</h3>
+<h4>FileStorageService.java</h4>
 
 ```java
     public List<FileInfo> loadFiles() {
@@ -243,7 +243,7 @@ method:{
 
 
 <br><br>
-<h3>FileStorageService.java</h3>
+<h4>FileStorageService.java</h4>
 
 ```javascript
 <template>
