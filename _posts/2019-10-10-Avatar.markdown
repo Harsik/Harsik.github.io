@@ -1,0 +1,11 @@
+---
+layout: post
+title: "Avatar"
+date: 2019-10-20
+categories:
+tags: Vuetify
+---
+<div style="display:none;">
+아바타 
+아바타 하면서 ui 개선 로그인 로그아웃 
+</div>
