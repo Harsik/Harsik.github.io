@@ -282,10 +282,6 @@ method:{
   </v-layout>
 </template>
 <script>
-import { loadFiles } from './APIUtils'
-// import { deleteFile, uploadFile, uploadFiles, loadFiles } from './APIUtils'
-// import { ipcRenderer, shell } from 'electron'
-
 export default {
   name: 'FileList',
   data: () => ({
