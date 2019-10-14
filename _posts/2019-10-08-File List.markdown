@@ -105,7 +105,7 @@ export default {
 
 <br><br>
 <h3>파일리스트</h3>
-저번 파일 서버 포스트에서 했던 것을 기억하는가. 파일들을 관리 하기 위해 데이터베이스에 Fileinfo 테이블을 만들고 저장했었다. 파일리스트 화면에서는 이를 그리드 화면을 구성하여 보여주는 것을 할려고 한다. Vuetify에서도 그리드를 구성하기 쉽도록 컴포넌트를 제공한며 이름은 <b><a href="https://vuetifyjs.com/en/components/data-tables#api">v-data-table</a></b>이라고 한다.
+저번 파일 서버 포스트에서 했던 것을 기억하는가. 파일들을 관리 하기 위해 데이터베이스에 Fileinfo 테이블을 만들고 저장했었다. 파일리스트 화면에서는 이를 그리드 화면을 구성하여 보여주는 것을 할려고 한다. Vuetify에서도 그리드를 구성하기 쉽도록 컴포넌트를 제공하며 이름은 <b><a href="https://vuetifyjs.com/en/components/data-tables#api">v-data-table</a></b>이라고 한다.
 
 <br><br>
 ![datatable1](/files/file/datatable1.png)
@@ -127,10 +127,10 @@ export default {
           class="elevation-1"
         >
           <template v-slot:items="props">
-            <td>{{ props.item.name }}</td>
-            <td>{{ props.item.type }}</td>
-            <td>{{ props.item.size }}</td>
-            <td>{{ props.item.updatedAt }}</td>
+            <td>{'{ props.item.name }'}</td>
+            <td>{'{ props.item.type }'}</td>
+            <td>{'{ props.item.size }'}</td>
+            <td>{'{ props.item.updatedAt }'}</td>
           </template>
         </v-data-table>
       </v-card>
@@ -173,6 +173,8 @@ export default {
 ![datatable2](/files/file/datatable2.png)
 <br><br>
 
+jekyll에서 대괄호를 두번 넣으면 표기되지 않는 문제 있으니 {'{ props.item.name }'}에서 따옴표를 제거하여 사용하길 바란다. 
+<br>
 간단한 모양새와 더미 데이터를 넣어보았다. 우리는 서버에서 응답을 받으면 위와 같은 JSON 형태의 데이터를 받게 될 것이다. 서버에 요청하고 응답을 받고 files 변수에 입력시키는 메소드를 만들면 파일리스트가 불러와지는 기능을 만들 수 있을 것이다. 자 그렇다면 바로 만들어 보자.
 
 <br>
@@ -188,7 +190,7 @@ export function loadFiles() {
 ```
 
 <br><br>
-<h3>FileList.vue</h3>
+<h4>FileList.vue</h4>
 
 ```javascript
 mounted () {
@@ -209,11 +211,11 @@ method:{
 ```
 
 <br><br>
-/* eslint-disable no-console */ 없이 console.log를 입력할려고 하면 에러가 뜨는 독자들이 있을 것이다. vscode에서 쓰는 eslint라는 유효성 검사 플러그인이 console.log를 사용하는 것을 막는 것인데 이 것뿐만 아니라 기타 칸이 간격이라던가 쓰지 않는 변수에 대해서도 에러를 표시하여 불편함을 느낄 것이다. 필자가 느끼기에 eslint는 너무 깐깐하다고 생각한다. 하지만 eslint에 대해서는 나중에 깊게 다루어 보도록 하고 지금은 에러를 막는 것만 생각하자. 
+/* eslint-disable no-console */ 없이 console.log를 입력할려고 하면 에러가 뜨는 독자들이 있을 것이다. vscode에서 쓰는 eslint라는 유효성 검사 플러그인이 console.log를 사용하는 것을 막는 것인데 이 것뿐만 아니라 칸이 간격이라던가 쓰지 않는 변수에 대해서도 에러를 표시하여 불편함을 느낄 것이다. 필자가 느끼기에 eslint는 너무 깐깐하다고 생각한다. 하지만 eslint에 대해서는 나중에 깊게 다루어 보도록 하고 지금은 에러를 막는 것만 생각하자. 
 <br><br>
 앱에서 요청이 끝났으니 서버에서도 응답과 서비스를 만들어야 한다. 매우 간단하니 코드만 적어놓겠다.
 
-<br><br>
+<br>
 <h4>FileController.java</h4>
 
 ```java
