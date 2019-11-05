@@ -5,7 +5,7 @@ date: 2019-08-29
 categories:
 tags: SpringBoot
 ---
-이번 글은 <b>Spring Boot</b>의 시작하는 방법에 대해서 기술할려고 한다. 
+이번 글은 <b>Spring Boot</b>의 시작하는 방법에 대해서 적어볼려고 한다. 
 <br><br>
 Spring 재단은 처음 프로젝트를 생성할때 편의를 제공해 주는 도구로 <b><a href="https://start.spring.io/">Spring Boot Initialzer</a></b>라는 것을 제공한다. 
 <br><br>
@@ -21,7 +21,7 @@ Spring 재단은 처음 프로젝트를 생성할때 편의를 제공해 주는 
 <br><br>
 ![addWebController](/files/addWebController.png)
 <br><br>
-그리고 main에서 Run하면 Spring Boot가 실행된다는 문구가 터미널 혹은 출력으로 나올 것이다.
+그리고 메인클래스에서 Run버튼을 눌려 실행하면 Spring Boot가 실행된다는 문구가 터미널 혹은 출력으로 나올 것이다.
 <br><br>
 ![SpringBootRun](/files/SpringBootRun.png)
 <br><br>

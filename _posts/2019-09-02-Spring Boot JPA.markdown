@@ -64,7 +64,7 @@ public class Account {
     private String password;
 }
 ```
-이렇게 된다. 보기만 해도 지저분한 코드들이 싹 정리된 기분이 들 것이다. <b><a href="https://projectlombok.org/">Lombok 홈페이지</a></b>에서 지원되는 Annotation을 확인할 수 있으며 사용하는 방법에 대해서는 <b><a href="https://cheese10yun.github.io/lombok/">여기</a></b>를 참고하길 바란다. 
+이렇게 된다. 보기만 해도 지저분한 코드들이 싹 정리되었다. <b><a href="https://projectlombok.org/">Lombok 홈페이지</a></b>에서 지원되는 Annotation을 확인할 수 있으며 사용하는 방법에 대해서는 <b><a href="https://cheese10yun.github.io/lombok/">여기</a></b>를 참고하길 바란다. 
 <br><br>   
 이 다음 <b>JPA</b>를 사용하는 예제를 하나 만들 것이다. 우리가 목표로 하는 것은 <b>Rest API</b>를 이용한 백엔드 서버를 구축하는 것이기 때문에 기초적인 부분을 구현할려고 한다. 여기서 사용할 DB는 <b>H2</b> DB로 독자들을 따로 설치가 필요가 없다. 이것은 매우 가벼운 인메모리 DB이기 때문에 서버 실행과 동시에 설치되고 실행된다. 
 <br><br>   
@@ -149,7 +149,7 @@ public class Account {
 <br><br>
 <b>@Getter나 @Setter, @Builder, @NoArgsConstructor</b>는 아까 전 보았던 Lombok의 Annotation이라 눈에 익겠지만 <b>@Entity와 @Table, @Id, @GeneratedValue</b>는 JPA의 Annotation이기 때문에 따로 설명하겠다. 
 <br><br><b>@Entity</b>는 선언된 클래스가 테이블과 링크될 클래스임을 나타내는 Annotation이며, <b>@Table</b>은 어떤 테이블로 변환될지를 정하는 Annotation이다. 지금은 Table의 이름을 accounts로 정한 상태이다. <b>@Id</b>는 테이블의 인덱스성 기본키를 만드는 Annotation이며, <b>@GeneratedValue</b>가 튜플이 생성될 시 기본키를 하나씩 더해주는 역할을 한다.
-<br><br><b>CreationTimestamp, UpdateTimestamp</b> 둘 다 <b>Hibernate</b>에서 제공하는 Annotation이다.으로 테이블에 새로운 객체가 저장될 시 생성시간, 수정시간을 기록해주는 Annotation이다. 이렇게 생성된 Class를 Repository에 등록하면 아래와 같이 된다. Timestamp는 없어도 되지만 있으면 편리하다.
+<br><br><b>CreationTimestamp, UpdateTimestamp</b> 둘 다 <b>Hibernate</b>에서 제공하는 Annotation이다.으로 테이블에 새로운 객체가 저장될 시 생성시간, 수정시간을 기록해주는 Annotation이다. 이렇게 생성된 Class를 Repository에 등록하면 아래와 같이 된다.
 <br><br>
 ```java
 public interface AccountRepository extends JpaRepository<Account,Long>{
@@ -172,7 +172,7 @@ public interface AccountRepository extends JpaRepository<Account,Long>{
 <br><br>
 ![comfirmInputingRequest](/files/jpa/comfirmInputingRequest.png)
 <br><br>
-요청한 대로 잘 입력된 것을 확인할 수 있다. 확인해 본 결과 값을 보면 비밀번호가 저렇게 들어가 있으면 안된다는 생각이 들 것이다. 그러므로 우리는 <b>Spring security</b>라는 Framwork기술을 적용 시켜 보안에 문제가 없도록 할 것이다. 다음 시간에
+요청한 대로 잘 입력된 것을 확인할 수 있다. 확인해 본 결과 값을 보면 비밀번호가 저렇게 들어가 있으면 안된다는 생각이 들 것이다. 그러므로 다음 포스트에 우리는 <b>Spring security</b>라는 Framwork기술을 적용 시켜 보안에 문제가 없도록 할 것이다.
 <div style="display:none;">
 이 다음 할 것으로 가상머신의 소개와 CentOS소개 및 설치 Mysql 소개와 설치, 연결할까? -- 당장은 안필요할듯
 아니면 Spring security 소개와 적용 할까? -- 적용 한다고 해도 테스트할 페이지를 만들어야되, themeleaf로 샘플이 있긴 하지

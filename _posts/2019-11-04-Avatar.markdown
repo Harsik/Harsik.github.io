@@ -1,0 +1,13 @@
+---
+layout: post
+title: "Avatar"
+date: 2019-11-04
+categories:
+tags: Vuetify
+---
+<div style="display:none;">
+전체적인 ui 개선
+아바타 
+</div>
+제목은 뭘로 할까? 전체적인 ui 개선이라는 개요를 만들긴 했지만 막상 할려고 하니 잘 안되네 일단 ui 개선에 필수 적인 부분을 꼽자면 역시 그리드이다.
+

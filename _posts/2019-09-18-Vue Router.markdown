@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Vue Router"
+title: "Vue Router, Signup"
 date: 2019-09-18
 categories:
-tags: Vue VueRouter
+tags: Vue VueRouter Yarn
 ---
 <div style="display:none;">
 Vue Router 설명과 적용

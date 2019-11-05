@@ -3,7 +3,7 @@ layout: post
 title: "블로그 카테고리 추가"
 date: 2019-09-06
 categories:
-tags: Diary
+tags: Diary, Jekyll
 ---
 <div style="display:none;">
 </div>
