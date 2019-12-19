@@ -104,7 +104,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 <br><br>
 1번을 보면 클라이언트의 요청이 들어가고 있는데 <b>AuthenticationFilter</b>에서 이 요청의 형식이 적합한지 본다. 위에서 설정했다시피 <b>"/api/auth/**"</b>의 접근은 인증없이 허용한다던가하는 방식으로 필터에서 정할 수가 있다. 우리는 필터를 좀 더 추가하여 JWT에 대해 유효성을 검사하거나 발급하는 등에 사용하는 것이다. <b>AuthenticationManager</b>란 인터페이스를 이용해 로그인 만든다고 생각해보자. <b>AuthenticationProvider</b>는 <b>JWTTokenProvider</b>가 되어 <b>JWT</b>를 발급해 줄 것이며 <b>UserDetailService</b>로 <b>accountService</b>를 등록할 것이고 그 서비스 안에서 <b>UserDetails</b> 인터페이스를 이용하여 인증으로 사용할 User 객체를 Account 객체로 사용할 것이다. 발급 받은 JWT은 <b>AuthenticationFilter</b>를 대체한 <b>JwtAuthenticationFilter</b>에서 유효성 검사를 받을 것이며, 검사를 끝맞치면 서버내에서 접근할 수 있는 것이다.
 <br><br>
-뭔 소리인지 알 필요 없는 사람은 그냥 기존 <b>세션-쿠키</b>방식의 <b>Spring Security</b>방식을 JWT으로 전환하는데 아래의 작업이 필요하다는 걸 알면 될 것 같다. 
+이해가 어려운 사람들은 기존 <b>세션-쿠키</b>방식의 <b>Spring Security</b>방식을 JWT으로 전환하는데 아래의 작업이 필요하다는 걸 알면 될 것 같다. 
 <br><br>
 접근시 처음 거치는 것이 <b>JwtAuthenticationFilter</b>이니 바로 어떻게 구성되어 있는지 살펴보도록 하겠다.
 <br><br>
@@ -210,7 +210,7 @@ public class JwtTokenProvider {
 }
 ```
 <br><br>
-구조가 간단하기에 대략적인 설명을 주석으로 달아놓았다. <b>AccountPrincipal</b>는 접근 주체(Principal)로 인증이 필요한 대상에 접근하는 유저로 <b>UserDetail</b>에서 좀 더 추가사항을 넣기 위해 만들어 사용하였다. JWT를 살펴보면 알다시피 암호화키와 해싱 알고리즘이 필요하다. 일반적으로 ${app.jwtSecret}와 같이 프로퍼티 값을 <b>application.yml</b>에 선언하여 사용한다. 
+구조가 간단하기에 대략적인 설명을 주석으로 달아놓았다. <b>AccountPrincipal</b>는 접근 주체(Principal)로 인증이 필요한 대상에 접근하는 유저로 <b>UserDetail</b>에서 좀 더 추가사항을 넣기 위해 만들어 사용하였다. JWT를 살펴보면 알다시피 암호화키와 해싱 알고리즘이 필요하다. 일반적으로 ${app.jwtSecret}와 같이 프로퍼티 값을 <b>application.yml</b>파일에 선언하여 사용한다. 
 <br><br>
 ```yml
 server:
@@ -302,7 +302,7 @@ public class AuthController {
 Refused to display 'http://localhost:8080/h2-console/query.jsp?jsessionid=b634f61cbb6732c889d818464177bbf8' in a frame because it set 'X-Frame-Options' to 'deny'.
 ```
 <br><br>
-이 문제를 해결하기 위해 그리고 프로젝트의 진행을 위해 다음 포스트에서 DB를 <b>H2에서 MySQL로 전환</b>하는 법에 대해 다루겠다. 그리고 위에 대한 좀 더 자세한 설명을 하겠다.
+SpringSecurity가 h2-console에 접근하려하자 x-frame-options가 deny임 확인하고 화면표시를 하지 않기에 이러한 문제가 발생한다. 이 문제를 해결하기 위해 그리고 프로젝트의 진행을 위해 다음 포스트에서 DB를 <b>H2에서 MySQL로 전환</b>하는 법에 대해 다루겠다. 그리고 위에 대한 좀 더 자세한 설명을 하겠다.
 
 
 <div style="display:none;">

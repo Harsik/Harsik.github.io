@@ -20,13 +20,13 @@ tags: SpringBoot SpringSecurity Gradle
 ![SpringSecurityGettheCode](/files/security/SpringSecurityGettheCode.png)
 <br><br>
 
-다운로드 버튼을 눌러 다운 받으면 가이드에서 제공하는 웹어플리케이션을 다운 받을 수 있다. 압축을 풀고 나면 아래와 같이 나오는데 그 중 <b>initial</b> 폴더로 작업하기 바란다. 혹시 막히거나 구체적인 답이 필요할 때는 <b>complete</b>에서 구하기 바란다.
+다운로드 버튼을 눌러 다운 받으면 가이드에서 제공하는 웹어플리케이션을 다운 받을 수 있다. 압축을 풀고 나면 아래와 같이 나오는데 그 중 <b>initial</b> 폴더로 작업하기 바란다. 혹시 막히거나 구체적인 답이 필요할 때는 <b>complete</b>폴더에서 구하기 바란다.
 
 <br><br>
 ![initialFileTree](/files/security/initialFileTree.png)
 <br><br>
 
-친절하게도 <b>Maven</b>과 <b>Gradle</b> 둘다 지원되도록 만들어져 있다. 독자들은 좀 더 편한쪽을 택해 진행하면 된다. 그대로 <b>Application.java</b>에 들어가 웹어플을 실행 시켜보자. 
+친절하게도 <b>Maven</b>과 <b>Gradle</b> 둘다 지원되도록 만들어져 있다. 독자들은 좀 더 편한쪽을 선택해 진행하면 된다. 그대로 <b>Application.java</b>에 들어가 웹어플을 실행 시켜보자. 
 <br><br>
 <b><a href="https://http://localhost:8080/">웹서버</a></b>에 접속해 보면 간단하게 2페이지로만 구성되어 있다. 의존성 또한 아직 <b>Spring Security</b>가 없다. 본 가이드에서는 여기에 <b>/hello</b>로 접근을 제어하는 것을 <b>Spring Security</b>로 만들려고 하는 것이다. 
 <br><br>
@@ -93,9 +93,9 @@ Config Class에 WebSecurityConfigurerAdapter를 extend로 붙여 HttpSecurity객
 
 필자는 전자의 방식이 이해가 안되다가 후자의 방식으로 보고 전자가 왜 이런 형태를 띄게 됬는지 이해했다. 독자들 중에 필자와 같은 고민을 가지고 있었다면 이걸로 해결할 수 있길 바란다. 
 <br><br>
-그 다음 <b>UserDetails</b>은 <b>Spring Security</b>가 사용자의 정보를 담고 있는 객체이다. 기본적으로 제공하는 User 객체로 비밀번호 암호화기능이 있으며 사용자의 접근 제한을 설정할 수 있다. <b>Spring Security</b>가 사용자 정보를 처리 하는 <b>UserDetailsService</b> 메소드에 @Override 선언을 하여 InMemoryUserDetailsManager을 반환하도록 하면 서버 메모리 상에 저장된 위 사용자의 아이디와 비밀번호로 인증 할 수 있게 된다. 
+그 다음 <b>UserDetails</b>은 <b>Spring Security</b>가 사용자의 정보를 담고 있는 객체이다. 기본적으로 제공하는 User 객체로 비밀번호 암호화기능이 있으며 사용자의 접근 제한을 설정할 수 있다. <b>Spring Security</b>가 사용자 정보를 처리 하는 <b>UserDetailsService</b> 메소드에 @Override 선언을 하여 InMemoryUserDetailsManager을 반환하도록 하면 서버 메모리 상에 사용자의 아이디와 비밀번호를 저장하여 해당 아이디, 비밀번호로 인증 할 수 있게 된다. 
 <br><br>
-그 다음 로그인 할 수 있도록 로그인 페이지가 필요하기에 로그인 페이지를 아래와 같이 만든다.
+그 다음 로그인 할 수 있도록 로그인 페이지가 필요하기에 로그인 페이지를 아래와 같이 만들겠다.
 
 <br><br>
 ```html
@@ -124,9 +124,9 @@ Config Class에 WebSecurityConfigurerAdapter를 extend로 붙여 HttpSecurity객
 <br><br>
 ![completeHello](/files/security/completeHello.png)
 <br><br>
-설정에서는 <b>"/"와 "/home", "/login"</b>에 접근하는 것은 <b>permitall</b> 즉 허용되어 있다. 인증하지 않아도 말이다. 하지만 그 외에는 인증을 필요로 하도록 설정하였기에 독자들은 한번 로그인 하기 전이나 로그아웃 후 <b>"/hello"</b>에 접근해 보아라. 바로 튕겨져 나올 것이다. <b>Spring Security</b>가 제대로 적용되고 있는 것이다. 
+설정에서는 <b>"/"와 "/home", "/login"</b>에 접근하는 것은 <b>permitall</b> 즉 허용되어 있다. 인증하지 않아도 말이다. 하지만 그 외에는 인증을 필요로 하도록 설정하였기에 독자들은 한번 로그인 하기 전이나 로그아웃 후 <b>"/hello"</b>에 접근해 보아라. 바로 로그인화면으로 튕겨져 나올 것이다. <b>Spring Security</b>가 제대로 적용되고 있는 것이다. 
 <br><br>
-어떻게 적용하는지 작동하는지에 대해서는 대략적으로 알았으나 이것으로 부족하다고 생각하면 <b><a href="https://spring.io/guides/topicals/spring-security-architecture">여기</a></b>나  <b><a href="https://sjh836.tistory.com/165">빨간색소년</a></b>님 블로그를 참고하길 바란다. <b>Spring Security</b>가 실질적으로 어떻게 작동하는지 알 수 있다.
+어떻게 적용하는지 작동하는지에 대해서는 대략적으로 알았으나 이것으로 부족하다고 생각하면 <b><a href="https://spring.io/guides/topicals/spring-security-architecture">여기</a></b>나  <b><a href="https://sjh836.tistory.com/165">빨간색소년</a></b>님 블로그를 참고하길 바란다. <b>Spring Security</b>가 실질적으로 어떻게 작동하는지 알 수 있다. 나중에 다시 심화적으로 SpringSecurity를 다뤄 보도록 하겠다.
 
 <div style="display:none;">
 </div>

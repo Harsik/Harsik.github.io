@@ -2,7 +2,7 @@
 layout: post
 title: "Spring Boot 시작하기"
 date: 2019-08-29
-categories:
+categories: 
 tags: SpringBoot
 ---
 이번 글은 <b>Spring Boot</b>의 시작하는 방법에 대해서 적어볼려고 한다. 
