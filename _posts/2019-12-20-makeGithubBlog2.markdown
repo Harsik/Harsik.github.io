@@ -157,7 +157,8 @@ layout: default
 <br><br>
 ![makeGithubBlog9](/files/makeGithubBlog/makeGithubBlog9.png)
 <br><br>
-남의 노력을 얻는 것은 쉬운일이 아니다. 어쩌면 자신의 길을 묵묵히 걷는 것이 나을 수도 있다. 기본적으로 제공하는 테마를 사용하여 진행하도록 하겠다.
+남의 노력을 얻는 것은 쉬운일이 아니다. 어쩌면 자신의 길을 묵묵히 걷는 것이 최선일때도 있다. 기본적으로 제공하는 테마를 사용하여 진행하도록 하겠다.
 <br><br>
 ![makeGithubBlog8](/files/makeGithubBlog/makeGithubBlog8.png)
 <br><br>
+<hr style="display:block !important; margin:25px 0; border:1px solid #c3c3c3">
