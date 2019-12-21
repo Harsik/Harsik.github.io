@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "UI Components"
+title: "post1"
 date: 2019-12-19
-categories: [jekyll github]
+categories: jekyll
 tags: 
 ---
 <div style="display:none;">
