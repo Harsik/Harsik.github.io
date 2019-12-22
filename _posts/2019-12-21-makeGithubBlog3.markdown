@@ -37,18 +37,7 @@ layout속성은 이 포스트가 표시될 파일 및 공간을 나타내며, po
 <br>
 백문이 불여일견. 하나 포스트를 만들어보자. _posts 폴더 내에 년-월-일-제목.md에 형식에 맞춘 파일을 만들고 ---에 포스트의 제목, 날짜 등을 넣고 본문을 만들면 아래와 같다.
 <br><br>
-<h4>2019-12-21-mypost.md</h4>
-{% raw %}
-~~~
----
-layout: post
-title:  "MyPost"
-date:   2019-12-21
-categories: jekyll update
----
-Hello World!
-~~~
-{% endraw %}
+![makeGithubBlog10](/files/makeGithubBlog/makeGithubBlog10.png)
 <br><br>
 ![makeGithubBlog11](/files/makeGithubBlog/makeGithubBlog11.png)
 <br><br>
@@ -63,7 +52,7 @@ Hello World!
 <br>
 포스트 마크다운 문서이며 기본적으로 웹 문서이기 때문에 html태그들이 적용된다. `<b>`<b>굵게하거나</b> `<i>`<i>기울이거나</i> `<u>`<u>밑줄을 추가하는</u>것이 가능하다. 억음부호(```) 두개 사용하여 강조할 수도 있고 본문 내에 `[Jekyll docs][jekyll-docs] [jekyll-docs]: https://jekyllrb.com/docs/home`식으로 링크를 거는 것도 가능하다. 그 밖에 텍스트를 꾸미는 것은 다양하기에 <b>[테디노트][tedinote]</b>님의 링크를 걸어놓겠다.
 <br><br>  
-필자가 주로 이미지를 올리는 때 사용하는 방법은` ![이미지제목](/폴더경로/파일명)`으로 files라는 폴더를 만들고 그 안에 이미지 파일을 넣어 위에 같은 형태로 사용한다.
+필자가 주로 이미지를 올리는 때 사용하는 방법은` ![이미지제목](/폴더경로/파일명)`으로 files라는 폴더를 만들고 그 안에 이미지 파일을 넣어 위에 같은 형태로 사용한다.<br>
 `![makeGithubBlog12](/files/makeGithubBlog/makeGithubBlog12.png)`은 
 <br><br>
 ![makeGithubBlog12](/files/makeGithubBlog/makeGithubBlog12.png)
@@ -74,7 +63,54 @@ Hello World!
 <br><br>
 ![makeGithubBlog13](/files/makeGithubBlog/makeGithubBlog13.png)
 <br><br>
-위와 같이 표현할 수도 있다. 이번 포스트는 여기까지 작성하도록 하겠으며 다음 포스트에서는 카테고리를 적용하는 방법에 대해 다루어 보도록하겠다.
+위와 같이 표현할 수도 있다. 리퀴드 언어를 활용하면 {% raw %}
+{% highlight java %}{% endhighlight %}
+{% endraw %}로 쓸수 있다. 
+
+<h4>2019-12-21-mypost.md</h4>
+{% raw %}
+~~~html
+---
+layout: post
+title:  "MyPost"
+date:   2019-12-21
+categories: jekyll update
+---
+Hello World!
+<br>
+<b>Hello World!</b>
+<br>
+<i>Hello World!</i>
+<br>
+<u>Hello World!</u>
+<br>
+<b>[테디노트][tedinote]</b>
+<br>
+![sunny](/files/sunny_stag.jpg)
+<br>
+{% highlight html %}
+---
+layout: default
+---
+<div class="home">
+  <h1 class="page-heading">site.title</h1>
+  <ul class="post-list">
+      <li>
+        <span class="post-meta">post-meta</span>
+        <h3><a class="post-link">post-link<a></h3>
+        <br>
+      </li>
+  </ul>
+</div>
+{% endhighlight %}
+
+[tedinote]: https://teddylee777.github.io/jekyll/Jekyll-%EC%82%AC%EC%9A%A9%EC%9D%84-%EC%9C%84%ED%95%9C-markdown-%EB%AC%B8%EB%B2%95
+~~~
+{% endraw %}
+<br><br>
+![makeGithubBlog14](/files/makeGithubBlog/makeGithubBlog14.png)
+<br><br>
+이번 포스트는 여기까지 작성하도록 하겠으며 다음 포스트에서는 카테고리를 적용하는 방법에 대해 다루어 보도록하겠다.
 <hr style="display:block !important; margin:25px 0; border:1px solid #c3c3c3">
 
 
