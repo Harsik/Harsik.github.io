@@ -240,3 +240,70 @@ plugins:
 <br><br>
 이렇게 화면들을 바꿀 수 있는 준비가 되었다. 이 다음은 카테고리 기능을 추가하는 작업을 시작하겠다.
 <hr style="display:block !important; margin:25px 0; border:1px solid #c3c3c3">
+<h3>카테고리 시나리오</h3>
+<br>
+카테고리를 만들 수 있지만 어떻게 만들어야 하는지를 정하기 위해서는 이 카테고리 기능을 어떻게 쓸 지를 정해야 한다. 필자는 헤더부분에서 카테고리의 이름을 나열하고 그것을 클릭할 시 해당 카테고리에 해당하는 포스트들을 보여주는 방식으로 사용할 생각이다. 
+<br><br>
+![makeGithubBlog19](/files/makeGithubBlog/makeGithubBlog19.png)
+<br><br>
+만약 포스트가 매우 많아지게 되면 페이징기능을 추가하거나 카테고리 레벨을 늘려볼 생각이다. 일단 가벼운 기능부터 구현하는 것을 목적으로 잡고 시작해보자.
+<hr style="display:block !important; margin:25px 0; border:1px solid #c3c3c3">
+<h3>카테고리 만들기</h3>
+<br>
+프로젝트 내에 폴더가 있으면 엔진이 같은 위치에 컴파일함으로 category라는 폴더를 만들고 만들고자 하는 카테고리이름으로 마크다운 파일을 만들어야한다.
+<br><br>
+![makeGithubBlog17](/files/makeGithubBlog/makeGithubBlog17.png)
+<br><br>
+<h4>Github.md</h4>
+{% raw %}
+~~~html
+---
+layout: category
+title: Github
+---
+~~~
+{% endraw %}
+<br><br>
+다음은 카테고리에 해당하는 주소에 표시할 화면을 만들어야 한다. _layout 폴더에 category.html을 생성하겠다.
+<br><br>
+<h4>category.html</h4>
+{% raw %}
+~~~html
+---
+layout: default
+---
+<div class="home">
+	{% assign category = page.category | default: page.title %}
+	<h2 class="post-list-heading">{{ category }}</h2>
+	<ul class="post-list">
+		{% for post in site.categories[category] %}
+		<li>
+			<span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+			<h3>
+				<a class="post-link" href="{{ post.url | prepend: site.baseurl }}"
+					>{{ post.title }}</a
+				>
+			</h3>
+		</li>
+		{% endfor %}
+	</ul>
+</div>
+~~~
+{% endraw %}
+<br><br>
+이제 포스트의 categories로 jekyll을 넣고 /category/jekyll로 접근해보아라. 지금은 템플릿에 첫 포스트가 jekyll을 카테고리로 갖고 있기에 그 포스트만이 리스트에 있을 것이다.
+<br><br>
+![makeGithubBlog18](/files/makeGithubBlog/makeGithubBlog18.png)
+<br><br>
+이제 접근하도록 스위치만 만들면 된다. 헤더파일에서 home 주소를 링크하고 있던 부분을 바꾸도록 하자. 
+{% highlight html %}
+<a class="page-link" href="{{ site.baseurl }}/">Home</a>
+->
+<a class="page-link" href="{{ site.baseurl }}/category/jekyll">Jekyll</a>
+{% endhighlight %}
+<br><br>
+![makeGithubBlog20](/files/makeGithubBlog/makeGithubBlog20.png)
+<br><br>
+카테고리 하나를 만들었다. 만약 더 추가하고 싶다면 위에서 하던 것처럼 추가하면 된다. 
+<hr style="display:block !important; margin:25px 0; border:1px solid #c3c3c3">
+
