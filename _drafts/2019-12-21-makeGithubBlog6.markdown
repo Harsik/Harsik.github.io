@@ -6,7 +6,7 @@ categories: Github
 tags: 
 ---
 <div style="display:none;">
-댓글 만들기
+페이징 만들기
 </div>
 <hr style="display:block !important; margin:25px 0; border:1px solid #c3c3c3">
 <h3></h3>

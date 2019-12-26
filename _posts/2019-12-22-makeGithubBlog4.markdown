@@ -154,14 +154,6 @@ layout: default
 							<span class="username">{{ site.github_username }}</span></a
 						>
 					</li>
-					<!-- <li>
-						<a href="https://www.twitter.com/jekyllrb"
-							><svg class="svg-icon">
-								<use xlink:href="/assets/minima-social-icons.svg#twitter"></use>
-							</svg>
-							<span class="username">jekyllrb</span></a
-						>
-					</li> -->
 				</ul>
 			</div>
 			<div class="footer-col footer-col-3">
@@ -198,7 +190,6 @@ config 변수들을 적용하기 위해서 _config.yml을 조금 수정할 필�
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-
 title: Harsik's blog
 email: aznm12@archivsoft.com
 description: >- # this means to ignore newlines until "baseurl:"
@@ -214,7 +205,6 @@ github_address: https://github.com/Harsik
 theme: minima
 plugins:
   - jekyll-feed
-
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
@@ -240,17 +230,16 @@ plugins:
 <br><br>
 이렇게 화면들을 바꿀 수 있는 준비가 되었다. 이 다음은 카테고리 기능을 추가하는 작업을 시작하겠다.
 <hr style="display:block !important; margin:25px 0; border:1px solid #c3c3c3">
-<h3>카테고리 시나리오</h3>
+<h3>카테고리 목표</h3>
 <br>
-카테고리를 만들 수 있지만 어떻게 만들어야 하는지를 정하기 위해서는 이 카테고리 기능을 어떻게 쓸 지를 정해야 한다. 필자는 헤더부분에서 카테고리의 이름을 나열하고 그것을 클릭할 시 해당 카테고리에 해당하는 포스트들을 보여주는 방식으로 사용할 생각이다. 
+![makeGithubBlog21](/files/makeGithubBlog/makeGithubBlog21.png)
 <br><br>
-![makeGithubBlog19](/files/makeGithubBlog/makeGithubBlog19.png)
-<br><br>
+위 사진은 필자가 목표로 하고 있는 칼리코더라는 사람의 블로그이다. 헤더에 있는 것들이 카테고리 분류이며 클릭하면 각 카테고리에 해당하는 게시물을 밑 본문에 보여주게 된다. 최대한 비슷하게 만들어 볼 생각이다.
 만약 포스트가 매우 많아지게 되면 페이징기능을 추가하거나 카테고리 레벨을 늘려볼 생각이다. 일단 가벼운 기능부터 구현하는 것을 목적으로 잡고 시작해보자.
 <hr style="display:block !important; margin:25px 0; border:1px solid #c3c3c3">
 <h3>카테고리 만들기</h3>
 <br>
-프로젝트 내에 폴더가 있으면 엔진이 같은 위치에 컴파일함으로 category라는 폴더를 만들고 만들고자 하는 카테고리이름으로 마크다운 파일을 만들어야한다.
+프로젝트 내에 폴더가 있으면 엔진이 같은 위치에 컴파일함으로 category라는 폴더를 만들고 만들고자 하는 카테고리 이름으로 마크다운 파일을 만들어야한다.
 <br><br>
 ![makeGithubBlog17](/files/makeGithubBlog/makeGithubBlog17.png)
 <br><br>
@@ -304,6 +293,6 @@ layout: default
 <br><br>
 ![makeGithubBlog20](/files/makeGithubBlog/makeGithubBlog20.png)
 <br><br>
-카테고리 하나를 만들었다. 만약 더 추가하고 싶다면 위에서 하던 것처럼 추가하면 된다. 
+카테고리 하나를 만들었다. 만약 더 추가하고 싶다면 위에서 하던 것처럼 추가하면 된다. 언젠가 카테고리 기능을 추가 및 강화 하는 방법을 다루어 볼 생각이며, 다음 포스트에서는 태그 기능을 추가하는 방법에 대해 다루어 보도록 하겠다.
 <hr style="display:block !important; margin:25px 0; border:1px solid #c3c3c3">
 

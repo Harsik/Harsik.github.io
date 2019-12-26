@@ -67,26 +67,12 @@ layout: default
 ---
 <div class="post">
   <header class="post-header">
-     <h1 class="post-title">{{ page.title }}</h1>
+     <h1 class="post-title p-name" itemprop="name headline">{{ page.title }}</h1>
      <p class="post-meta">Posted on {{ page.date | date: "%b %-d, %Y" }}
-       {% if page.author %} • {{ page.author }}
-       {% endif %}
-       {% if page.meta %} • {{ page.meta }}
-       {% endif %}
-       {% if page.tags %} 
-       {% for tag in page.tags %}
-        <a class="label label-success">{{ tag }}</a> &nbsp;
-        {% endfor %}
-       {% endif %}
      </p>
   </header>
-  <article class="post-content">
+  <div class="post-content e-content" itemprop="articleBody">
     {{ content }}
-  </article>
-  <div align="center">
-  	<a href="#">
-  	<i class="fa fa-arrow-circle-up fa-2x"></i>
-  	</a>
   </div>
 </div>
 ~~~
