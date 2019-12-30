@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "깃허브 블로그(GitHub Blog) 만들기 5 - 태그 기능 구현"
-date: 2019-12-23
+date: 2019-12-30
 categories: Github
 tags: Jekyll Liquid
 ---
@@ -183,14 +183,18 @@ permalink: /tags/
 ~~~
 {% endraw %}
 <br><br>
-포스트에서 태그들을 변수로 정의하고 리퀴드 필터를 통해 재가공되어진다. <b>[리퀴드][liquidPage]</b> 홈페이지에서 태그와 필터에 대한 설명을 볼 수 있다. 
+&nbsp;포스트에서 태그들을 변수로 정의하고 리퀴드 필터를 통해 재가공되어진다. <b>[리퀴드][liquidPage]</b> 홈페이지에서 태그와 필터에 대한 설명을 볼 수 있다. 
 <br><br>
-assign 태그를 통해 불러온 tags를 '|'문자로 재결합하고 if와 unless 태그를 통해 상황에 맞게 적용할 수 있도록 만든다. sort 필터는 재결합된 tags를 split필터로 분할할때 정렬된 변수값으로 만들어 준다. 이렇게 만든 tags를 반복문을 통해 tags 별로 포스트를 보여주는 리스트를 만들 수가 있다.
+&nbsp;assign 태그를 통해 불러온 tags를 '|'문자로 재결합하고 if와 unless 태그를 통해 상황에 맞게 적용할 수 있도록 만든다. sort 필터는 재결합된 tags를 split필터로 분할할때 정렬된 변수값으로 만들어 준다. 이렇게 만든 tags를 반복문을 통해 tags 별로 포스트를 보여주는 리스트를 만들 수가 있다.
 <br><br>
 ![makeGithubBlog27](/files/makeGithubBlog/makeGithubBlog27.png)
 <br><br>
-각 포스트명에는 포스트의 하이퍼링크가 걸려 있어 해당 포스트로 이동하게 된다.
+&nbsp;각 포스트명에는 포스트의 하이퍼링크가 걸려 있어 해당 포스트로 이동하게 된다.
 <hr class="divider">
+<h3>태그 검색 기능 추가하기</h3>
+<br>
+검색창을 만들어서 자동완성된 게시물명이나 태그명을 통해 검색할 수 있는 기능을 만들려고 하였으나 자바스크립트를 통한 동적페이지 구성이 필요하다는 것을 깨닮았다. 최대한 자바스크립트가 아닌 html나 지킬, 리퀴드로만 만들어 볼려고 했으나 그게 안된다면 어쩔 수 없다. TipueSearch라는 라이브러리를 사용할 것이다.
+
 
 [liquidPage]: https://shopify.github.io/liquid/ 
 [materialIcon]: https://material.io/resources/icons/?icon=local_offer&style=baseline
