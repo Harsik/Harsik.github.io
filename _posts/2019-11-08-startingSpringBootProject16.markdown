@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "UI Components"
+title: "SpringBoot 프로젝트 시작하기 16 - UI 개선"
 date: 2019-11-08
-categories: test
+categories: SpringBoot
 tags: Vuetify
 ---
 <div style="display:none;">

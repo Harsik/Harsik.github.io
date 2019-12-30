@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Vue Router, Signup"
+title: "SpringBoot 프로젝트 시작하기 9 - 뷰 라이터와 아이디가입"
 date: 2019-09-18
-categories:
+categories: SpringBoot
 tags: Vue VueRouter Yarn
 ---
 <div style="display:none;">

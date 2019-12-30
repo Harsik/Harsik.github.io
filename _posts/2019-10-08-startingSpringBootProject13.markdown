@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "File List"
+title: "SpringBoot 프로젝트 시작하기 13 - 파일리스트 만들기"
 date: 2019-10-08
-categories:
+categories: SpringBoot
 tags: Vuetify
 ---
 <div style="display:none;">

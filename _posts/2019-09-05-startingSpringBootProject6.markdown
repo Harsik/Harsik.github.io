@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Vue App"
+title: "SpringBoot 프로젝트 시작하기 6 - Vue 어플"
 date: 2019-09-05
 categories: SpringBoot
 tags: Javascript Vue Vuetify FetchAPi

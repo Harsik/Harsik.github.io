@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Profile"
+title: "SpringBoot 프로젝트 시작하기 11 - 프로파일 만들기"
 date: 2019-09-27
-categories:
+categories: SpringBoot
 tags: Hibernate JPA
 ---
 <div style="display:none;">

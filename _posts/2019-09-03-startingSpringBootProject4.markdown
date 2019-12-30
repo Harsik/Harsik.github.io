@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Spring Security"
+title: "SpringBoot 프로젝트 시작하기 4 - 스프링 시큐리티"
 date: 2019-09-03
 categories: SpringBoot
 tags: SpringBoot SpringSecurity Gradle

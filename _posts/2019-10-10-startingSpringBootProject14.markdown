@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "File Upload Download"
+title: "SpringBoot 프로젝트 시작하기 14 - 파일 업로드, 다운로드"
 date: 2019-10-10
-categories:
+categories: SpringBoot
 tags: Vuetify
 ---
 <div style="display:none;">

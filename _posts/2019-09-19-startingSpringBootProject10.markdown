@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Logout"
+title: "SpringBoot 프로젝트 시작하기 10 - 로그아웃 구현하기"
 date: 2019-09-19
-categories:
+categories: SpringBoot
 tags: Vuetify JWT
 ---
 <div style="display:none;">

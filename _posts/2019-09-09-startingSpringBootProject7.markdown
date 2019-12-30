@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Spring Security JWT"
+title: "SpringBoot 프로젝트 시작하기 7 - 스프링 시큐리티 JWT"
 date: 2019-09-09
 categories: SpringBoot
 tags: SpringSecurity JWT

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Login"
+title: "SpringBoot 프로젝트 시작하기 8 - 로그인 구현하기"
 date: 2019-09-17
-categories:
+categories: SpringBoot
 tags: Tomcat Undertow SpringSecurity Vue
 ---
 <div style="display:none;">

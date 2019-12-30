@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Avatar"
+title: "SpringBoot 프로젝트 시작하기 15 - 아바타칸 만들기"
 date: 2019-11-04
-categories:
+categories: SpringBoot
 tags: Vuetify
 ---
 <div style="display:none;">

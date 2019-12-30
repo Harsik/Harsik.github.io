@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Vue Javascript"
+title: "SpringBoot 프로젝트 시작하기 5 - Vue.js"
 date: 2019-09-04
 categories: SpringBoot
 tags: Javascript Vue Vuetify NPM

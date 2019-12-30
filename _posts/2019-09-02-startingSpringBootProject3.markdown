@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Spring Boot JPA"
+title: "SpringBoot 프로젝트 시작하기 3 - 스프링부트 JPA"
 date: 2019-09-02
 categories: SpringBoot
 tags: JPA Hibernate H2 Lombok

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "File Server"
+title: "SpringBoot 프로젝트 시작하기 12 - 파일서버 구축하기"
 date: 2019-10-02
-categories:
+categories: SpringBoot
 tags: SpringBoot
 ---
 <div style="display:none;">
