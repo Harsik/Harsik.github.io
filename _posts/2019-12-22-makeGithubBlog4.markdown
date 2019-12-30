@@ -3,7 +3,7 @@ layout: post
 title: "깃허브 블로그(GitHub Blog) 만들기 (4/7)"
 date: 2019-12-22
 categories: Github
-tags: 
+tags: Jekyll Liquid
 ---
 <div style="display:none;">
 카테고리 만들기

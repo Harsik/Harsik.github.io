@@ -2,7 +2,7 @@
 layout: post
 title: "Spring Security"
 date: 2019-09-03
-categories:
+categories: SpringBoot
 tags: SpringBoot SpringSecurity Gradle
 ---
 <div style="display:none;">

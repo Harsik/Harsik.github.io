@@ -2,8 +2,8 @@
 layout: post
 title: "깃허브 블로그(GitHub Blog) 만들기 (5/7)"
 date: 2019-12-23
-categories: Github jekyll
-tags: jekyll Jekyll Jekyll
+categories: Github
+tags: Jekyll Liquid
 ---
 <div style="display:none;">
 태그 만들기
@@ -191,14 +191,6 @@ assign 태그를 통해 불러온 tags를 '|'문자로 재결합하고 if와 unl
 <br><br>
 각 포스트명에는 포스트의 하이퍼링크가 걸려 있어 해당 포스트로 이동하게 된다.
 <hr style="display:block !important; margin:25px 0; border:1px solid #c3c3c3">
-
-
-
-
-
-
-
-
 
 [liquidPage]: https://shopify.github.io/liquid/ 
 [materialIcon]: https://material.io/resources/icons/?icon=local_offer&style=baseline

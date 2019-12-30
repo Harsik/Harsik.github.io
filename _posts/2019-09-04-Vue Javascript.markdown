@@ -2,7 +2,7 @@
 layout: post
 title: "Vue Javascript"
 date: 2019-09-04
-categories:
+categories: SpringBoot
 tags: Javascript Vue Vuetify NPM
 ---
 <div style="display:none;">

@@ -2,8 +2,8 @@
 layout: post
 title: "MySQL"
 date: 2019-09-16
-categories:
-tags: MySQL Linux PuTTY
+categories: Linux
+tags: MySQL PuTTY
 ---
 <div style="display:none;">
 MySQL를 고른 이유와 설명

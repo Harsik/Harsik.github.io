@@ -2,7 +2,7 @@
 layout: post
 title: "Spring Boot JPA"
 date: 2019-09-02
-categories:
+categories: SpringBoot
 tags: JPA Hibernate H2 Lombok
 ---
 <div style="display:none;">

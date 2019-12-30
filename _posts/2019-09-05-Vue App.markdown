@@ -2,7 +2,7 @@
 layout: post
 title: "Vue App"
 date: 2019-09-05
-categories:
+categories: SpringBoot
 tags: Javascript Vue Vuetify FetchAPi
 ---
 <div style="display:none;">

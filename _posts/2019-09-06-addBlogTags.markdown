@@ -2,7 +2,7 @@
 layout: post
 title: "블로그 태그 추가"
 date: 2019-09-06
-categories:
+categories: Github
 tags: Diary, Jekyll
 ---
 <div style="display:none;">

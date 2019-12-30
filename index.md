@@ -3,18 +3,18 @@ layout: default
 ---
 
 <div class="home">
-	{% assign category = page.category | default: page.title %}
-	<h2 class="post-list-heading">{{ category }}</h2>
+	<h2 class="post-list-heading">최근 게시물</h2>
 	<ul class="post-list">
-		{% for post in site.categories[category] %}
+		{% for post in site.posts %}
 		<li>
 			<span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}
 			{% if post.tags %} 
 			<i class="material-icons svg-icon">local_offer</i>
 			{% for tag in post.tags %}
-			<a class="label" href="{{ '/tags' | prepend: site.baseurl }}">#{{ tag }}</a> &nbsp;  
+			<a class="label" href="{{ '/tags' | prepend: site.baseurl }}">#{{ tag }}</a> &nbsp; 
 			{% endfor %} 
-			{% endif %}</span>
+			{% endif %}
+			</span>
 			<h3>
 				<a class="post-link" href="{{ post.url | prepend: site.baseurl }}"
 					>{{ post.title }}</a

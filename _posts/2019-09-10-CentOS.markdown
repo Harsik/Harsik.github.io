@@ -2,8 +2,8 @@
 layout: post
 title: "CentOS"
 date: 2019-09-10
-categories:
-tags: CentOS Linux VMWare
+categories: Linux
+tags: CentOS VMWare
 ---
 <div style="display:none;">
 서버를 나누는 이유

@@ -2,7 +2,7 @@
 layout: post
 title: "8월 28일 포스트"
 date: 2019-08-28
-categories:
+categories: Diary
 tags: Diary
 ---
 첫 시작부터 거창한 걸 하고 싶었지만 일단 내가 하고 싶은 말부터 적기로 하였다.<br>

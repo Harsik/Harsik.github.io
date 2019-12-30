@@ -28,18 +28,16 @@ permalink: /tags/
 {% endfor %}
 
 {% for tag in tags %}
-<a class="label label-success" href="#{{ tag | slugify }}" >{{ tag }}</a> &nbsp;
+<a class="label label-success" href="#{{ tag | slugify }}" >#{{ tag }}</a> &nbsp;
 {% endfor %}
-
-<br/>
-<br/>
+<hr style="display:block !important; margin:25px 0; border:1px solid #c3c3c3">
 {% for tag in tags %}
 <h4 id="{{ tag | slugify }}">{{ tag }}</h4>
 <ul>
   {% for post in site.posts %}
   {% if post.tags contains tag %}
   <li>
-      <a href="{{ post.url }}">
+      <a href="{{ post.url | prepend: site.baseurl }}">
         {{ post.title }}
       </a>
   </li>

@@ -2,7 +2,7 @@
 layout: post
 title: "Spring Security JWT"
 date: 2019-09-09
-categories:
+categories: SpringBoot
 tags: SpringSecurity JWT
 ---
 <div style="display:none;">
