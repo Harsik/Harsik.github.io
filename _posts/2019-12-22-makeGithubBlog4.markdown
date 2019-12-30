@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "깃허브 블로그(GitHub Blog) 만들기 (4/7)"
+title: "깃허브 블로그(GitHub Blog) 만들기 4 - 카테고리 기능 구현"
 date: 2019-12-22
 categories: Github
 tags: Jekyll Liquid
@@ -8,7 +8,7 @@ tags: Jekyll Liquid
 <div style="display:none;">
 카테고리 만들기
 </div>
-<hr style="display:block !important; margin:25px 0; border:1px solid #c3c3c3">
+<hr class="divider">
 <h3>카테고리 만들기에 앞서</h3>
 <br>
 ![makeGithubBlog8](/files/makeGithubBlog/makeGithubBlog8.png)
@@ -229,14 +229,14 @@ plugins:
 ![makeGithubBlog16](/files/makeGithubBlog/makeGithubBlog16.png)
 <br><br>
 이렇게 화면들을 바꿀 수 있는 준비가 되었다. 이 다음은 카테고리 기능을 추가하는 작업을 시작하겠다.
-<hr style="display:block !important; margin:25px 0; border:1px solid #c3c3c3">
+<hr class="divider">
 <h3>카테고리 목표</h3>
 <br>
 ![makeGithubBlog21](/files/makeGithubBlog/makeGithubBlog21.png)
 <br><br>
 위 사진은 필자가 목표로 하고 있는 칼리코더라는 사람의 블로그이다. 헤더에 있는 것들이 카테고리 분류이며 클릭하면 각 카테고리에 해당하는 게시물을 밑 본문에 보여주게 된다. 최대한 비슷하게 만들어 볼 생각이다.
 만약 포스트가 매우 많아지게 되면 페이징기능을 추가하거나 카테고리 레벨을 늘려볼 생각이다. 일단 가벼운 기능부터 구현하는 것을 목적으로 잡고 시작해보자.
-<hr style="display:block !important; margin:25px 0; border:1px solid #c3c3c3">
+<hr class="divider">
 <h3>카테고리 만들기</h3>
 <br>
 프로젝트 내에 폴더가 있으면 엔진이 같은 위치에 컴파일함으로 category라는 폴더를 만들고 만들고자 하는 카테고리 이름으로 마크다운 파일을 만들어야한다.
@@ -294,5 +294,5 @@ layout: default
 ![makeGithubBlog20](/files/makeGithubBlog/makeGithubBlog20.png)
 <br><br>
 카테고리 하나를 만들었다. 만약 더 추가하고 싶다면 위에서 하던 것처럼 추가하면 된다. 언젠가 카테고리 기능을 추가 및 강화 하는 방법을 다루어 볼 생각이며, 다음 포스트에서는 태그 기능을 추가하는 방법에 대해 다루어 보도록 하겠다.
-<hr style="display:block !important; margin:25px 0; border:1px solid #c3c3c3">
+<hr class="divider">
 

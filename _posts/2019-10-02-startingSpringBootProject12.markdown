@@ -9,12 +9,16 @@ tags: SpringBoot
 File Server 구축
 File upload
 </div>
-<h3>File Server 구축 계기</h3>
+<hr class="divider">
+<h3>파일 서버 구축 계기</h3>
+<br>
 지난시간까지 프로파일 기능을 추가하는 것을 하였다. 하지만 독자들도 느꼈듯 없으면 아쉬운게 빠져있다. 그것은 바로 프로필 사진이다. 이를 어떻게 구현 할 수 있을까? html 기능으로 파일주소를 걸어놓는다고 해도 그건 클라이언트의 파일 주소지 서버 파일 주소가 아니다. 프로파일로 다시 재접속했을 때는 텅 빈 사진칸만 남아있을 것이다. 그렇기에 서버에서 파일을 업로드 및 다운로드가 가능한 파일 서버를 구축해야하는 것이다. 파일 서버를 새로 만들 수도 있으나 파일관련해서 요청 및 응답이 자주 일어나지 않으니 기존 서버에 파일 업로드 및 다운로드 기능을 추가해 사용할 것이다.
 
 <br><br>
-<h3>File Server 구축 하기</h3>
-필자는 <b><a href="https://spring.io/guides/gs/uploading-files/">SpringBoot Guide</a></b>와 <b><a href="https://www.callicoder.com/spring-boot-file-upload-download-rest-api-example/">Caillicorder</a></b>를 주로 참고하였으니 독자들도 막히는 부분이 있으면 참고바란다. 파일 서버를 구축하기 위해 따로 의존성을 추가할 필요가 없다. 파일 시스템을 다루는 클래스는 자바에서 기본적으로 제공하는 것을 사용할 것이다. 우선 사용할 프로퍼티부터 정의할 것이다. 
+<hr class="divider">
+<h3>파일 서버 구축 하기</h3>
+<br>
+필자는 <b><a href="https://spring.io/guides/gs/uploading-files/">스프링부트 가이드</a></b>와 <b><a href="https://www.callicoder.com/spring-boot-file-upload-download-rest-api-example/">Caillicorder</a></b>를 주로 참고하였으니 독자들도 막히는 부분이 있으면 참고바란다. 파일 서버를 구축하기 위해 따로 의존성을 추가할 필요가 없다. 파일 시스템을 다루는 클래스는 자바에서 기본적으로 제공하는 것을 사용할 것이다. 우선 사용할 프로퍼티부터 정의할 것이다. 
 
 <br><br>
 ```
@@ -238,6 +242,9 @@ public class FileStorageException extends RuntimeException {
 ![spring-boot-download-file-rest-api-service-example](/files/file/spring-boot-download-file-rest-api-service-example.jpg)
 <br><br>
 
+<hr class="divider">
+<h3>FileInfo Entity 클래스</h3>
+<br>
 파일 시스템을 만드는 데 너무 대충한다고 생각다면 맞다. 하지만 이유가 있다. 지금부터 그 이유를 설명하겠다. 위 코드로 화면에서 업로드하거나 파일의 URI 주소를 입력해서 다운로드 하는 것은 가능 할 것이다. 
 <br><br>
 문제는 다시 접속했을 때 이전의 리스트를 어떻게 다시 불러올 지 문제가 생긴다. 서버의 파일 시스템을 읽어들여 리스트를 만드는 방법도 있겠지만 필자는 다른 방법을 선택하겠다. 데이터베이스 상에 FileInfo 테이블을 생성하여 서비스가 작동하면 테이블의 정보 또한 수정할 수 있도록 만들 것이다. 그렇다면 우선 FileInfo Entity 클래스부터 만들어 보도록 하겠다.

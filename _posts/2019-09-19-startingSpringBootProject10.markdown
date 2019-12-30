@@ -16,9 +16,10 @@ RDMS에서 관계를 JPA로 적용시키는 방법
 AuthController 수정
 AccountController에 Profile service 제작 및 등록 
 </div>
+<hr class="divider">
 <h3>로그인 후 페이지</h3>
+<br>
 언제까지 로그인을 확인하기 위해서 화면에 로그로 남기기보다는 만족감을 얻고 싶어서 로그인 후 나를 반겨줄 페이지를 하나 추가할려고 한다. 
-
 <br><br>
 ```javascript
 <template>
@@ -51,7 +52,7 @@ AccountController에 Profile service 제작 및 등록
 ```
 <br><br> 
 
-이 위에 있는 것과 같은 파일을 생성하여 만들어도 되나 독자들이 하나 만들어보길 권장한다. Vue 파일을 만들고 router에서 목록을 추가하여 로그인 후 주소를 찾아가게 만들면 된다. onLogin 메소드에서 fetch가 끝난다음 함수에서 this.$router.push('/InspireView')를 추가하자.
+이 위에 있는 것과 같은 파일을 생성하여 만들어도 되나 독자들이 하나 만들어보길 권장한다. 뷰 파일을 만들고 router에서 목록을 추가하여 로그인 후 주소를 찾아가게 만들면 된다. onLogin 메소드에서 fetch가 끝난다음 함수에서 this.$router.push('/InspireView')를 추가하자.
 
 <br><br>
 ```javascript
@@ -80,7 +81,9 @@ AccountController에 Profile service 제작 및 등록
 이 사진을 보여준 것은 다름이 아니라 로그인 후 화면을 어떻게 구성할지에 대해서 설명하기 위해서이다. 위 사진을 보면 우측 위 점3개의 버튼이 보일 것이다. 구글을 크롬에 대한 서브 메뉴를 보여줄 때 저 버튼을 사용한다. 우리도 그와 비슷하게 하기 위해서 로그인을 하면 기존의 버튼들을 교체하고 새로나온 버튼에게 새 기능을 추가 할 것이다. 
 
 <br><br>
+<hr class="divider">
 <h3>서브 메뉴</h3>
+<br>
 말로 하면 어려우니 바로 실전으로 들어가겠다. 우선 우리가 가장 먼저 해야하는 일을 정의하면 로그인 성공 시 버튼을 전환하는 작업이다. 일단 원하는 버튼을 추가하자.
 
 <br><br>
@@ -103,7 +106,7 @@ AccountController에 Profile service 제작 및 등록
 ```
 <br><br>
 
-Vue의 v-if 기능을 이용하면 간단하게 구현할 수 있다. 위 isAuthenticated값을 로그인에 따라 다르게 해보자. 그 다음 새로 만든 위 아이콘에 메뉴 기능을 추가할 것이다. 메뉴를 추가하기 위해 vuetify에서 제공하는 v-menu component를 사용할 것이다.
+뷰의 v-if 기능을 이용하면 간단하게 구현할 수 있다. 위 isAuthenticated값을 로그인에 따라 다르게 해보자. 그 다음 새로 만든 위 아이콘에 메뉴 기능을 추가할 것이다. 메뉴를 추가하기 위해 뷰티파이에서 제공하는 v-menu 컴포넌트를 사용할 것이다.
 
 <br><br>
 ```javascript
@@ -157,17 +160,16 @@ export default {
     
 ```
 <br><br>
-필자는 메뉴에 Profile과 Logout를 넣어놨다. 이글 뒤로 두 메뉴에 대한 기능을 구현하기 위해서이다. 그리고 vue-router에서 vue간 통신을 위해 @sendAuthentication="setAuthentication"를 선언하여 하위 컴포넌트에도 setAuthentication메소드를 사용할 수 있도록 하였다. 이렇게 함으로써 Login.vue에서 상위 App.vue의 변수 값을 변경 할 수 있도록 메소드를 제공할 수 있는 것이다. Profile를 만들기 전에 우선 Logout 기능부터 만들도록 하겠다.
-                  
+필자는 메뉴에 프로파일과 로그아웃를 넣어놨다. 이글 뒤로 두 메뉴에 대한 기능을 구현하기 위해서이다. 그리고 뷰라우터에서 뷰 파일간 통신을 위해 @sendAuthentication="setAuthentication"를 선언하여 하위 컴포넌트에도 setAuthentication메소드를 사용할 수 있도록 하였다. 이렇게 함으로써 Login.vue에서 상위 App.vue의 변수 값을 변경 할 수 있도록 메소드를 제공할 수 있는 것이다. 프로파일를 만들기 전에 우선 로그아웃 기능부터 만들도록 하겠다.    
 <br><br>
-<h3>Logout</h3>
+<hr class="divider">
+<h3>로그아웃 기능 구현하기</h3>
+<br>
 기존 세션-쿠키 방식에서는 로그아웃이란 세션 혹은 쿠키를 없애면 사용자 접속한 세션이 없거나 쿠키가 유효하지 않게 되어 로그아웃으로 처리되게 된다. 하지만 JWT 방식은 세션이 없다. 서버로 다른 클라이언트에서 같은 아이디가 로그인한다고 해서 서버가 이미 로그인 한 아이디임을 알 수 없다. 발급된 토큰을 기준으로 서버 접근이 가능한지 아닌지만 판별한다. 만약 우리가 그래도 로그아웃을 만들고 싶다면 로그아웃 프로세스를 만들고 JWT를 지워 서버에 접근할 수 없도록 해야한다.
-
 <br><br>
 ![sessionjwtlogout](/files/security/sessionjwtlogout.png)
 <br><br>
-
-로그아웃을 위한 Vue 페이지를 하나 만들고 /Logout으로 접근시 로그아웃 프로세스가 작동하도록 만들것이다.
+로그아웃을 위한 뷰 페이지를 하나 만들고 /Logout으로 접근시 로그아웃 프로세스가 작동하도록 만들것이다.
 
 <br><br>
 
@@ -192,5 +194,5 @@ export default {
 ```
 <br><br>
 
-vue의 life cycle 중 하나인 mounted는 화면이 표시되기 시작한 시점을 말하며 좀 더 자세한 부분은 <b><a href="https://medium.com/witinweb/vue-js-%EB%9D%BC%EC%9D%B4%ED%94%84%EC%82%AC%EC%9D%B4%ED%81%B4-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-7780cdd97dd4">링크</a></b>를 참고하길 바란다. 위 과정으로 jwt는 없어지며 로그인 상태값이 변경되고 로그인 화면으로 넘어오게 된다. 다음은 Profile 화면을 구성할 차례이다. 하지만 Profile을 구현하는데 앱과 서버 둘다 설명하면서 하기에 매우 길어질 것 같아 여기까지만 쓰도록 하겠다.
+뷰의 라이프 서클 중 하나인 mounted는 화면이 표시되기 시작한 시점을 말하며 좀 더 자세한 부분은 <b><a href="https://medium.com/witinweb/vue-js-%EB%9D%BC%EC%9D%B4%ED%94%84%EC%82%AC%EC%9D%B4%ED%81%B4-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-7780cdd97dd4">링크</a></b>를 참고하길 바란다. 위 과정으로 jwt는 없어지며 로그인 상태값이 변경되고 로그인 화면으로 넘어오게 된다. 다음은 프로파일 화면을 구성할 차례이다. 하지만 프로파일을 구현하는데 앱과 서버 둘다 설명하면서 하기에 매우 길어질 것 같아 여기까지만 쓰도록 하겠다.
 <br><br>

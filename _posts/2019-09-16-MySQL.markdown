@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "MySQL"
+title: "MySQL 설치하기"
 date: 2019-09-16
 categories: Linux
 tags: MySQL PuTTY
@@ -13,51 +13,48 @@ MySQL 세팅
 PuTTY 사용법
 MySQL WorkBench 설치와 사용법
 </div>
+<hr class="divider">
 <h3>PuTTY</h3>
-MySQL 설치에 앞서 PuTTY를 설치하겠다. 필자는 독자들이 PuTTY에 익숙하기 바라기 때문에 그렇다. 지금 가상 머신에 서버가 있는 것처럼 로컬이 아닌 환경에서 서버에 접속할 일이 있을 것이다. 그런 일을 대비하기 위해 PuTTY에 다뤄봐야한다고 생각한다. <b>PuTTY</b>를 간단히 설명하자면 <b>원격 터미널 접속 프로그램</b>이다. 용량도 적고 가볍기 때문에 특별히 설치과정이 없이 바로 실행이 가능하다. 실행하면 아래와 같은 화면이 뜰 것이다.
-
+<br> 
+&nbsp;MySQL 설치에 앞서 PuTTY를 설치하겠다. 필자는 독자들이 PuTTY에 익숙하기 바라기 때문에 그렇다. 지금 가상 머신에 서버가 있는 것처럼 로컬이 아닌 환경에서 서버에 접속할 일이 있을 것이다. 그런 일을 대비하기 위해 PuTTY에 다뤄봐야한다고 생각한다. PuTTY를 간단히 설명하자면 원격 터미널 접속 프로그램이다. 용량도 적고 가볍기 때문에 특별히 설치과정이 없이 바로 실행이 가능하다. 실행하면 아래와 같은 화면이 뜰 것이다.
 <br><br>
 ![PuTTY](/files/MySQL/PuTTY.png)
 <br><br>
-
-위 Host Name 빈칸에 접속하고자 하는 서버의 아이피를 입력하여 Open할 것이다. 그렇다면 서버의 아이피는 어떻게 알 수 있을까? 
-
+&nbsp;위 Host Name 빈칸에 접속하고자 하는 서버의 아이피를 입력하여 Open할 것이다. 그렇다면 서버의 아이피는 어떻게 알 수 있을까? 
 <br><br>
 ![CentOSNetSetting1](/files/CentOS/CentOSNetSetting1.png)
 <br><br>
-
-서버 화면 우측 위에 보면 시간 옆에 아이콘들이 보인다. 그걸 클릭하면 위 그림같이 뜬다. 그 중 네트워크에 해당하는 부분을 클릭하면 상세메뉴가 펼쳐지는데 거기서 네트워크 설정을 열 수 있다. 열린 설정에서 유선 네트워크 환경설정 버튼을 눌러보자.
-
+&nbsp;서버 화면 우측 위에 보면 시간 옆에 아이콘들이 보인다. 그걸 클릭하면 위 그림같이 뜬다. 그 중 네트워크에 해당하는 부분을 클릭하면 상세메뉴가 펼쳐지는데 거기서 네트워크 설정을 열 수 있다. 열린 설정에서 유선 네트워크 환경설정 버튼을 눌러보자.
 <br><br>
 ![CentOSNetSetting2](/files/CentOS/CentOSNetSetting2.png)
 <br><br>
-
-그러면 상세 환경 창이 뜨는데 거기서 서버가 할당된 IPv4 주소를 알 수 있다. 그럼 이제 PuTTY를 통해 서버에 접속할 수 있다. 
+&nbsp;그러면 상세 환경 창이 뜨는데 거기서 서버가 할당된 IPv4 주소를 알 수 있다. 그럼 이제 PuTTY를 통해 서버에 접속할 수 있다. 
 <br><br>
+<hr class="divider">
 <h3>MySQL의 설치</h3>
-접속했다면 우선 <i>yum update</i>를 입력해보자. 하지만 안될 것이다. 관리자로 접속하지 않았기 때문이다. root로 접속하기 위해서 <i>su -</i> 를 입력해보자. 설치과정에서 입력했던 비밀번호를 입력해 로그인 한 후에 방금 전 할려고 했던 것을 다시 하면 된다. 
+<br> 
+&nbsp;접속했다면 우선 <i>yum update</i>를 입력해보자. 하지만 안될 것이다. 관리자로 접속하지 않았기 때문이다. root로 접속하기 위해서 <i>su -</i> 를 입력해보자. 설치과정에서 입력했던 비밀번호를 입력해 로그인 한 후에 방금 전 할려고 했던 것을 다시 하면 된다. 
 <br><br>
-왜 이 명령어를 먼저 입력하냐면 설치된 운영체제에서 사용하는 패키지들을 업데이트하기 위해서이다. 간단히 생각하면 <b>윈도우 업데이트</b> 같은 것이다. Complete!란 문장이 출력되면 업데이트가 끝난 것이다. 그 다음 <i>yum install mysql-server</i> 명령어를 입력해보자. No package mysql-server available. Error: Nothing to do라는 에러가 뜰 텐데 yum에서 제공하지 않는 패키지이기에 다른 명령어를 입력해야 한다. 입력 전에 설치를 위해 참고한 <b><a href="http://pseg.or.kr/pseg/infoinstall/8335">사이트 링크</a></b>를 달아 두겠다. 
+&nbsp;왜 이 명령어를 먼저 입력하냐면 설치된 운영체제에서 사용하는 패키지들을 업데이트하기 위해서이다. 간단히 생각하면 윈도우 업데이트 같은 것이다. Complete!란 문장이 출력되면 업데이트가 끝난 것이다. 그 다음 <i>yum install mysql-server</i> 명령어를 입력해보자. No package mysql-server available. Error: Nothing to do라는 에러가 뜰 텐데 yum에서 제공하지 않는 패키지이기에 다른 명령어를 입력해야 한다. 입력 전에 설치를 위해 참고한 <b><a href="http://pseg.or.kr/pseg/infoinstall/8335">사이트 링크</a></b>를 달아 두겠다. 
 <br><br>
-우선 <i>rpm -ivh http://dev.mysql.com/get/mysql-community-release-el7-5.noarch.rpm</i>를 입력하자. 그러면 yum repository에 MySQL 패키지가 추가된다. 그 다음 <i>yum install -y mysql-server</i>를 입력해 설치할 수 있다. 설치가 완료 되면 <i>systemctl start mysqld</i>를 입력하여 MySQL DB를 실행 시키면 <i>mysql</i> 명령어를 통해 접속할 수 있다.
+&nbsp;우선 <i>rpm -ivh http://dev.mysql.com/get/mysql-community-release-el7-5.noarch.rpm</i>를 입력하자. 그러면 yum repository에 MySQL 패키지가 추가된다. 그 다음 <i>yum install -y mysql-server</i>를 입력해 설치할 수 있다. 설치가 완료 되면 <i>systemctl start mysqld</i>를 입력하여 MySQL DB를 실행 시키면 <i>mysql</i> 명령어를 통해 접속할 수 있다.
 
 <br><br>
 ![MySQLInstallComplete](/files/MySQL/MySQLInstallComplete.png)
 <br><br>
 
-설치가 완료 되었다. 하지만 이걸로는 터미널상에 표시되는 밋밋한 화면이 나올 뿐이다. 그렇기에 DB를 좀 더 관리하기 쉽도록 해주는 도구가 있는데 그것이 바로 MySQL WorkBench다.
+&nbsp;설치가 완료 되었다. 하지만 이걸로는 터미널상에 표시되는 밋밋한 화면이 나올 뿐이다. 그렇기에 DB를 좀 더 관리하기 쉽도록 해주는 도구가 있는데 그것이 바로 MySQL WorkBench다.
 <br><br>
-<h3>MySQL WorkBench</h3>
-<b>MySQL WorkBench</b>는 DB관리를 위해 그래픽 유저 인터페이스(GUI)를 제공한다. <b><a href="https://www.mysql.com/products/workbench/">다운로드 링크</a></b>에서 다운받을 수 있다. 설치는 설명이 필요 없을 정도로 간단하다. 
-
+<hr class="divider">
+<h3>MySQL 워크벤치</h3>
+<br> 
+&nbsp;MySQL 워크벤치는 DB관리를 위해 그래픽 유저 인터페이스(GUI)를 제공한다. <b><a href="https://www.mysql.com/products/workbench/">다운로드 링크</a></b>에서 다운받을 수 있다. 설치는 설명이 필요 없을 정도로 간단하다. 
 <br><br>
 ![MySQLWorkbench1](/files/MySQL/MySQLWorkbench1.png)
 <br><br>
 ![MySQLWorkbench2](/files/MySQL/MySQLWorkbench2.png)
 <br><br>
-
-DB와 연결하기 위해 설정할려고 하면 Hostname은 PuTTY를 다룰 때 알았지만 username부터는 막막할 것이다. 그렇기에 우리는 DB를 사용하기 위한 계정과 계정에 할당할 <b>스키마</b>를 만들 것이다. 필자는 이 <b><a href="https://2dubbing.tistory.com/13">사이트</a></b>를 참고하여 진행하였다. 터미널에서 mysql -u root -p를 입력해 root로 접속하자. 이 root의 권한으로 DB 계정을 하나 만들 것이다.
-
+&nbsp;DB와 연결하기 위해 설정할려고 하면 Hostname은 PuTTY를 다룰 때 알았지만 username부터는 막막할 것이다. 그렇기에 우리는 DB를 사용하기 위한 계정과 계정에 할당할 스키마를 만들 것이다. 필자는 이 <b><a href="https://2dubbing.tistory.com/13">사이트</a></b>를 참고하여 진행하였다. 터미널에서 mysql -u root -p를 입력해 root로 접속하자. 이 root의 권한으로 DB 계정을 하나 만들 것이다.
 <br><br>
 ```
 mysql> create user centos@'%' identified by 'password';
@@ -76,9 +73,7 @@ mysql> show grants for centos@'%';
 2 rows in set (0.00 sec)
 ```
 <br><br>
-
-위 과정을 통해 외부 접근이 가능한 DB 계정을 만들었으며 이 계정은 testDB 스키마에만 접근 가능하다. 이제 MySQL Workbench에서 접속해 보자. 아직 되지 않을 것이다. 왜냐하면 아직 방화벽 설정을 하지 않았기 때문에 방화벽에서 접근을 막는 것이다. 
-
+&nbsp;위 과정을 통해 외부 접근이 가능한 DB 계정을 만들었으며 이 계정은 testDB 스키마에만 접근 가능하다. 이제 MySQL 워크벤치에 접속해 보자. 아직 되지 않을 것이다. 왜냐하면 아직 방화벽 설정을 하지 않았기 때문에 방화벽에서 접근을 막는 것이다. 
 <br><br>
 ```
 [root@localhost ~]# systemctl stop firewalld
@@ -88,17 +83,13 @@ Removed symlink /etc/systemd/system/dbus-org.fedoraproject.FirewallD1.service.
 [root@localhost ~]#
 ```
 <br><br>
-
-일시적으로 방화벽을 끄고 싶다면 stop, 앞으로 끄고 싶다면 disable을 이용하여 방화벽을 내리면 된다. 방화벽을 내리지 않고 허용하는 방법도 있으니 시간이 있다면 찾아서 해보길 바란다.
-
+&nbsp;일시적으로 방화벽을 끄고 싶다면 stop, 앞으로 끄고 싶다면 disable을 이용하여 방화벽을 내리면 된다. 방화벽을 내리지 않고 허용하는 방법도 있으니 시간이 있다면 찾아서 해보길 바란다.
 <br><br>
 ![MySQLTestConnectionSuccess](/files/MySQL/MySQLTestConnectionSuccess.png)
 <br><br>
 ![MySQLTestConnectionSuccess2](/files/MySQL/MySQLTestConnectionSuccess2.png)
 <br><br>
-
-접속에 성공한다면 Test Connection시 위 사진와 같이 나올 것이다. 드디어 MySQL을 사용할 서버 준비를 마쳤다. 원래라면 백엔드 서버 구현을 제대로 구현하기 위해 MySQL이 설치된 서버에서 어플을 실행하는 것이 맞지만 빠른 테스트를 위해 로컬에서 어플을 실행하도록 하고 후에 백엔드 서버에서 어플 실행이라는 주제로 포스트를 게시하도록 하겠다. 우선 어플에서 MySQL을 사용하기 위한 커넥터를 쓰기 위해 의존성을 추가하자. 
-
+&nbsp;접속에 성공한다면 Test Connection시 위 사진와 같이 나올 것이다. 드디어 MySQL을 사용할 서버 준비를 마쳤다. 원래라면 백엔드 서버 구현을 제대로 구현하기 위해 MySQL이 설치된 서버에서 어플을 실행하는 것이 맞지만 빠른 테스트를 위해 로컬에서 어플을 실행하도록 하고 후에 백엔드 서버에서 어플 실행이라는 주제로 포스트를 게시하도록 하겠다. 우선 어플에서 MySQL을 사용하기 위한 커넥터를 쓰기 위해 의존성을 추가하자. 
 <br><br>
 ```
 dependencies {
@@ -119,9 +110,7 @@ dependencies {
 }
 ```
 <br><br>
-
-H2 DB를 사용하지 않기에 지금은 주석처리하였으나 필자들이 후에 지우길 바란다. 앞으로 MySQL만 사용할 것이다. 
-
+&nbsp;H2 DB를 사용하지 않기에 지금은 주석처리하였으나 필자들이 후에 지우길 바란다. 앞으로 MySQL만 사용할 것이다. 
 <br><br>
 ```
 spring:
@@ -138,7 +127,7 @@ spring:
             ddl-auto: update   
 ```
 <br><br>
-그리고 application.yml에서 설정했던 유저아이디와 패스워드 그리고 URL을 입력한다. 이대로 실행 시켜보아라. 
+&nbsp;그리고 application.yml에서 설정했던 유저아이디와 패스워드 그리고 URL을 입력한다. 이대로 실행 시켜보아라. 
 <br><br>
 ```
 2019-09-16 10:10:52.335  INFO 13828 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
@@ -147,21 +136,18 @@ spring:
 java.sql.SQLException: The server time zone value 'KST' is unrecognized or represents more than one time zone. You must configure either the server or JDBC driver (via the serverTimezone configuration property) to use a more specifc time zone value if you want to utilize time zone support.
 ```
 <br><br>
-
-그러면 연결을 시도하다가 위와 같은 에러로 연결이 되지 않을 것이다. 검색해서 찾아보면 MySQL 커넥터가 일정 버전 이후로 타임존을 인식하지 못하기에 URL 타임존을 추가해야한다. 자세한 내용은 <b><a href="https://offbyone.tistory.com/318">링크</a></b>를 걸어놓겠다. URL에 ?serverTimezone=UTC를 덧붙이고 어플을 실행해 보아라. 콘솔상에 hiberate 로그가 찍히는 것을 확인한 후 MySQL WorkStation을 새로고침하면 필요로하는 테이블이 모두 생성되어 있을 것이다. 
-
+&nbsp;그러면 연결을 시도하다가 위와 같은 에러로 연결이 되지 않을 것이다. 검색해서 찾아보면 MySQL 커넥터가 일정 버전 이후로 타임존을 인식하지 못하기에 URL 타임존을 추가해야한다. 자세한 내용은 <b><a href="https://offbyone.tistory.com/318">링크</a></b>를 걸어놓겠다. URL에 ?serverTimezone=UTC를 덧붙이고 어플을 실행해 보아라. 콘솔상에 하이버네이트 로그가 찍히는 것을 확인한 후 MySQL WorkStation을 새로고침하면 필요로하는 테이블이 모두 생성되어 있을 것이다. 
 <br><br>
 ![HibernateCreateTable](/files/MySQL/HibernateCreateTable.png)
 <br><br>
 
-필자의 기억으로는 선언된 RoleName이 Role을 구성하는 것으로 알았는데 지금 테스트를 위해 진행하면서 되지 않았다. 독자들 중에 이같은 경우를 격고 있는 경우 Role을 아래와 같이 입력하길 바란다.
+&nbsp;필자의 기억으로는 선언된 RoleName이 Role을 구성하는 것으로 알았는데 지금 테스트를 위해 진행하면서 되지 않았다. 독자들 중에 이같은 경우를 격고 있는 경우 Role을 아래와 같이 입력하길 바란다.
 
 <br><br>
 ![InsertRole](/files/MySQL/InsertRole.png)
 <br><br>
 
-그리고 나서 우선 포스트맨을 통해 저번 포스트에서 했던 Signup 요청을 보내면 아래와 같이 성공했다는 메세지를 받을 수 있을 것이다. 나머지 DB의 테이블도 확인해 보길 바란다. 
-
+&nbsp;그리고 나서 우선 포스트맨을 통해 저번 포스트에서 했던 Signup 요청을 보내면 아래와 같이 성공했다는 메세지를 받을 수 있을 것이다. 나머지 DB의 테이블도 확인해 보길 바란다. 
 <br><br>
 ```
 {
@@ -170,8 +156,7 @@ java.sql.SQLException: The server time zone value 'KST' is unrecognized or repre
 }
 ```
 <br><br>
-
-다음 포스트에서는 Vue App에서 미쳐 하지 못했던 Login과 Signup을 기능을 구현해볼 것이다.
+&nbsp;다음 포스트에서는 Vue App에서 미쳐 하지 못했던 로그인과 사인업 기능을 구현해볼 것이다.
 
 <div style="display:none;">
 </div>

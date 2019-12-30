@@ -14,7 +14,9 @@ tags: Vuetify
 파일 업로드
 파일 다운로드, 멀티다운로드
 </div>
-<h3>v-navigation-drawer</h3>
+<hr class="divider">
+<h3>네비게이션 서랍 만들기</h3>
+<br>
 지난 포스트에서 파일 서버를 구축하였다. 이제 이 파일 서버를 앱에서 나타내는 작업을 할 것이다. 화면을 하나 더 만들 텐데 독자들이라면 이 화면을 어떻게 추가 할 것인가. 프로파일 밑에 하나 더 추가 할 것인가? 아니면 독자적인 방법을 쓸 것인가? 필자의 경우 매우 정통적인 방법을 사용하기로 하였다. 우리가 흔히 모바일 앱에서도 볼 수 있는 형태인 네비게이션 드로워, 간단히 말하자면 메뉴들이 담겨 있는 서랍을 하나 만들어 쓸 것이다. 
 <br><br>
 Vuetify에서는 v-navigation-drawer라는 컴포넌트가 서랍기능을 제공한다. 우리는 이것을 이용하여 새로운 메뉴를 만들어 파일 리스트 화면을 띄울 수 있게 만들 것이다. 자세한 건 <b><a href="https://vuetifyjs.com/en/components/navigation-drawers#navigation-drawers">여기</a></b>를 참고하길 바라며 App 파일에 서랍기능을 추가해보자.
@@ -104,8 +106,11 @@ export default {
 아직 파일리스트 화면을 만들지 않았기 때문에 FileList를 클릭해도 아무일도 일어나지 않거나 홈화면으로 돌아갈 것이다. 그럼 바로 파일리스트 화면을 만들어 보도록 하자.
 
 <br><br>
-<h3>파일리스트</h3>
-저번 파일 서버 포스트에서 했던 것을 기억하는가. 파일들을 관리 하기 위해 데이터베이스에 Fileinfo 테이블을 만들고 저장했었다. 파일리스트 화면에서는 이를 그리드 화면을 구성하여 보여주는 것을 할려고 한다. Vuetify에서도 그리드를 구성하기 쉽도록 컴포넌트를 제공하며 이름은 <b><a href="https://vuetifyjs.com/en/components/data-tables#api">v-data-table</a></b>이라고 한다.
+
+<hr class="divider">
+<h3>파일리스트 만들기</h3>
+<br>
+저번 파일 서버 포스트에서 했던 것을 기억하는가. 파일들을 관리 하기 위해 데이터베이스에 Fileinfo 테이블을 만들고 저장했었다. 파일리스트 화면에서는 이를 그리드 화면을 구성하여 보여주는 것을 할려고 한다. 뷰티파이에서도 그리드를 구성하기 쉽도록 컴포넌트를 제공하며 이름은 <b><a href="https://vuetifyjs.com/en/components/data-tables#api">v-data-table</a></b>이라고 한다.
 
 <br><br>
 ![datatable1](/files/file/datatable1.png)
@@ -117,6 +122,17 @@ export default {
 <h4>FileList.vue</h4>
 
 ```javascript
+
+
+```
+
+<br>
+![datatable2](/files/file/datatable2.png)
+<br><br>
+
+<h4>2019-12-21-mypost.md</h4>
+{% raw %}
+~~~javascript
 <template>
   <v-layout align-start justify-center row wrap>
     <v-flex xs12 sm12 md12>
@@ -127,10 +143,10 @@ export default {
           class="elevation-1"
         >
           <template v-slot:items="props">
-            <td>{'{ props.item.name }'}</td>
-            <td>{'{ props.item.type }'}</td>
-            <td>{'{ props.item.size }'}</td>
-            <td>{'{ props.item.updatedAt }'}</td>
+            <td>{{ props.item.name }}</td>
+            <td>{{ props.item.type }}</td>
+            <td>{{ props.item.size }}</td>
+            <td>{{ props.item.updatedAt }}</td>
           </template>
         </v-data-table>
       </v-card>
@@ -166,16 +182,10 @@ export default {
   }
 }
 </script>
-
-```
-
+~~~
+{% endraw %}
 <br>
-![datatable2](/files/file/datatable2.png)
-<br><br>
-
-jekyll에서 대괄호를 두번 넣으면 표기되지 않는 문제 있으니 {'{ props.item.name }'}에서 따옴표를 제거하여 사용하길 바란다. 
-<br>
-간단한 모양새와 더미 데이터를 넣어보았다. 우리는 서버에서 응답을 받으면 위와 같은 JSON 형태의 데이터를 받게 될 것이다. 서버에 요청하고 응답을 받고 files 변수에 입력시키는 메소드를 만들면 파일리스트가 불러와지는 기능을 만들 수 있을 것이다. 자 그렇다면 바로 만들어 보자.
+간단한 모양새와 더미 데이터를 넣어보았다. 우리는 서버에서 응답을 받으면 위와 같은 제이슨 형태의 데이터를 받게 될 것이다. 서버에 요청하고 응답을 받고 files 변수에 입력시키는 메소드를 만들면 파일리스트가 불러와지는 기능을 만들 수 있을 것이다. 자 그렇다면 바로 만들어 보자.
 
 <br>
 <h4>APIUtills.js</h4>
@@ -241,7 +251,10 @@ method:{
 ![datatable3](/files/file/datatable3.png)
 <br><br>
 
-우리가 저번 포스트에 했던 작업의 흔적이 남아있다. 그럼 이것 말고 또 뭘했었냐면 업로드 다운로드 기능을 구현하는 것도 하였다. 그 기능에 대한 요청 기능을 이 앱에서 추가시킬 것이다. 하지만 두 기능을 이 글에 넣기엔 글이 너무 길어 질 것 같기에 search 기능만 소개 및 추가하고 마무리하겠다. v-data-table 컴포넌트에서는 검색기능을 제공한다. 검색 프로퍼티를 추가시키는 것은 물론 검색어 변수를 입력할 칸도 필요하기에 검색바와 겸사겸사 타이틀도 넣을 것이다.
+<hr class="divider">
+<h3>파일 검색 기능 구현</h3>
+<br>
+우리가 저번 포스트에 했던 작업의 흔적이 남아있다. 그럼 이것 말고 또 뭘했었냐면 업로드 다운로드 기능을 구현하는 것도 하였다. 그 기능에 대한 요청 기능을 이 앱에서 추가시킬 것이다. 하지만 두 기능을 이 글에 넣기엔 글이 너무 길어 질 것 같기에 검색 기능만 소개 및 추가하고 마무리하겠다. v-data-table 컴포넌트에서는 검색기능을 제공한다. 검색 프로퍼티를 추가시키는 것은 물론 검색어 변수를 입력할 칸도 필요하기에 검색바와 겸사겸사 타이틀도 넣을 것이다.
 
 
 <br><br>

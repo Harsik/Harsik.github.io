@@ -9,7 +9,7 @@ tags:
 로그인 댓글 만들기
 
 </div>
-<hr style="display:block !important; margin:25px 0; border:1px solid #c3c3c3">
+<hr class="divider">
 <h3></h3>
 <br>
-<hr style="display:block !important; margin:25px 0; border:1px solid #c3c3c3">
+<hr class="divider">
