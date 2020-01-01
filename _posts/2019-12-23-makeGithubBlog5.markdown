@@ -11,14 +11,14 @@ tags: Jekyll Liquid
 <hr class="divider">
 <h3>태그 만들기 계획</h3>
 <br>
-&nbsp;태그를 어떻게 만들까? 일단 태그 기능에 대한 정의가 필요하다. 필자가 만들고 싶은 태그 기능은 
+&nbsp;태그를 어떻게 만들까? 일단 태그 기능에 대한 정의가 필요하다. 필자가 만들고 싶은 태그 기능은 아래와 같다. 
 <ul>
 <li>각 포스트에 태그라는 포스트를 나타내는 푯말을 추가하는 것</li>
 <li>그것을 포스트 내부와 그리고 외부, 리스트에서 표현하는 것</li>
 <li>태그를 통해 게시물을 찾아갈 수 있도록 하는 것</li>
 <li>태그를 검색하여 게시물을 찾아가는 것들을 가능하게 하는 것</li>
 </ul>
-&nbsp;이상이다. 차례차례 하나씩 구현해보자.
+&nbsp;이상이다. 그렇다면 차례차례 하나씩 구현해보자.
 <br><br>
 <hr class="divider">
 <h3>포스트 푯말 추가</h3>
@@ -127,7 +127,7 @@ layout: default
 ~~~
 {% endraw %}
 <br><br>
-&nbsp;사이트 오브젝트에서 포스트 오브젝트를 리퀴드의 반복문을 통해 포스트의 목록을 만들었었는데 그것을 응용하여 포스트 오브젝트에서 태그 오브젝트를 반복문으로 나타내었다. 위에서 포스트에서 태그 만들 때 사용한 방법과 동일한 방법으로 태그를 만들었다. 또한 태그를 클릭할 경우 태그 리스트로 접속하도록 하이퍼링크를 추가하였다.
+&nbsp;사이트 오브젝트에서 포스트 오브젝트를 리퀴드 반복문을 통해 포스트의 목록을 만들었는데 그것을 응용하여 포스트 오브젝트에서 태그 오브젝트를 반복문으로 나타내었다. 위에서 포스트에서 태그 만들 때 사용한 방법과 동일한 방법으로 태그를 만들었다. 또한 태그를 클릭할 경우 태그 리스트로 접속하도록 하이퍼링크를 추가하였다.
 <br><br>
 ![makeGithubBlog26](/files/makeGithubBlog/makeGithubBlog26.png)
 <br><br>
@@ -191,10 +191,203 @@ permalink: /tags/
 <br><br>
 &nbsp;각 포스트명에는 포스트의 하이퍼링크가 걸려 있어 해당 포스트로 이동하게 된다.
 <hr class="divider">
-<h3>태그 검색 기능 추가하기</h3>
+<h3>검색 기능 추가하기</h3>
 <br>
-검색창을 만들어서 자동완성된 게시물명이나 태그명을 통해 검색할 수 있는 기능을 만들려고 하였으나 자바스크립트를 통한 동적페이지 구성이 필요하다는 것을 깨닮았다. 최대한 자바스크립트가 아닌 html나 지킬, 리퀴드로만 만들어 볼려고 했으나 그게 안된다면 어쩔 수 없다. TipueSearch라는 라이브러리를 사용할 것이다.
+검색창을 만들어서 자동완성된 게시물명이나 태그명을 통해 검색할 수 있는 기능을 만들려고 하였으나 자바스크립트를 통한 동적페이지 구성이 필요하다는 것을 깨닮았다. 최대한 자바스크립트가 아닌 html나 지킬, 리퀴드로만 만들어 볼려고 했으나 그게 안된다면 어쩔 수 없다. 
+<br><br>
+그래서 필자는 TipueSearch라는 라이브러리를 사용할 것이다.
+<br><br>
+![makeGithubBlog30](/files/makeGithubBlog/makeGithubBlog30.png)
+<br><br>
+위 사진은 그 라이브러리를 사용한 모습으로 검색어에 해당하는 문구를 포스트명 뿐만 아니라 포스트 본문에서 찾아 해당하는 포스트를 보여준다. 필자는 전에도 참고했던 CALLICODER의 홈페이지와 비슷하게 만들어 볼려고 한다.
+<br><br>
+![makeGithubBlog28](/files/makeGithubBlog/makeGithubBlog28.png)
+<br><br>
+위 사진에서 검색 아이콘을 클릭하면 아래의 사진처럼 검색칸이 뜨는 형식이다.
+<br><br>
+![makeGithubBlog29](/files/makeGithubBlog/makeGithubBlog29.png)
+<br><br>
+그럼 우선적으로 라이브러리를 추가해야 한다. <b>[TipueSearch][tipuesearch]</b> 페이지에서 라이브러리를 다운받자.
+<br><br>
+![makeGithubBlog31](/files/makeGithubBlog/makeGithubBlog31.png)
+<br><br>
+다운받은 라이브러리에서 위 사진에 해당하는 파일을 프로젝트 내로 옮기고 _config.yml 파일에 환경변수를 추가해야한다.
+<h4>_config.yml</h4>
+{% highlight text %}
+# Tipue search settings
+tipue_search:
+  include:
+    pages: true
+  exclude:
+    files: [search.html]
+{% endhighlight %}
+그리고 검색 폼이 추가될만한 곳을 찾아 아래의 코드를 추가하여야 한다.
+<h4>header.html</h4>
+{% highlight html %}
+<!-- search box -->
+		<form action="/search">
+			<div class="tipue_search_box">
+				<img src="/assets/tipuesearch/search.png" class="tipue_search_icon" />
+				<input
+					type="text"
+					name="q"
+					id="tipue_search_input"
+					pattern=".{2,}"
+					title="최소 2글자 이상"
+					required
+				/>
+			</div>
+
+			<div style="clear: both;"></div>
+		</form>
+{% endhighlight %}
+search.html에 layout을 default로 수정하는 것도 있지 않고 하자. 모든 작업이 끝나고 검색어 칸에 검색어를 입력하면 아래의 사진처럼 검색어 입력칸과 검색결과 창이 뜰 것이다. 검색될 포스트가 모자르기에 추가하였다.
+<br><br>
+![makeGithubBlog32](/files/makeGithubBlog/makeGithubBlog32.png)
+<br><br>
+기능적인 부분이 완료되었으니 이제 스타일 부분을 고쳐볼 것이다. 독자들도 느꼈듯이 쓸대 없이 검색어 입력칸이 하나 더 생긴다는 점과 헤더에 위치해있는 입력칸이 보기 좋지는 않다는 점 그리고 굳이 보여줄 필요 없는 포스트 URL이 보여진다는 점이 고쳐야 할 점으로 느껴질 것이다. 하나하나 고쳐보자.
+<h4>search.html</h4>
+{% highlight html %}
+---
+title: Search
+description: "Search this site"
+layout: default
+permalink: /search/
+tipue_search_active: true
+exclude_from_search: true
+---
+<!-- <form action="{{ page.url | relative_url }}">
+  <div class="tipue_search_left"><img src="{{ "/assets/tipuesearch/search.png" | relative_url }}" class="tipue_search_icon"></div>
+  <div class="tipue_search_right"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required></div>
+  <div style="clear: both;"></div>
+</form> -->
+<div id="tipue_search_content"></div>
+
+<script>
+$(document).ready(function() {
+  $('#tipue_search_input').tipuesearch();
+});
+</script>
+{% endhighlight %}
+우선 본문에서 검색입력칸이 하나 더 나오는 이유는 서치페이지에서 폼 태그가 있기 때문이다. 그렇기에 폼 태그를 주석처리하면 하나 더 나오는 문제가 해결된다. 그 다음 헤더에 있는 입력칸의 스타일을 변경할 차례이다.
+
+<h4>header.html</h4>
+{% highlight html %}
+<header class="site-header" role="banner">
+	<div class="wrapper">
+		<a class="site-title" rel="author" href="/">{{ site.title }}</a>
+		<div style="display: flex;">
+			<form class="searchButton" action="/search">
+				<input
+					class="searchBar"
+					type="text"
+					name="q"
+					id="tipue_search_input"
+					pattern=".{2,}"
+					title="최소 2글자 이상"
+					required
+				/>
+			</form>
+			<button id="searchClose" class="searchClose">
+				<svg
+					height="24"
+					viewBox="0 0 24 24"
+					width="24"
+					xmlns="http://www.w3.org/2000/svg"
+				>
+					<path
+						d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+					></path>
+					<path d="M0 0h24v24H0z" fill="none"></path>
+				</svg>
+			</button>
+		</div>
+		<nav class="site-nav">
+			<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+			<label for="nav-trigger">
+				<span class="menu-icon">
+					<svg viewBox="0 0 18 15" width="18px" height="15px">
+						<path
+							d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"
+						/>
+					</svg>
+				</span>
+			</label>
+			<div id="headerTrigger" class="trigger">
+				<a class="page-link" href="{{ site.baseurl }}/category/Linux">Linux</a>
+				<a class="page-link" href="{{ site.baseurl }}/category/SpringBoot"
+					>SpringBoot</a
+				>
+				<a class="page-link" href="{{ site.baseurl }}/category/Github"
+					>Github</a
+				>
+				<a class="page-link" href="{{ site.baseurl }}/tags">Tags</a>
+				<a class="page-link" href="{{ site.baseurl }}/about">About</a>
+			</div>
+		</nav>
+		<!-- search box -->
+		<img
+			src="/assets/tipuesearch/search.png"
+			id="searchIcon"
+			class="searchIcon"
+		/>
+	</div>
+</header>
+<script>
+	$('#searchIcon').click(function() {
+		$('#tipue_search_input').show()
+		$('#searchIcon').hide()
+		$('#searchClose').show()
+		$('#headerTrigger').hide()
+	})
+	$('#searchClose').click(function() {
+		$('#tipue_search_input').hide()
+		$('#searchIcon').show()
+		$('#searchClose').hide()
+		$('#headerTrigger').show()
+	})
+</script>
+{% endhighlight %}
+타이틀 옆으로 검색 아이콘과 입력칸을 넣고 제이쿼리를 이용하여 클릭 이벤트에 따른 상태 변화를 추가 하였다. 스타일을 다루기 위해 아래의 코드를 파일에 넣었다.
+
+<h4>main.css</h4>
+{% highlight css %}
+.searchBar {
+  display: none;
+  background-color: #f4f4f4;
+  width: 100%;
+	padding: 1em;
+	border: none;
+	margin: 0.5em;
+}
+
+.searchIcon {
+  padding: 15px;
+  width: 24px;
+  height: 24px;
+}
+
+.searchClose {
+  display:none;
+  border:none;
+  background:none;
+}
+
+.searchButton {
+  float: right;
+}
+{% endhighlight %}
+
+<br><br>
+![makeGithubBlog33](/files/makeGithubBlog/makeGithubBlog33.png)
+<br><br>
+![makeGithubBlog34](/files/makeGithubBlog/makeGithubBlog34.png)
+<br><br>
+
+이 다음 포스트 URL이 보이는 현상을 해결할려 했으나 라이브러리를 수정하는 단계까지 가야한다. 라이브러리를 수정하는 것은 그리 좋은 방법은 아니기에 그냥 두기로 하겠다. 이번 포스트는 여기까지 하고 언제 다시 시간이 될 지 모르겠지만 다음 포스트는 인디케이터를 추가한 페이징 기능을 추가하는 것을 다루어보도록 하겠다.
 
 
+
+[tipuesearch]: https://github.com/jekylltools/jekyll-tipue-search
 [liquidPage]: https://shopify.github.io/liquid/ 
 [materialIcon]: https://material.io/resources/icons/?icon=local_offer&style=baseline

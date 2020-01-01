@@ -1,6 +1,32 @@
 <header class="site-header" role="banner">
 	<div class="wrapper">
 		<a class="site-title" rel="author" href="/">{{ site.title }}</a>
+		<div style="display: flex;">
+			<form class="searchButton" action="/search">
+				<input
+					class="searchBar"
+					type="text"
+					name="q"
+					id="tipue_search_input"
+					pattern=".{2,}"
+					title="최소 2글자 이상"
+					required
+				/>
+			</form>
+			<button id="searchClose" class="searchClose">
+				<svg
+					height="24"
+					viewBox="0 0 24 24"
+					width="24"
+					xmlns="http://www.w3.org/2000/svg"
+				>
+					<path
+						d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+					></path>
+					<path d="M0 0h24v24H0z" fill="none"></path>
+				</svg>
+			</button>
+		</div>
 		<nav class="site-nav">
 			<input type="checkbox" id="nav-trigger" class="nav-trigger" />
 			<label for="nav-trigger">
@@ -12,13 +38,37 @@
 					</svg>
 				</span>
 			</label>
-			<div class="trigger">
+			<div id="headerTrigger" class="trigger">
 				<a class="page-link" href="{{ site.baseurl }}/category/Linux">Linux</a>
-				<a class="page-link" href="{{ site.baseurl }}/category/SpringBoot">SpringBoot</a>
-				<a class="page-link" href="{{ site.baseurl }}/category/Github">Github</a>
+				<a class="page-link" href="{{ site.baseurl }}/category/SpringBoot"
+					>SpringBoot</a
+				>
+				<a class="page-link" href="{{ site.baseurl }}/category/Github"
+					>Github</a
+				>
 				<a class="page-link" href="{{ site.baseurl }}/tags">Tags</a>
 				<a class="page-link" href="{{ site.baseurl }}/about">About</a>
 			</div>
 		</nav>
+		<!-- search box -->
+		<img
+			src="/assets/tipuesearch/search.png"
+			id="searchIcon"
+			class="searchIcon"
+		/>
 	</div>
 </header>
+<script>
+	$('#searchIcon').click(function() {
+		$('#tipue_search_input').show()
+		$('#searchIcon').hide()
+		$('#searchClose').show()
+		$('#headerTrigger').hide()
+	})
+	$('#searchClose').click(function() {
+		$('#tipue_search_input').hide()
+		$('#searchIcon').show()
+		$('#searchClose').hide()
+		$('#headerTrigger').show()
+	})
+</script>
