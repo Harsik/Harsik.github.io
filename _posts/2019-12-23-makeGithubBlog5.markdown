@@ -3,7 +3,7 @@ layout: post
 title: "깃허브 블로그(GitHub Blog) 만들기 5 - 태그 기능 구현"
 date: 2020-01-01
 categories: Github
-tags: Jekyll Liquid
+tags: Jekyll Liquid Javascript
 ---
 <div style="display:none;">
 태그 만들기
