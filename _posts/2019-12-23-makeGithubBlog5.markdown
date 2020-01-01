@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "깃허브 블로그(GitHub Blog) 만들기 5 - 태그 기능 구현"
-date: 2019-12-30
+date: 2020-01-01
 categories: Github
 tags: Jekyll Liquid
 ---
