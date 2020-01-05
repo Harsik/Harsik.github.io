@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "앞으로 삶의 길을 어떻게 걸어가야 하는지에 대해서"
-date: 2020-01-03
+date: 2020-01-05
 categories: ETC
 tags: ETC
 ---
