@@ -31,6 +31,14 @@ github_address: https://github.com/Harsik
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-paginate-v2
+pagination:
+    enabled: true
+    per_page: 5
+    limit: 0
+    sort_field: "date"
+    sort_reverse: true
+    paginate_path: "/blog/page:num/"
 
 # Tipue search settings
 tipue_search:

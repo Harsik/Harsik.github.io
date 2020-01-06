@@ -1,11 +1,13 @@
 ---
 layout: default
+pagination:
+    enabled: true
+    per_page: 5
 ---
-
 <div class="home">
 	<h2 class="post-list-heading">최근 게시물</h2>
 	<ul class="post-list">
-		{% for post in site.posts %}
+		{% for post in paginator.posts %}
 		<li>
 			<span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}
 			{% if post.tags %} 
@@ -24,3 +26,6 @@ layout: default
 		{% endfor %}
 	</ul>
 </div>
+
+{% include pagination.html %}
+				
