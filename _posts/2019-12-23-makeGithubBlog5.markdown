@@ -4,6 +4,7 @@ title: "깃허브 블로그(GitHub Blog) 만들기 5 - 태그 기능 구현"
 date: 2020-01-01
 categories: Github
 tags: Jekyll Liquid Javascript
+comments: true
 ---
 <div style="display:none;">
 태그 만들기
@@ -214,12 +215,9 @@ permalink: /tags/
 다운받은 라이브러리에서 위 사진에 해당하는 파일을 프로젝트 내로 옮기고 _config.yml 파일에 환경변수를 추가해야한다.
 <h4>_config.yml</h4>
 {% highlight text %}
-# Tipue search settings
-tipue_search:
-  include:
-    pages: true
-  exclude:
-    files: [search.html]
+#Disqus Comment
+disqus_url: https://https-harsik-github-io.disqus.com/
+disqus_id: aznm4736@gmail.com
 {% endhighlight %}
 그리고 검색 폼이 추가될만한 곳을 찾아 아래의 코드를 추가하여야 한다.
 <h4>header.html</h4>

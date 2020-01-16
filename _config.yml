@@ -34,7 +34,9 @@ plugins:
   - jekyll-paginate
 paginate: 5
 paginate_path: "/posts/page/:num"
-
+#Disqus Comment
+disqus_url: <disqus url>
+disqus_id: <disqus id>
 # Tipue search settings
 tipue_search:
   include:

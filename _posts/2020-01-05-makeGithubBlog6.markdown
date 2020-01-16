@@ -1,9 +1,10 @@
 ---
 layout: post
 title: "깃허브 블로그(GitHub Blog) 만들기 6 - 페이지네이터 구현"
-date: 2020-01-16
+date: 2020-01-06
 categories: Github
 tags: Jekyll Liquid Javascript
+comments: true
 ---
 <div style="display:none;">
 페이징 만들기
