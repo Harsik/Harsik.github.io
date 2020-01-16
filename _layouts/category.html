@@ -3,10 +3,12 @@ layout: default
 ---
 
 <div class="home">
-	<h2 class="post-list-heading">{{ page.pagination.category }}</h2>
+	paginator : {{ paginator }}
+	{% assign category = page.category | default: page.title %}
+	<h2 class="post-list-heading">{{ category }}</h2>
 	<ul class="post-list">
-{% for post in paginator.posts %}
-    <li>
+		{% for post in site.categories[category] %}
+		<li>
 			<span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}
 			{% if post.tags %} 
 			<i class="material-icons svg-icon">local_offer</i>
@@ -20,8 +22,6 @@ layout: default
 				>
 			</h3>
 		</li>
-{% endfor %}
+		{% endfor %}
 	</ul>
 </div>
-
-{% include pagination.html %}
