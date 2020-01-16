@@ -3,7 +3,6 @@ layout: default
 ---
 
 <div class="home">
-	paginator : {{ paginator }}
 	{% assign category = page.category | default: page.title %}
 	<h2 class="post-list-heading">{{ category }}</h2>
 	<ul class="post-list">
