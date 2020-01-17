@@ -4,12 +4,12 @@ title: "SpringBoot 프로젝트 시작하기 14 - 파일 업로드, 다운로드
 date: 2019-10-10
 categories: SpringBoot
 tags: Vuetify
+comments: true
 ---
 <div style="display:none;">
 파일 업로드
 파일 다운로드, 멀티다운로드
 </div>
-<hr class="divider">
 <h3>파일 업로드</h3>
 <br>
 &nbsp;파일 업로드 하는 방법에는 기존에 사용하던 input태그를 사용해도 되지만 정말 볼품 없는 모습으로 아래의 사진처럼 보이게 된다.

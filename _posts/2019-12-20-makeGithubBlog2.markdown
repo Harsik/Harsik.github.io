@@ -4,10 +4,10 @@ title: "깃허브 블로그(GitHub Blog) 만들기 2 - 템플릿 수정하기"
 date: 2019-12-20
 categories: Github
 tags: Jekyll Liquid
+comments: true
 ---
 <div style="display:none;">
 </div>
-<hr class="divider">
 <h3>템플릿 구조</h3>
 <br>
 &nbsp;우리는 저번 포스트에서 지킬이 제공하는 템플릿을 받아 웹사이트를 실행해 보았다. 이번 포스트에서는 그 템플릿이 어떤 구조로 되어 있으며 각 구조들이 어떤 역할을 하는지 알아볼 것이다.

@@ -4,8 +4,8 @@ title: "SpringBoot 프로젝트 시작하기 2 - 스프링부트 이니셜라이
 date: 2019-08-29
 categories: SpringBoot
 tags: SpringBoot
+comments: true
 ---
-<hr class="divider">
 <h3>스프링부트 프로젝트 시작하기</h3>
 <br>
 &nbsp;이번 글은 스프링부트를 시작하는 방법에 대해서 적어볼려고 한다. 

@@ -4,6 +4,7 @@ title: "SpringBoot 프로젝트 시작하기 3 - 스프링부트 JPA"
 date: 2019-09-02
 categories: SpringBoot
 tags: JPA Hibernate H2 Lombok
+comments: true
 ---
 <div style="display:none;">
 SPring security 설명을 위한 사전 작업 중 하나로 jpa를 통한 db 유저 정보 등록 및 조회로 login logout을 구현 할 수 있도록 설명
@@ -12,7 +13,6 @@ SPring security 설명을 위한 사전 작업 중 하나로 jpa를 통한 db �
 후반 jpa 응용 방법 mysql
 <br><br>
 </div>
-<hr class="divider">
 <h3>JPA란</h3>
 <br>
 &nbsp;우선 JPA가 뭐지라는 생각과 함께 고개를 기울이는 독자들을 위해서 간략히 설명하면서 시작하겠다. 

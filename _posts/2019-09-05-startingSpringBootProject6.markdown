@@ -4,13 +4,13 @@ title: "SpringBoot 프로젝트 시작하기 6 - Vue 어플"
 date: 2019-09-05
 categories: SpringBoot
 tags: Javascript Vue Vuetify FetchAPi
+comments: true
 ---
 <div style="display:none;">
 프론트 엔드에 해당하는 웹어플 만들기 
 웹어플에서 백서버로 로그인 시도해보기
 웹어플 로그인 요청 시, 프론트 엔드와 백엔드로 나뉘었을 때 문제점 기술
 </div>
-<hr class="divider">
 <h3>App 구성하기</h3>
 <br>
 &nbsp;자 이제 본격적으로 어플리케이션을 구성해보자. 필자는 개인적으로 <b><a href="https://vuetifyjs.com/ko/">Vuetify 홈페이지</a></b>에 있는 컴포넌트들이 무엇 무엇이 있는지 살펴보고 왔으면 하는 바람이다. 컴포넌트들을 눈에 익혀 놓으면 나중에 이 화면엔 이러한 기능이 필요한데라고 생각할 때 해당하는 컴포넌트를 떠올릴 수 있다. 

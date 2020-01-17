@@ -4,11 +4,11 @@ title: "깃허브 블로그(GitHub Blog) 만들기 4 - 카테고리 기능 구�
 date: 2019-12-22
 categories: Github
 tags: Jekyll Liquid
+comments: true
 ---
 <div style="display:none;">
 카테고리 만들기
 </div>
-<hr class="divider">
 <h3>카테고리 만들기에 앞서</h3>
 <br>
 ![makeGithubBlog8](/files/makeGithubBlog/makeGithubBlog8.png)

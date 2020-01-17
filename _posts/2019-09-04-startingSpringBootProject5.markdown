@@ -4,12 +4,12 @@ title: "SpringBoot 프로젝트 시작하기 5 - Vue.js"
 date: 2019-09-04
 categories: SpringBoot
 tags: Javascript Vue Vuetify NPM
+comments: true
 ---
 <div style="display:none;">
 프론트 엔드에 해당하는 웹어플 만들기 
 웹어플 로그인 요청 시, 프론트 엔드와 백엔드로 나뉘었을 때 문제점 기술
 </div>
-<hr class="divider">
 <h3>웹은 진화하고 있다</h3>
 <br> 
 <br><br>

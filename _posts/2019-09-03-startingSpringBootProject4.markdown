@@ -4,6 +4,7 @@ title: "SpringBoot 프로젝트 시작하기 4 - 스프링 시큐리티"
 date: 2019-09-03
 categories: SpringBoot
 tags: SpringBoot SpringSecurity Gradle
+comments: true
 ---
 <div style="display:none;">
 우선 spring security의 소개
@@ -11,7 +12,6 @@ tags: SpringBoot SpringSecurity Gradle
 프론트 엔드와 백엔드로 나뉘었을 때 문제점 기술
 프론트 엔드에 해당하는 웹어플 만들기 
 </div>
-<hr class="divider">
 <h3>스프링 시큐리티 소개</h3>
 <br> 
 &nbsp;우리는 웹 서비스는 물론 기타 다른 서비스를 이용하기 위해 대부분 아이디, 비밀번호를 사용한다. 그 서비스가 자체적으로 제공할 수도 있지만 스프링에서는 스프링 시큐리티라는 프레임워크를 제공한다. 

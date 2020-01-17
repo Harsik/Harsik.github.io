@@ -4,10 +4,10 @@ title: "블로그 태그 추가"
 date: 2019-09-06
 categories: Github
 tags: Diary, Jekyll
+comments: true
 ---
 <div style="display:none;">
 </div>
-<hr class="divider">
 <h3>블로그 태그 추가</h3>
 <br>
 &nbsp;오늘은 블로그 태그를 추가하는 작업을 할 것이다. 각 글에 <b>태그</b>들을 넣어 관리해볼려고 한다.

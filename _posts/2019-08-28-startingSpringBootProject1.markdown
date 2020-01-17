@@ -4,8 +4,8 @@ title: "SpringBoot 프로젝트 시작하기 1 - VSCode설치와 시작"
 date: 2019-08-28
 categories: SpringBoot
 tags: VSCode SpringBoot
+comments: true
 ---
-<hr class="divider">
 <h3>동기와 글이 지향하는 방향</h3>
 <br>
 &nbsp;글을 쓰는건 정말 힘든일이다. 지금 당장 내가 쓰고 싶은 글에서 무엇부터 시작해야할지도 모르지 않는가. 하지만 지금 쓰다보면 글자가 쌓여 글이 되고 글이 쌓여 블로그가 되어 바닷모래를 모아 성을 만드는 것처럼 내가 쓰고 싶은 글이 될 수 있을 것이다. 

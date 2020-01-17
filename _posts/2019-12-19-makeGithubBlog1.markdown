@@ -4,10 +4,10 @@ title: "깃허브 블로그(GitHub Blog) 만들기 1 - 지킬 설치하기"
 date: 2019-12-19
 categories: Github
 tags: Jekyll
+comments: true
 ---
 <div style="display:none;">
 </div>
-<hr class="divider">
 <h3>동기와 글이 지향하는 방향</h3>
 <br>
 &nbsp;이 포스트에 시작은 다소 뜬끔 없지만 글을 어떻게 써야되는지 고민하는 것부터 시작한다. 어떻게 하면 좀 더 찾기 쉽고 읽기 쉬우며 이해가 쉬운 3便을 충족시킬 수 있을까 생각한다. 방금 전에 3便도 3가지 쉬운점을 요약 표현하기 위해 적었으나 어쩌면 findable, readable, understandable 표현하는 것이 나을 수도 있다고 생각한다. 

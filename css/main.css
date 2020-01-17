@@ -165,7 +165,7 @@ table td { border: 1px solid #e8e8e8; }
 
 .post-link { display: block; font-size: 24px; }
 
-.divider { display:block !important; margin:25px 0; border:1px solid #c3c3c3 }
+.divider { display:block; margin:25px 0; border:1px solid #c3c3c3 }
 
 /** Posts */
 .post-header { margin-bottom: 30px; }

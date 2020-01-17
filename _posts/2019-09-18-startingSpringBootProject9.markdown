@@ -4,6 +4,7 @@ title: "SpringBoot 프로젝트 시작하기 9 - 뷰 라이터와 사인업"
 date: 2019-09-18
 categories: SpringBoot
 tags: Vue VueRouter Yarn
+comments: true
 ---
 <div style="display:none;">
 Vue Router 설명과 적용
@@ -11,7 +12,6 @@ Yarn 설명과 설치
 button components link
 Vue App에서 Signup 기능 구현
 </div>
-<hr class="divider">
 <h3>뷰 라우터(Vue Router)란</h3>
 <br>
 &nbsp;<b><a href="https://router.vuejs.org/kr/">뷰 라우터(Vue Router)</a></b>란 Vue.js를 사용한 싱글 페이지 앱을 쉽게 만들 수 있도록 도와준다. 또한 사용자가 원하는 곳에다 원하는 방식으로 원하는 페이지를 보여지게 할 수 있으며 이해하기 쉬운 간단한 방법도 제공해 준다. 자세한 내용을 링크를 통해 알아보고 바로 실전으로 넘어가보자. 기존에 사용하던 프론트앱에다가 뷰 라우터를 적용시킬 것이다.

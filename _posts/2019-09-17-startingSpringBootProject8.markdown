@@ -4,6 +4,7 @@ title: "SpringBoot 프로젝트 시작하기 8 - 로그인 구현하기"
 date: 2019-09-17
 categories: SpringBoot
 tags: Tomcat Undertow SpringSecurity Vue
+comments: true
 ---
 <div style="display:none;">
 서버에서 포트 변경하는 방법
@@ -12,7 +13,6 @@ Login Signup RestController 부분 설명
 Vue App에서 Login Signup 기능 구현
 Vue Router 설명과 적용
 </div>
-<hr class="divider">
 <h3>포트 변경</h3>
 <br>
 &nbsp;여태까지 필자가 알려준 방법으로 서버를 실행한 독자들은 좀 불편하게 여겼을 것이다. 프론트부터 실행하고 백엔드를 실행하려하면 실행되지 않았을 테니깐말이다. 이러한 경우를 대비하여 필자는 서버의 포트번호를 변경하려한다. 변경하는 방법은 매우 간단하다. application.yml에 들어가 아래 항목만 변경하면 된다. 아 물론 변경하지 않고 8080으로 사용해도 상관없다.

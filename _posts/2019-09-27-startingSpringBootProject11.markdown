@@ -4,6 +4,7 @@ title: "SpringBoot 프로젝트 시작하기 11 - 프로파일 만들기"
 date: 2019-09-27
 categories: SpringBoot
 tags: Hibernate JPA
+comments: true
 ---
 <div style="display:none;">
 프론트에서 v-toolbar-items로 로그인 전 후 버튼 및 메뉴 생성
@@ -16,7 +17,6 @@ RDMS에서 관계를 JPA로 적용시키는 방법
 AuthController 수정
 AccountController에 Profile service 제작 및 등록 
 </div>
-<hr class="divider">
 <h3>프로파일 뷰</h3>
 <br>
 &nbsp;독자들이라면 자기자신에 대해 적는다면 무엇을 적을 것인가? 이름? 주소? 회사? 등등 여러가지 있겠지만 필자는 간단하게 4개만 사용하겠다. 우선 프로파일 뷰 파일을 간단하게 작성하고 바로 백엔드 구성으로 들어가겠다.

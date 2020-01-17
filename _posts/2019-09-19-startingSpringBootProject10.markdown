@@ -4,6 +4,7 @@ title: "SpringBoot 프로젝트 시작하기 10 - 로그아웃 구현하기"
 date: 2019-09-19
 categories: SpringBoot
 tags: Vuetify JWT
+comments: true
 ---
 <div style="display:none;">
 프론트에서 v-toolbar-items로 로그인 전 후 버튼 및 메뉴 생성
@@ -16,7 +17,6 @@ RDMS에서 관계를 JPA로 적용시키는 방법
 AuthController 수정
 AccountController에 Profile service 제작 및 등록 
 </div>
-<hr class="divider">
 <h3>로그인 후 페이지</h3>
 <br>
 &nbsp;언제까지 로그인을 확인하기 위해서 화면에 로그로 남기기보다는 만족감을 얻고 싶어서 로그인 후 나를 반겨줄 페이지를 하나 추가할려고 한다. 

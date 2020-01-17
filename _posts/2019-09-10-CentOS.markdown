@@ -4,6 +4,7 @@ title: "CentOS 설치하기"
 date: 2019-09-10
 categories: Linux
 tags: CentOS VMWare
+comments: true
 ---
 <div style="display:none;">
 서버를 나누는 이유
@@ -16,7 +17,6 @@ MySQL 세팅
 PuTTY 사용법
 MySQL WorkBench 설치와 사용법
 </div>
-<hr class="divider">
 <h3>VMware 설치 앞서</h3>
 <br> 
 우리는 보통 서버를 두개를 돌릴 수 있을 정도로 PC가 많지 않다. 기껏해야 노트북 하나 가지고 다니는데 어떻게 서버 나눌 수 있을까? 답은 가상머신이다. 

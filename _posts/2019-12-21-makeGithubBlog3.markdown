@@ -4,10 +4,10 @@ title: "깃허브 블로그(GitHub Blog) 만들기 3 - 포스트 작성"
 date: 2019-12-21
 categories: Github
 tags: Jekyll
+comments: true
 ---
 <div style="display:none;">
 </div>
-<hr class="divider">
 <h3>포스트 생성</h3>
 <br>
 &nbsp;저번 포스트에서는 전체적인 구조와 화면추가 그리고 테마의 적용까지 알아보았다. 이번 포스트는 블로그의 핵심 포스트에 대해 다루어 보도록 하겠다. 

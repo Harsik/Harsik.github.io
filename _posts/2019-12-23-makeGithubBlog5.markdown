@@ -9,7 +9,6 @@ comments: true
 <div style="display:none;">
 태그 만들기
 </div>
-<hr class="divider">
 <h3>태그 만들기 계획</h3>
 <br>
 &nbsp;태그를 어떻게 만들까? 일단 태그 기능에 대한 정의가 필요하다. 필자가 만들고 싶은 태그 기능은 아래와 같다. 
