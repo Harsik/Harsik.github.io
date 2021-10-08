@@ -19,41 +19,41 @@ MySQL WorkBench 설치와 사용법
 </div>
 <h3>VMware 설치 앞서</h3>
 <br> 
-우리는 보통 서버를 두개를 돌릴 수 있을 정도로 PC가 많지 않다. 기껏해야 노트북 하나 가지고 다니는데 어떻게 서버 나눌 수 있을까? 답은 가상머신이다. 
+우리는 보통 서버를 두개를 돌릴 수 있을 정도로 PC가 많지 않습니다. 기껏해야 노트북 하나 가지고 다니는데 어떻게 서버 나눌 수 있을까? 답은 가상머신입니다. 
 <br><br>
-&nbsp;가상머신이란 물리적 컴퓨터 환경을 소프트웨어로 구현한 것으로 간단히 말하자면 컴퓨터 에뮬레이터다. 여기서 OS를 설치하고 서버로 사용하는 것이다. 대표적인 가상 머신으로 VirtualBox(이하 VB), VMware를 들 수 있다. 우리는 그 중 VMware를 설치할 것이다. 필자가 경험하기에 VB보단 VMware가 더 편하고 빠르고 성능이 좋았다. 물론 무료 체험판인 VB가 성능이 더 떨어지는게 당연할 수 있다. 그래도 VMware를 사용하고 싶다면 <b><a href="https://www.vmware.com/kr/products/workstation-player/workstation-player-evaluation.html">VMware Player</a></b>가 있다. 
+&nbsp;가상머신이란 물리적 컴퓨터 환경을 소프트웨어로 구현한 것으로 간단히 말하자면 컴퓨터 에뮬레이터입니다. 여기서 OS를 설치하고 서버로 사용하는 것입니다. 대표적인 가상 머신으로 VirtualBox(이하 VB), VMware를 들 수 있습니다. 우리는 그 중 VMware를 설치할 것입니다. 제가 경험하기에 VB보단 VMware가 더 편하고 빠르고 성능도 좋았습니다. 물론 무료 체험판인 VB가 성능이 더 떨어지는게 당연할 수 있습니다. 그래도 VMware를 사용하고 싶다면 <b><a href="https://www.vmware.com/kr/products/workstation-player/workstation-player-evaluation.html">VMware Player</a></b>가 있습니다. 
 <br><br>
-&nbsp;일단 <b><a href="https://www.vmware.com/kr/products/workstation-pro/workstation-pro-evaluation.html">체험판 다운로드 링크</a></b>를 통해 설치파일을 다운 받아 설치해보자. 설치과정은 정말 단순하기에 따로 설명하지 않겠다. 다만 필요한 사람들을 위해 <b><a href="https://m.blog.naver.com/PostView.nhn?blogId=bellship99&logNo=221164040584&proxyReferer=https%3A%2F%2Fwww.google.com%2F">설명링크</a></b>를 달아 두겠다. 필자는 안정성을 위해 VMware Workstation pro 14로 진행하고 있다. 하지만 15와 다를것이 없기에 독자들은 걱정할 필요는 없다.
+&nbsp;일단 <b><a href="https://www.vmware.com/kr/products/workstation-pro/workstation-pro-evaluation.html">체험판 다운로드 링크</a></b>를 통해 설치파일을 다운 받아 설치해봅시다. 설치과정은 정말 단순하기에 따로 설명하지 않겠습니다. 다만 필요한 사람들을 위해 <b><a href="https://m.blog.naver.com/PostView.nhn?blogId=bellship99&logNo=221164040584&proxyReferer=https%3A%2F%2Fwww.google.com%2F">설명링크</a></b>를 달아 두겠습니다. 저는 안정성을 위해 VMware Workstation pro 14로 진행하고 있습니다. 하지만 15와 다를것이 없기에 독자들은 걱정할 필요는 없습니다.
 <hr class="divider">
 <h3>CentOS 설치</h3>
 <br> 
-&nbsp;설치에 앞서 수많은 리눅스 운영체제 중 왜 CentOS를 골랐는지에 대해 설명하겠다. 아니 먼저 왜 윈도우 설치 안하고 리눅스를 설치하는지부터 말하겠다. 제일 큰 장점은 무료다. 윈도우도 무료던데요라고 하는 독자들은 잘못된 루트로 설치파일을 받은 것이다. 윈도우는 기본적으로 유료정책을 유지하고 있다. 다른 세세한 이유가 있지만 위 장점 하나로 나머지를 언급할 필요가 없을 정도이다. 이 윈도우 OS 중 CentOS는 다른 윈도우들 보다 서버환경에 특화 되으며 가볍고 리눅스 서버 시장 1위 RHEL(Red Hat Enterprise Linux)을 사용하기에 있기에 필자는 이 OS를 선택하였다. 일단 <b><a href="http://mirror.kakao.com/centos/7.6.1810/isos/x86_64/">다운로드</a></b> 링크를 남기겠다. 
+&nbsp;설치에 앞서 수많은 리눅스 운영체제 중 왜 CentOS를 골랐는지에 대해 설명하겠습니다. 제일 큰 장점은 무료입니다. 윈도우는 기본적으로 유료정책을 유지하고 있습니다. 다른 세세한 이유가 있지만 위 장점 하나로 나머지를 언급할 필요가 없을 정도입니다. 이 윈도우 OS 중 CentOS는 다른 윈도우들 보다 서버환경에 특화되 있으며 가볍고 리눅스 서버 시장 1위 RHEL(Red Hat Enterprise Linux)을 사용하기에 있기에 저는 이 OS를 선택하였습니다. 일단 <b><a href="http://mirror.kakao.com/centos/7.6.1810/isos/x86_64/">다운로드</a></b> 링크를 남기겠습니다. 
 <br><br>
 ![CentOSDownloadSiteKakao](/files/CentOS/CentOSDownloadSiteKakao.png)
 <br><br>
-&nbsp;Minimal을 설치해도 좋지만 설치하면 언더바만 반짝이는 어두컴컴한 화면이 독자들을 반길뿐이다. DVD를 다운 받길 바란다. 그리고 나서 VMware를 처음 실행하면 홈화면이 있다. 
+&nbsp;Minimal을 설치해도 좋지만 설치하면 언더바만 반짝이는 어두컴컴한 화면이 여러분들을 반길뿐입니다. DVD를 다운 받길 바랍니다. 그리고 나서 VMware를 처음 실행하면 홈화면이 있습니다. 
 <br><br>
 ![VMwareHome](/files/CentOS/VMwareHome.png)
 <br><br>
-Create버튼을 눌러 새로운 VM을 생성해보자.
+Create버튼을 눌러 새로운 VM을 생성해봅시다.
 <br><br>
 ![VMwareWizard1](/files/CentOS/VMwareWizard1.png)
 <br><br>
-&nbsp;되도록이면 Typical을 추천한다.
+&nbsp;되도록이면 Typical을 추천합니다.
 <br><br>
 ![VMwareWizard2](/files/CentOS/VMwareWizard2.png)
 <br><br>
-&nbsp;방금전 받았던 CentOS.iso를 등록한다.
+&nbsp;방금전 받았던 CentOS.iso를 등록합니다.
 <br><br>
 ![VMwareWizard3](/files/CentOS/VMwareWizard3.png)
 <br><br>
 ![VMwareWizard4](/files/CentOS/VMwareWizard4.png)
 <br><br>
-&nbsp;필요에 따라 디스크 크기를 정하면 된다.
+&nbsp;필요에 따라 디스크 크기를 정하면 됩니다.
 <br><br>
 ![VMwareWizard5](/files/CentOS/VMwareWizard5.png)
 <br><br>
-&nbsp;Customize Hardware 버튼을 눌러 가상 하드웨어 설정을 한다. 설정내에 추천해 주는 수치가 있으므로 그걸 선택해주면 된다. Finish를 누르면 바로 설치된 가상머신이 실행 되면서 Install CentOS로 자동 진입하게 된다. 그 이후 설치 과정을 아래 사진과 같다.
+&nbsp;Customize Hardware 버튼을 눌러 가상 하드웨어 설정을 합니다. 설정내에 추천해 주는 수치가 있으므로 그걸 선택해주면 됩니다. Finish를 누르면 바로 설치된 가상머신이 실행 되면서 Install CentOS로 자동 진입하게 됩니다. 그 이후 설치 과정을 아래 사진과 같습니다.
 <br><br>
 ![CentOSInstall1](/files/CentOS/CentOSInstall1.png)
 <br><br>
@@ -65,11 +65,11 @@ Create버튼을 눌러 새로운 VM을 생성해보자.
 <br><br>
 ![CentOSInstall5](/files/CentOS/CentOSInstall5.png)
 <br><br>
-&nbsp;특별한 일 없이 위대로 설정한 후 설치하면 되며 임의의 루트암호와 사용자를 정하면 된다.
+&nbsp;특별한 일 없이 위대로 설정한 후 설치하면 되며 임의의 루트암호와 사용자를 정하면 됩니다.
 <br><br>
 ![CentOSInstall6](/files/CentOS/CentOSInstall6.png)
 <br><br>
-&nbsp;재부팅 후에 터미널 화면이 지나고 나면 아래의 화면들이 나온다. 네트워크는 나중에도 설정할 수 있으니 굳이 지금 할 필요는 없다.
+&nbsp;재부팅 후에 터미널 화면이 지나고 나면 아래의 화면들이 나옵니다. 네트워크는 나중에도 설정할 수 있으니 굳이 지금 할 필요는 없습니다.
 <br><br>
 ![CentOSInstall7](/files/CentOS/CentOSInstall7.png)
 <br><br>
@@ -81,6 +81,6 @@ Create버튼을 눌러 새로운 VM을 생성해보자.
 <br><br>
 ![CentOSInstall11](/files/CentOS/CentOSInstall11.png)
 <br><br>
-&nbsp;이로써 CentOS 설치가 모두 완료되었다. 필요한 설정이나 부가적인 설치는 다음 MySQL 설치에서 다루도록 하겠다.
+&nbsp;이로써 CentOS 설치가 모두 완료되었습니다. 필요한 설정이나 부가적인 설치는 다음 MySQL 설치에서 다루도록 하겠습니다.
 <div style="display:none;">
 </div>

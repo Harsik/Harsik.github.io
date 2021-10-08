@@ -8,27 +8,30 @@ comments: true
 ---
 <h3>Git 소개</h3>
 <br>
-&nbsp;자신이 프로젝트를 어떻게 고쳐왔고 사용해 왔는지를 기록을 남기고 싶지 않은가? 그런 것들을 관리하는 것을 형상 관리라고 하며 이 형상 관리를 도와주는 도구도 있다. 대표적으로 Git, SVN 등이다. 필자는 이클립스를 사용하면서 SVN으로 형상 관리를 했었다. 하지만 VSCode로 넘어오면서 기본적으로 제공하는 소스 제어 기능을 활용할 겸사 Git이 무언인가 알아볼 겸사 쓰기 시작했다. 필자의 생각으로는 Git은 매우 편리한 형상 관리 도구라는 것이다. 
+&nbsp;자신이 프로젝트를 어떻게 고쳐왔고 사용해 왔는지를 기록을 남기기 위한 프로그램이 있습니다. 대표적으로 Git, SVN가 있으며 이를 형상관리도구라고 합니다. 저는 이클립스를 사용하면서 SVN으로 형상 관리를 했었습니다.
+하지만 VSCode로 넘어오면서 기본적으로 제공하는 소스 제어 기능을 활용할 겸사 Git이 무언인가 알아볼 겸사 쓰기 시작했습니다. 
+제가 사용하면서 느낀건 Git은 매우 편리한 형상 관리 도구라는 것입니다. 
 <br><br>
-&nbsp;이제부터 Git의 설치 방법과 사용 방법에 대해 알아볼 것이다. <b><a href="https://git-scm.com/">여기</a></b>에서 Git 설치파일을 다운로드 할 수 있다.
+&nbsp;이제부터 Git의 설치 방법과 사용 방법에 대해 알아볼 것입니다. <b><a href="https://git-scm.com/">여기</a></b>에서 Git 설치파일을 다운로드 할 수 있습니다.
 <br><br>
 ![gitDownload](/files/git/gitDownload.png)
 <br><br>
-&nbsp;설치에는 큰 어려움 없이 Next 후 Install 해주면 된다.
+&nbsp;설치에는 큰 어려움 없이 Next 후 Install 하면됩니다.
 <br><br>
-&nbsp;Git 사용에 대한 기초적인 부분은 <b><a href="https://rogerdudler.github.io/git-guide/index.ko.html">여기</a></b>를 참고하길 바란다. 시각적으로 재밌게 설명하고 있다. 하지만 Git만으로는 아직 형상관리를 편하게 할 수 없다. 이제 본격적으로 깃허브를 사용할 때가 온 것이다. 이 깃허브를 통해 프로젝트를 서버에 저장하고 기록을 관리하게 될 것이다.
+&nbsp;Git 사용에 대한 기초적인 부분은 <b><a href="https://rogerdudler.github.io/git-guide/index.ko.html">여기</a></b>를 참고하길 바랍니다. 들어가보면 시각적으로 재밌게 설명하고 있습니다. 
+하지만 Git만으로는 아직 형상관리를 편하게 할 수 없습니다. 깃허브를 사용해야합니다. 이 깃허브를 통해 프로젝트를 서버에 저장하고 기록을 관리할 수 있습니다.
 <br><br>
-&nbsp;그 전에 우선 깃허브가 무엇인지 간단히 설명하겠다. 깃허브란 Git을 사용하는 프로젝트를 지원하는 웹호스팅 서비스이다. 즉 나만의 형상관리 홈페이지를 제공한다는 것이다. 깃허브를 사용하기 위한 회원가입은 간단하기에 따로 설명하지는 않겠다.
+&nbsp;그 전에 우선 깃허브가 무엇인지 간단히 설명하겠습니다. 깃허브란 Git을 사용하는 프로젝트를 지원하는 웹호스팅 서비스입니다. 즉 나만의 형상관리 페이지를 제공한다는 것입니다. 간단한 회원가입 후에 사용하실 수 있습니다.
 <br><br>
-&nbsp;처음 로그인을 하면 Start a Project라는 버튼이 당신을 반길 것이다. 하지 않아도 되지만 프로젝트를 저장하고 관리할 저장소 즉 epository가 필요하므로 버튼을 눌러 진행하도록 하자. 
+&nbsp;처음 로그인을 하면 Start a Project라는 버튼이 있습니다. 사용하지 않아도 되지만 프로젝트를 저장하고 관리할 저장소 즉 repository가 필요하기에 버튼을 눌러 진행하도록 합시다. 
 <br><br>
 ![createNewRepository](/files/git/createNewRepository.png)
 <br><br>
-&nbsp;처음 Repository에 이름을 정하고 Description 부분은 딱히 적지 않아도 된다. Public으로 할 지 Private로 할 지는 본인 마음이며, Initialize this repository with a README는 체크하는 것을 추천한다. 그리고 생성버튼을 누르면 레포지토리가 생성된다.
+&nbsp;처음 Repository에 이름을 정하고 Description 부분은 저장소를 어떻게 사용할 지 적으면 좋습니다. 노출 여부에 따라 Public으로 할 지 Private로 할 지를 정하면 되며, Initialize this repository with a README는 체크하는 것을 추천합니다. 그리고 생성버튼을 누르면 레포지토리가 생성됩니다.
 <br><br>
 ![demoRepository](/files/git/demoRepository.png)
 <br><br>
-&nbsp;보아라 당신의 레포지토리가 만들어졌다. 이제 프로젝트를 업로드하면 된다. 업로드를 깃허브에서는 Push라고도 하는데 Push에는 여러 다양한 방법이 있지만 필자가 자주 사용하는 방법 하나만 설명하도록 하겠다.
+&nbsp;레포지토리가 만들어졌습니다. 이제 프로젝트를 업로드하면 됩니다. 업로드를 깃허브에서는 Push라고도 하는데 Push에는 여러 다양한 방법이 있지만 제가 자주 사용하는 방법이 하나 있습니다.
 <br><br>
 ![ClonewithHTTPS](/files/git/ClonewithHTTPS.png)
 <br><br>
@@ -36,16 +39,15 @@ comments: true
 <br><br>
 ![GitBashHere](/files/git/GitBashHere.png)
 <br><br>
-&nbsp;Git Bash Here를 눌러 커맨드 창을 연다. 
+&nbsp;Git Bash Here를 눌러 커맨드 창을 엽니다.
 <br><br>
 ![gitclonecommand](/files/git/gitclonecommand.png)
 <br><br>
-&nbsp;git clone + 복사한 주소를 입력해 엔터를 치게 되면 커맨드 창을 열었던 탐색기 화면에 레포지토리 이름과 같은 폴더가 생긴다. 그 폴더 안에 있는 것들을 전에 만든 프로젝트 안에 넣고 VSCode로 실행시켜보자.
+&nbsp;git clone + 복사한 주소를 입력해 엔터를 치게 되면 커맨드 창을 열었던 탐색기 화면에 레포지토리 이름과 같은 폴더가 생깁니다. 그 폴더 안에 있는 것들을 전에 만든 프로젝트 안에 넣고 VSCode로 실행시켜 봅시다.
 <br><br>
 ![opengitmenu](/files/git/opengitmenu.png)
 <br><br>
-&nbsp;위 사진과 같이 1번을 누르면 레포지토리에 등록된 프로젝트와 비교해 어떤 것이 추가 됬거나 삭제됬는지를 보여주며 이 변경점을 적용시킬려면 2,3번을 눌러야 한다. 2번은 Commit 3번이 Push다. 자 이제 깃허브로 돌아가서 제대로 업로드가 됬는지 확인하자.
+&nbsp;위 사진과 같이 1번을 누르면 레포지토리에 등록된 프로젝트와 비교해 어떤 것이 추가 됬거나 삭제됬는지를 보여주며 이 변경점을 적용시킬려면 2,3번을 눌러야 한다. 2번은 Commit 3번이 Push입니다. 자 이제 깃허브로 돌아가서 제대로 업로드가 됬는지 확인해 봅시다.
 <br><br>
 ![firstcommitpushcomplete](/files/git/firstcommitpushcomplete.png)
-<br><br>
-&nbsp;제대로 나온다면 축하한다. Git에는 다양한 기능과 형상관리를 위한 방법들이 존재하니 사용하는 기술을 갈고 닦아야 할 것이다. 이상 여기까지
+
