@@ -13,11 +13,11 @@ comments: true
 <br>
 ![makeGithubBlog8](/files/makeGithubBlog/makeGithubBlog8.png)
 <br><br>
-&nbsp;지금 화면이 스타일을 맞추기 전에 임시로 만들어 놓은 것이기 때문에 보기에 불편하고 중구난방적으로 요소들이 배치가 되어있다. 그래서 어느정도 스타일을 맞추기 위해 화면을 조정하기로 하였다.
+&nbsp;지금 화면이 스타일을 맞추기 전에 임시로 만들어 놓은 것이기 때문에 보기에 불편할겁니다. 그래서 어느정도 스타일을 맞추기 위해 화면을 조정해봅시다.
 <br><br>
 ![makeGithubBlog15](/files/makeGithubBlog/makeGithubBlog15.png)
 <br><br>
-&nbsp;위 사진은 처음 만들었던 템플릿의 모습이다. 참 깔끔하지 않는가. 지금은 템플릿을 고칠 수 없기 때문에 고칠 수 있도록 이 모습을 참고하여 화면들을 만들어 볼 것이다. 우선 화면을 헤더, 디폴트, 풋터순으로 구분하고 하나씩 만들어 보자. 우선 디폴트이다.
+&nbsp;위 사진은 처음 만들었던 템플릿의 모습입니다. 지금은 템플릿을 고칠 수 없기 때문에 이 모습을 참고하여 화면들을 만들어 볼 것입니다. 우선 화면을 헤더, 디폴트, 풋터순으로 구분하고 디폴트부터 만들어보겠습니다.
 <br><br>
 <h4>default.html</h4>
 {% raw %}
@@ -42,7 +42,7 @@ comments: true
 ~~~
 {% endraw %}
 <br><br>
-&nbsp;head 태그에 해당하는 부분을 분리하여 head.html 파일로 관리할 것이다. 
+&nbsp;head 태그에 해당하는 부분을 분리하여 head.html 파일로 관리할 겁니다. 
 <br><br>
 <h4>head.html</h4>
 {% raw %}
@@ -69,7 +69,7 @@ comments: true
 ~~~
 {% endraw %}
 <br><br>
-&nbsp;body 부분에서 header 또한 따로 나누겠다.
+&nbsp;body 부분에서 header 또한 따로 나누겠습니다.
 <br><br>
 <h4>header.html</h4>
 {% raw %}
@@ -98,7 +98,7 @@ comments: true
 ~~~
 {% endraw %}
 <br><br>
-&nbsp;다음은 본문 즉 main 태그 부분이다. 이 부분은 실질적으로 index.html가 담당하는 부분과 같기 때문에 따로 파일을 두지 않고 index.html 파일을 사용하겠다.
+&nbsp;다음은 본문 즉 main 태그 부분입니다. 이 부분은 실질적으로 index.html가 담당하는 부분과 같기 때문에 따로 파일을 두지 않고 index.html 파일을 사용하겠습니다.
 <br><br>
 <h4>index.html</h4>
 {% raw %}
@@ -124,7 +124,7 @@ layout: default
 ~~~
 {% endraw %}
 <br><br>
-&nbsp;다음 footer 부분이다.
+&nbsp;다음 footer 부분입니다.
 <br><br>
 <h4>footer.html</h4>
 {% raw %}
@@ -167,7 +167,7 @@ layout: default
 ~~~
 {% endraw %}
 <br><br>
-&nbsp;config 변수들을 적용하기 위해서 _config.yml을 조금 수정할 필요가 있다.
+&nbsp;config 변수들을 적용하기 위해서 _config.yml을 조금 수정하겠습니다.
 <br><br>
 <h4>footer.html</h4>
 {% highlight html %}
@@ -228,18 +228,18 @@ plugins:
 <br><br>
 ![makeGithubBlog16](/files/makeGithubBlog/makeGithubBlog16.png)
 <br><br>
-&nbsp;이렇게 화면들을 바꿀 수 있는 준비가 되었다. 이 다음은 카테고리 기능을 추가하는 작업을 시작하겠다.
+&nbsp;이제 화면들을 바꿀 수 있는 준비가 되었습니다. 이 다음은 카테고리 기능을 추가하겠습니다.
 <hr class="divider">
 <h3>카테고리 목표</h3>
 <br>
 ![makeGithubBlog21](/files/makeGithubBlog/makeGithubBlog21.png)
 <br><br>
-&nbsp;위 사진은 필자가 목표로 하고 있는 칼리코더라는 사람의 블로그이다. 헤더에 있는 것들이 카테고리 분류이며 클릭하면 각 카테고리에 해당하는 게시물을 밑 본문에 보여주게 된다. 최대한 비슷하게 만들어 볼 생각이다.
+&nbsp;위 사진은 제가 목표로 하고 있는 칼리코더라는 사람의 블로그입니다. 헤더에 있는 것들이 카테고리 분류이며 클릭하면 각 카테고리에 해당하는 게시물을 밑 본문에 보여주게 됩니다. 최대한 비슷하게 만들어 볼 생각입니다.
 만약 포스트가 매우 많아지게 되면 페이징기능을 추가하거나 카테고리 레벨을 늘려볼 생각이다. 일단 가벼운 기능부터 구현하는 것을 목적으로 잡고 시작해보자.
 <hr class="divider">
 <h3>카테고리 만들기</h3>
 <br>
-&nbsp;프로젝트 내에 폴더가 있으면 엔진이 같은 위치에 컴파일함으로 category라는 폴더를 만들고 만들고자 하는 카테고리 이름으로 마크다운 파일을 만들어야한다.
+&nbsp;프로젝트 내에 폴더가 있으면 엔진이 같은 위치에 컴파일하여 category라는 폴더를 만들고 카테고리 이름으로 마크다운 파일을 만들어야 합니다.
 <br><br>
 ![makeGithubBlog17](/files/makeGithubBlog/makeGithubBlog17.png)
 <br><br>
@@ -253,7 +253,7 @@ title: Github
 ~~~
 {% endraw %}
 <br><br>
-&nbsp;다음은 카테고리에 해당하는 주소에 표시할 화면을 만들어야 한다. _layout 폴더에 category.html을 생성하겠다.
+&nbsp;다음은 카테고리에 해당하는 주소에 표시할 화면을 만들어야 합니다. _layout 폴더에 category.html을 생성하겠습니다.
 <br><br>
 <h4>category.html</h4>
 {% raw %}
@@ -280,11 +280,11 @@ layout: default
 ~~~
 {% endraw %}
 <br><br>
-&nbsp;이제 포스트의 categories로 jekyll을 넣고 /category/jekyll로 접근해보아라. 지금은 템플릿에 첫 포스트가 jekyll을 카테고리로 갖고 있기에 그 포스트만이 리스트에 있을 것이다.
+&nbsp;이제 포스트의 categories로 jekyll을 넣고 /category/jekyll주소로 접근해봅시다. 지금은 템플릿에 첫 포스트가 jekyll을 카테고리로 갖고 있기에 그 포스트만이 리스트에 있을겁니다.
 <br><br>
 ![makeGithubBlog18](/files/makeGithubBlog/makeGithubBlog18.png)
 <br><br>
-&nbsp;이제 접근하도록 스위치만 만들면 된다. 헤더파일에서 home 주소를 링크하고 있던 부분을 바꾸도록 하자. 
+&nbsp;이제 접근하도록 스위치를 만들면 됩니다. 헤더파일에서 home 주소를 링크하고 있던 부분을 바꾸도록 합시다. 
 {% highlight html %}
 <a class="page-link" href="{{ site.baseurl }}/">Home</a>
 ->
@@ -293,5 +293,5 @@ layout: default
 <br><br>
 ![makeGithubBlog20](/files/makeGithubBlog/makeGithubBlog20.png)
 <br><br>
-&nbsp;카테고리 하나를 만들었다. 만약 더 추가하고 싶다면 위에서 하던 것처럼 추가하면 된다. 언젠가 카테고리 기능을 추가 및 강화 하는 방법을 다루어 볼 생각이며, 다음 포스트에서는 태그 기능을 추가하는 방법에 대해 다루어 보도록 하겠다.
+&nbsp;카테고리 하나를 만들었습니다. 만약 더 추가하고 싶다면 위에서 하던 것처럼 추가하면 됩니다. 다음 포스트에서는 태그 기능을 추가하는 방법에 대해 다루어 보도록 하겠습니다.
 

@@ -11,9 +11,10 @@ comments: true
 </div>
 <h3>디스커스란</h3>
 <br>
-&nbsp;안타깝게도 깃허브 페이지에서는 댓글 기능을 제공하지 않는다. 그래서 해결방법을 찾아 다니던 와중 디스커스라는 것이 눈에 들어와 찾아보기 시작했다. 놀랍게도 이것이 다른 기술 블로그들이 쓰던 것과 같은 것이였고 이것을 쓰기 결정하였다. <b>[디스커스(disqus)][disqus]</b>란 소셜 댓글 서비스로 댓글을 직접 구현하지 않고 위젯의 형태로 서비스에 삽입할 수 있는 댓글 전문 서비스이다. 
+&nbsp;안타깝게도 깃허브 페이지에서는 댓글 기능을 제공하지 않습니다. 그래서 해결방법을 찾아 다니던 와중 디스커스이 다른 기술 블로그들이 쓰던 것과 같은 것여서 이것을 쓰기로 하였습니다.
+<b>[디스커스(disqus)][disqus]</b>란 소셜 댓글 서비스로 댓글을 직접 구현하지 않고 위젯의 형태로 삽입할 수 있는 댓글 전문 서비스입니다. 
 <br><br>
-&nbsp;지금부터 디스커스 서비스를 블로그에 추가하는 방법에 대해 설명하겠다. 아래의 사진은 처음 디스커스 홈페이지에 접속하면 볼 수 있는 화면이다. 바로 GET STARTED를 눌러 들어가자.
+&nbsp;지금부터 디스커스 서비스를 블로그에 추가하는 방법에 대해 설명하겠습니다. 아래의 사진은 처음 디스커스 홈페이지에 접속하면 볼 수 있는 화면입니다. 바로 GET STARTED를 눌러 들어가봅시다.
 <br><br>
 ![makeGithubBlog39](/files/makeGithubBlog/makeGithubBlog39.png)
 <br><br>
@@ -21,15 +22,15 @@ comments: true
 <br><br>
 ![makeGithubBlog40](/files/makeGithubBlog/makeGithubBlog40.png)
 <br><br>
-&nbsp;아래의 버튼을 눌러 들어간다.
+&nbsp;아래의 버튼을 눌러 들어갑시다.
 <br><br>
 ![makeGithubBlog41](/files/makeGithubBlog/makeGithubBlog41.png)
 <br><br>
-&nbsp;들어가면 사이트 작성에 필요한 프로필 작성을 하게 된다.
+&nbsp;들어가면 사이트 작성에 필요한 프로필 작성을 하게 됩니다.
 <br><br>
 ![makeGithubBlog42](/files/makeGithubBlog/makeGithubBlog42.png)
 <br><br>
-&nbsp;가격정책에 놀랄 수 있지만 광고화면을 포함하는 것으로 사용할 수 있는 방법이 바로 Basic이다. Subscribe Now를 눌러 들어가자.
+&nbsp;가격정책에 놀랄 수 있지만 광고화면을 포함하는 것으로 사용할 수 있는 방법이 Basic입니다. Subscribe Now를 눌러 들어가 봅시다.
 <br><br>
 ![makeGithubBlog43](/files/makeGithubBlog/makeGithubBlog43.png)
 <br><br>
@@ -37,7 +38,7 @@ comments: true
 <br><br>
 ![makeGithubBlog44](/files/makeGithubBlog/makeGithubBlog44.png)
 <br><br>
-&nbsp;나오는 코드를 기준으로 작성하면 된다. 세팅을 위한 단계가 남아 있으니 마저 진행해주자.
+&nbsp;나오는 코드를 기준으로 작성하면 됩니다. 세팅을 위한 단계가 남아 있으니 마저 진행해 줍시다.
 <br><br>
 ![makeGithubBlog45](/files/makeGithubBlog/makeGithubBlog45.png)
 <br><br>
@@ -45,7 +46,7 @@ comments: true
 <br><br>
 ![makeGithubBlog47](/files/makeGithubBlog/makeGithubBlog47.png)
 <br><br>
-&nbsp;앞에서 나온 코드로 코멘트 화면을 만들어야 한다. 코멘트를 위한 파일을 작성하자.
+&nbsp;앞에서 나온 코드로 코멘트 화면을 만들어야 합니다. 코멘트를 위한 파일을 작성합시다.
 <h4>_includes/disqus.html</h4>
 {% highlight html %}
 <div id="disqus_thread"></div>
@@ -69,7 +70,7 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                             
 {% endhighlight %}
-&nbsp;이것을 포스트 아래에 추가할 것이기에 post.html에 추가하자.
+&nbsp;이것을 포스트 아래에 추가할 것이기에 post.html에 추가합시다.
 <br><br>
 <h4>post.html</h4>
 {% raw %}
@@ -101,7 +102,7 @@ layout: default
 </div>
 ~~~
 {% endraw %}
-&nbsp;아직 끝나지 않았다. 설정파일에 환경변수를 추가하고 각 포스트에 comments: true를 추가하면 댓글기능이 활성화 될 것이다.
+&nbsp;설정파일에 환경변수를 추가하고 각 포스트에 comments: true를 추가하면 댓글기능이 활성화 될 것입니다.
 <h4>_config.yml</h4>
 {% highlight text %}
 #Disqus Comment
@@ -111,6 +112,6 @@ disqus_id: disqus id
 <br><br>
 ![makeGithubBlog48](/files/makeGithubBlog/makeGithubBlog48.png)
 <br><br>
-&nbsp;디스커스를 이용하면 이처럼 간단하게 블로그에 댓글 기능을 추가할 수 있다.
+&nbsp;디스커스를 이용하면 이처럼 간단하게 블로그에 댓글 기능을 추가할 수 있습니다.
 
 [disqus]: https://disqus.com/
