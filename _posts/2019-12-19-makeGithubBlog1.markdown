@@ -55,7 +55,7 @@ Done installing documentation for jekyll after 1 seconds
 2 gems installed
 </pre>
 <br><br>
-&nbsp;다음 명령어는 jekyll new my-awesome-site입니다. gem을 통해 설치된 지킬을 자체 명령어를 통해 웹사이트 템플릿을 제공할 수 있다.
+&nbsp;다음 명령어는 jekyll new my-awesome-site입니다. gem을 통해 설치된 지킬을 자체 명령어를 통해 웹사이트 템플릿을 제공할 수 있습니다.
 <pre>
 C:\Users\Achivsoft\Documents\githubblog>jekyll new my-awesome-site
 Running bundle install in C:/Users/Achivsoft/Documents/githubblog/my-awesome-site... 
