@@ -16,7 +16,7 @@ comments: true
 <br> 
 &nbsp;웹 서비스는 물론 기타 다른 서비스를 이용하기 위해 대부분 아이디, 비밀번호를 사용합니다. 그 웹 서비스가 자체적으로 보안을 제공할 수도 있지만 스프링에서는 스프링 시큐리티라는 프레임워크를 제공하고 있습니다. 
 <br><br>
-&nbsp;스프링 시큐리티에 대한 것은 스프링 홈페이지에서 제공하는 <b><a href="https://spring.io/guides/gs/securing-web/">가이드</a></b>를 통해 간단한 웹어플리케이션을 만들면서 설명해보도록 하겠다.
+&nbsp;스프링 시큐리티에 대한 것은 스프링 홈페이지에서 제공하는 <b><a href="https://spring.io/guides/gs/securing-web/">가이드</a></b>를 통해 간단한 웹어플리케이션을 만들면서 설명해보도록 하겠습니다.
 <br><br>
 ![SpringSecurityGettheCode](/files/security/SpringSecurityGettheCode.png)
 <br><br>
@@ -109,7 +109,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 <br><br>
 ![completeHello](/files/security/completeHello.png)
 <br><br>
-&nbsp;설정에서는 "/"와 "/home", "/login"에 접근하는 것은 permitall 즉 허용되어 있습니다. 하지만 그 외에는 인증을 필요로 하도록 설정하였기에 여러분들은 한번 로그인 하기 전이나 로그아웃 후 "/hello"에 접근해 보면 바로 로그인화면으로 튕겨져 나올 것입니다.. 
+&nbsp;설정에서는 "/"와 "/home", "/login"에 접근하는 것은 permitall 즉 허용되어 있습니다. 하지만 그 외에는 인증을 필요로 하도록 설정하였기에 여러분들은 한번 로그인 하기 전이나 로그아웃 후 "/hello"에 접근해 보면 바로 로그인화면으로 튕겨져 나올 것입니다.
 <br><br>
 &nbsp;어떻게 적용하는지 작동하는지에 대해서는 대략적으로 알았으나 좀더 자세하게 알고싶으시다면 <b><a href="https://spring.io/guides/topicals/spring-security-architecture">여기</a></b>나  <b><a href="https://sjh836.tistory.com/165">빨간색소년</a></b>님 블로그를 참고하길 바랍니다.
 <div style="display:none;">

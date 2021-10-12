@@ -107,7 +107,7 @@ public class Profile {
 }    
 ```
 <br><br>
-&nbsp;Account 클래스를 기본으로 Profile 클래스를 작성하였습니다. 1대1 관계를 명시하기 위해 @OneToOne를 선언하였습니다. 이것 또한 Account 클래스에서도 선언하여한다. 
+&nbsp;Account 클래스를 기본으로 Profile 클래스를 작성하였습니다. 1대1 관계를 명시하기 위해 @OneToOne를 선언하였습니다. 이것 또한 Account 클래스에서도 선언하여합니다. 
 <br><br>
 
 ```java
@@ -117,7 +117,7 @@ public class Profile {
 ```
 <br><br>
 
-&nbsp;@JsonBackReference와 @JsonManagedReference에 대해 의문이 들텐데 설명하자면 JPA는 ORM이기 때문에 RDB를 관리하는데 있어서 양방향 참조를 필요로 한다. 그렇기에 무한 순환 참조 현상이 일어나는데 자세한 내용은 <b><a href="https://binarycube.tistory.com/1">링크</a></b>를 남겨놓겠습니다.
+&nbsp;@JsonBackReference와 @JsonManagedReference에 대해 의문이 들텐데 설명하자면 JPA는 ORM이기 때문에 RDB를 관리하는데 있어서 양방향 참조를 필요로 합니다. 그렇기에 무한 순환 참조 현상이 일어나는데 자세한 내용은 <b><a href="https://binarycube.tistory.com/1">링크</a></b>를 남겨놓겠습니다.
 <br><br>
 &nbsp;이러한 문제를 해결 하기 위해 사용하는 것이 위 두 어노테이션입니다. 이 둘을 선언함으로서 무한 순환 참조 현상을 막을 수 있습니다. Role 클래스도 관계를 명시했지만 JoinTable을 이용한 다대다 관계 선언이기 때문에 JoinTable을 접근 후 다른 테이블을 호출하여 무한 순환 참조 현상이 일어나지 않습니다. 
 <br><br>

@@ -20,7 +20,7 @@ MySQL WorkBench 설치와 사용법
 <br><br>
 ![PuTTY](/files/MySQL/PuTTY.png)
 <br><br>
-&nbsp;위 Host Name 빈칸에 접속하고자 하는 서버의 아이피를 입력하여 Open할 것입니다. 그렇다면 서버의 아이피는 어떻게 알 수 있을까? 
+&nbsp;위 Host Name 빈칸에 접속하고자 하는 서버의 아이피를 입력하여 Open할 것입니다. 
 <br><br>
 ![CentOSNetSetting1](/files/CentOS/CentOSNetSetting1.png)
 <br><br>

@@ -75,7 +75,7 @@ comments: true
   }
 </script>
 ```
-&nbsp;위 코드는 필자 취향대로 변경한 것입니다. 코드를 변경하면 아래와 같이 화면이 만들어질 것입니다. 
+&nbsp;코드를 변경하면 아래와 같이 화면이 만들어질 것입니다. 
 <br><br>
 ![loginForm](/files/vuetify/loginForm.png)
 <br><br>
@@ -93,7 +93,7 @@ comments: true
 <br>
 &nbsp;Fetch API는 ES6에서 등장한 방식으로 프로미스와 함께 에이젝스를 대체할 수 있는 API입니다. ES6란 ECMA Script 6의 줄임말로 자바스크립트와 같은 스크립트 언어들을 표준화하기 위한 규격이라 할 수 있습니다. 버전 6에 이르러서 나온 Fetch API는 비동기 처리 특징을 그대로 가져와 강화 시킨 프로미스를 사용합니다. 
 <br><br>
-&nbsp;설명은 간단히 하고 프로미스에 대한 자세한 설명은 <b><a href="https://joshua1988.github.io/web-development/javascript/promise-for-beginners/">여기</a></b>를 참고하길 바랍니다. 잘 이해가 되지 않는 독자들은 에이젝스라고 생각해도 다르지 않다. 바로 지금 필요한 기능을 구현함으로써 배워보겠습니다.
+&nbsp;프로미스에 대한 자세한 설명은 <b><a href="https://joshua1988.github.io/web-development/javascript/promise-for-beginners/">여기</a></b>를 참고하길 바랍니다. 잘 이해가 되지 않는 분들은 에이젝스라고 생각해도 다르지 않습니다. 바로 지금 필요한 기능을 구현함으로써 배워보겠습니다.
 <br><br>
 ```javascript
    onLogin () {
