@@ -98,7 +98,7 @@ public class AccountController {
 }
 ```
 <br><br>
-&nbsp;@RestContorller이 선언된 클래스에 '/'이하의 주소에서 오는 요청을 처리한다. 그 중 포스트 요청은 @PostMapping이 선언된 메소드에서 처리하는데 지금 선언된 "/saveAccount"주소로 오는 요청을 처리하게 된다. ResponseEntity는 응답에 http 상태코드도 같이 보낼 수 있는 객체이다. 요청은 AccountController에서 받았으니 이제 그 처리과정을 밟을 차례이다. AccountService를 살펴보자.
+&nbsp;@RestContorller이 선언된 클래스에 '/'이하의 주소에서 오는 요청을 처리합니다. 그 중 포스트 요청은 @PostMapping이 선언된 메소드에서 처리하는데 지금 선언된 "/saveAccount"주소로 오는 요청을 처리하게 됩니다. ResponseEntity는 응답에 http 상태코드도 같이 보낼 수 있는 객체입니다. 요청은 AccountController에서 받았으니 이제 그 처리과정을 밟을 차례입니다. AccountService를 살펴봅시다.
 <br><br>
 ```java
 @Service
@@ -116,7 +116,7 @@ public class AccountService{
 <hr class="divider">
 <h3>레파지토리, Account 객체</h3>
 <br> 
-&nbsp;여기까지 오면 아 뭔 흐름인지는 알겠는데 Account가 어떤 구조로 되있길래 생성자를 통해 어떤 객체가 되었으며 Repository 또한 어떤 구조길래 save 메소드라는 것을 사용하여 DB에 저장하는 것이지라는 의문이 들 수 있습니다. 우선 Account 객체부터 설명하겠습니다.
+&nbsp;우선 Account 객체부터 설명하겠습니다.
 <br><br>
 ```java
 @Entity
@@ -148,11 +148,11 @@ public class Account {
 }
 ```
 <br><br>
-&nbsp;@Getter나 @Setter, @Builder, @NoArgsConstructor는 아까 전 보았던 롬북의 어노테이션이라 눈에 익겠지만 @Entity와 @Table, @Id, @GeneratedValue</b>는 JPA의 어노테이션이기 때문에 따로 설명하겠다. 
+&nbsp;@Getter나 @Setter, @Builder, @NoArgsConstructor는 아까 전 보았던 롬북의 어노테이션이라 눈에 익겠지만 @Entity와 @Table, @Id, @GeneratedValue</b>는 JPA의 어노테이션이기 때문에 따로 설명하겠습니다. 
 <br><br>
-&nbsp;@Entity는 선언된 클래스가 테이블과 링크될 클래스임을 나타내는 어노테이션이며, @Table은 어떤 테이블로 변환될지를 정하는 어노테이션이다. 지금은 Table의 이름을 accounts로 정한 상태이다. @Id는 테이블의 인덱스성 기본키를 만드는 어노테이션이며, <b>@GeneratedValue</b>가 튜플이 생성될 시 기본키를 하나씩 더해주는 역할을 한다.
+&nbsp;@Entity는 선언된 클래스가 테이블과 링크될 클래스임을 나타내는 어노테이션이며, @Table은 어떤 테이블로 변환될지를 정하는 어노테이션입니다. 지금은 Table의 이름을 accounts로 정한 상태입니다. @Id는 테이블의 인덱스성 기본키를 만드는 어노테이션이며, <b>@GeneratedValue</b>가 튜플이 생성될 시 기본키를 하나씩 더해주는 역할을 합니다.
 <br><br>
-&nbsp;CreationTimestamp, UpdateTimestamp 둘 다 하이버네이트에서 제공하는 어노테이션이다.으로 테이블에 새로운 객체가 저장될 시 생성시간, 수정시간을 기록해주는 어노테이션이다. 이렇게 생성된 Class를 Repository에 등록하면 아래와 같이 된다.
+&nbsp;CreationTimestamp, UpdateTimestamp 둘 다 하이버네이트에서 제공하는 어노테이션입니다.으로 테이블에 새로운 객체가 저장될 시 생성시간, 수정시간을 기록해주는 어노테이션입니다. 이렇게 생성된 Class를 Repository에 등록하면 아래와 같이 됩니다.
 <br><br>
 ```java
 public interface AccountRepository extends JpaRepository<Account,Long>{
