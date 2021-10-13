@@ -4,13 +4,9 @@ layout: default
 
 <div class="post">
 	<header class="post-header">
-		{% if page.title %}
 		<h1 class="post-title p-name" itemprop="name headline">{{ page.title }}</h1>
-		{% endif %}
 		<p class="post-meta">
-			{% if page.date %}
 			Posted on {{ page.date | date: "%b %-d, %Y" }}
-			{% endif %}
 			<i class="material-icons svg-icon">local_offer</i>
 			{% if page.tags %} {% for tag in page.tags %}
 			<a class="label" href="{{ '/tags' | prepend: site.baseurl }}"
@@ -19,7 +15,6 @@ layout: default
 			&nbsp; {% endfor %} {% endif %}
 		</p>
 	</header>
-
 	<hr class="divider">
 
 	<div class="post-content e-content" itemprop="articleBody">

@@ -21,12 +21,14 @@
 title: Harsik's blog
 email_address: aznm12@archivsoft.com
 description: >- # this means to ignore newlines until "baseurl:"
- "First, solve the problem. Then, write the code. - John Johnson"
+ "안녕하세요. 4년차 개발자입니다. 주 특기는 Spring Framework를 활용한 백엔드 서버 구축입니다. 그 밖에 도전하고 싶은건 이것저것 해보고 있습니다."
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  Harsik
 github_address: https://github.com/Harsik
+portfolio_name:  포트폴리오
+portfolio_address: https://github.com/portfolio
 # Build settings
 theme: minima
 plugins:
