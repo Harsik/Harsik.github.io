@@ -6,7 +6,8 @@ permalink: /portfolio/
 <div style="text-align:center;">
 <img class="circleImg main" src="/files/awesomedeer.png"/>
 <p>자바 백엔드 개발자 @아키브소프트 연구개발팀 주임</p>
-<p style="font-size: 12px;color:#6e7980;">의미와 뜻을 함축해서 전달하는 사람이 시인라고 하면 개발자 또한 시인이리
+<p style="font-size: 12px;color:#6e7980;">의미와 뜻을 함축해서 전달하는 사람이 시인라고 하면 개발자 또한 시인이리</p>
+</div>
 <br><br>
 <hr class="divider">
 <h3>자기소개</h3>
