@@ -1,0 +1,19 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="/assets/tipuesearch/tipuesearch_content.js"></script>
+<script src="/assets/tipuesearch/tipuesearch_set.js"></script>
+<script src="/assets/tipuesearch/tipuesearch.min.js"></script>
+
+<script>
+    $('#searchIcon').click(function() {
+        $('#tipue_search_input').show()
+        $('#searchIcon').hide()
+        $('#searchClose').show()
+        $('#headerTrigger').hide()
+    });
+    $('#searchClose').click(function() {
+        $('#tipue_search_input').hide()
+        $('#searchIcon').show()
+        $('#searchClose').hide()
+        $('#headerTrigger').show()
+    });
+</script>
