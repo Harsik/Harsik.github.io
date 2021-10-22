@@ -6,7 +6,7 @@ permalink: /portfolio/
 <div style="text-align:center;">
 <img class="circleImg main" src="/files/awesomedeer.png"/>
 <p>자바 백엔드 개발자 @아키브소프트 연구개발팀 주임</p>
-<p style="font-size: 12px;color:#6e7980;">(수정할것)개발 언어가 중요할 수 있으나 서비스를 완성하기 위한 도구이지 목표가 아니라고 생각합니다.<br>목표를 위해서 새롭고 고된 언어라도 도전하고 있습니다.</p>
+<p style="font-size: 12px;color:#6e7980;">의미와 뜻을 함축해서 전달하는 사람이 시인라고 하면 개발자 또한 시인이라 부를 수 있을까
 </div>
 <br><br>
 <hr class="divider">
@@ -24,23 +24,34 @@ permalink: /portfolio/
 <img class="mainStack" src="/files/logos/spring-boot.png"/>
 <img class="mainStack" src="/files/logos/jpa-hibernate.jpg"/>
 <img class="mainStack" src="/files/logos/html,css,js.jpg"/>
-<img class="mainStack" src="/files/logos/Gradle-1024x351.png"/>
-<img class="mainStack" src="/files/logos/jquery.jpg"/>
 <img class="mainStack" src="/files/logos/thymeleaf-logo.png"/>
-<img class="mainStack" src="/files/logos/elasticsearch.jpg"/>
-<img class="mainStack" src="/files/logos/1200px-Logo-mongodb.png"/>
-<img class="mainStack" src="/files/logos/mariadb.jpg"/>
-<img class="mainStack" src="/files/logos/mybatis.png"/>
-<img class="mainStack" src="/files/logos/kotlin-white-1600x384.png">
 <img class="mainStack" src="/files/logos/react-cover.png">
 <img class="mainStack" src="/files/logos/vuejs-logo.jpg">
 <img class="mainStack" src="/files/logos/electron.png">
-<img class="mainStack" src="/files/logos/jekyll-og.png">
-<img class="mainStack" src="/files/logos/mysql_PNG29.png">
-<img class="mainStack" src="/files/logos/rubylang.jpg">
-<img class="mainStack" src="/files/logos/docker.png">
-<img class="mainStack" src="/files/logos/github.png">
-<img class="mainStack" src="/files/logos/bootstrap1.jpg">
+
+[comment]: <> (<img class="mainStack" src="/files/logos/elasticsearch.jpg"/>)
+
+[comment]: <> (<img class="mainStack" src="/files/logos/1200px-Logo-mongodb.png"/>)
+
+[comment]: <> (<img class="mainStack" src="/files/logos/mariadb.jpg"/>)
+
+[comment]: <> (<img class="mainStack" src="/files/logos/mybatis.png"/>)
+
+[comment]: <> (<img class="mainStack" src="/files/logos/kotlin-white-1600x384.png">)
+[comment]: <> (<img class="mainStack" src="/files/logos/Gradle-1024x351.png"/>)
+
+[comment]: <> (<img class="mainStack" src="/files/logos/jquery.jpg"/>)
+[comment]: <> (<img class="mainStack" src="/files/logos/jekyll-og.png">)
+
+[comment]: <> (<img class="mainStack" src="/files/logos/mysql_PNG29.png">)
+
+[comment]: <> (<img class="mainStack" src="/files/logos/rubylang.jpg">)
+
+[comment]: <> (<img class="mainStack" src="/files/logos/docker.png">)
+
+[comment]: <> (<img class="mainStack" src="/files/logos/github.png">)
+
+[comment]: <> (<img class="mainStack" src="/files/logos/bootstrap1.jpg">)
 <br><br>
 <hr class="divider">
 <h2>경력사항</h2>
@@ -48,6 +59,8 @@ permalink: /portfolio/
 <h3>콜센터 상담 프로그램(김포시, 평택시)</h3>
 <p style="font-size: 12px;color:#6e7980;">
 콜센터 상담 업무를 웹 상에서 처리하는 프로그램
+김포시(2018.08.01 ~ 2019.01.04)
+평택시(2019.08.01 ~ 2019.10.31)
 
 </p>
 <br>
@@ -73,12 +86,17 @@ permalink: /portfolio/
 <b>디자인 변경</b>
 - 설정, 잠금 및 파비콘 변경 및 추가, 화면 내 테이블 구조 변경
 <br>
-&nbsp;평택시 프로젝트의 경우 기존 오라클 쿼리를 큐브리드 쿼리로 마이그레이션
+- 평택시 프로젝트의 경우 기존 오라클 쿼리를 큐브리드 쿼리로 마이그레이션
+
 <br><br>
+![cc.png](/files/cc.png)
+<br><br>
+
+<hr class="divider">
 <br><br>
 <h3>아키브소프트 물품대장관리</h3>
 <p style="font-size: 12px;color:#6e7980;">
-아키브소프트 내 비품관리를 위한 웹 어플리케이션
+아키브소프트 내 비품관리를 위한 웹 어플리케이션(2020.01.15 ~ 2020.02.29)
 </p>
 <br>
 <img class="circleImg sub2" src="/files/logos/spring-boot.jpg"/>
@@ -105,12 +123,16 @@ permalink: /portfolio/
 - 매출 매입 중 매입 계산서 리스트를 출력하고 입력되는 조건에 맞는 데이터를 불러오거나 그 데이터로 엑셀 파일을 다운로드하거나 업로드 양식에 맞는 엑셀 파일을 업로드하여 화면에 보여주는 등 다양한 요청에 대해 응답
 - 카테고리 리스트를 출력하고 제조사, 제품명, 모델명 카테고리를 조회, 수정, 삭제 요청에 응답, 미수금 현황 리스트를 출력하거나 해당 년도의 엑셀 파일을 다운로드
 - 미지급 현황 리스트를 출력하거나 해당 년도의 엑셀 파일을 다운로드 
-- <br><br>
+
+<br><br>
+![archive.png](/files/archive.png)
+<br><br>
+<hr class="divider">
 <br><br>
 <h3>무인 시설 관리 관제 시스템
 </h3>
 <p style="font-size: 12px;color:#6e7980;">
-무인으로 시설 관리, 관제를 하기 위한 기능들 연계한 시스템
+무인으로 시설 관리, 관제를 하기 위한 기능들 연계한 시스템(2020.01.15 ~ 2020.10.31)
 </p>
 <br>
 <img class="circleImg sub2" src="/files/logos/spring-boot.jpg"/>
@@ -135,11 +157,14 @@ permalink: /portfolio/
 - 채팅 페이지, To Do List 페이지
 
 <br><br>
+![ufmccs.png](/files/ufmccs.png)
+<br><br>
+<hr class="divider">
 <br><br>
 <h3>NovelWill
   </h3>
 <p style="font-size: 12px;color:#6e7980;">
-유언장 작성 및 관리 웹어플리케이션
+유언장 작성 및 관리 웹어플리케이션(2020.12.01 ~ 2020.12.31)
 </p>
 <br>
 <img class="circleImg sub2" src="/files/logos/spring-boot.jpg"/>
@@ -154,11 +179,14 @@ permalink: /portfolio/
 - 유언장 입력 폼 화면 작성
 
 <br><br>
+![novel.png](/files/novel.png)
+<br><br>
+<hr class="divider">
 <br><br>
 <h3>(비)정형 데이터 관리 시스템
 </h3>
 <p style="font-size: 12px;color:#6e7980;">
-기관 내 정형, 비정형 기록물들을 관리 하기 위한 시스템
+기관 내 정형, 비정형 기록물들을 관리 하기 위한 시스템(2021.03.01 ~ 2021.03.31)
 </p>
 <br>
 <img class="circleImg sub2" src="/files/logos/spring-boot.jpg"/>
@@ -188,12 +216,14 @@ permalink: /portfolio/
 - 기록물 열람 신청, 현황, 승인
 - 사용자, 권한, 조직도, 메뉴, 공지사항 관리
 
-
+<br><br>
+![nfa.png](/files/nfa.png)
   <br><br>
+<hr class="divider">
   <br><br>
 <h3>AIOCR</h3>
 <p style="font-size: 12px;color:#6e7980;">
-학습된 데이터로 사진 속 텍스트를 읽고 데이터화
+학습된 데이터로 사진 속 텍스트를 읽고 데이터화, 아파치 티카를 활용(2021.04.01 ~ 2021.04.31)
 </p>
 <br>
 <img class="circleImg sub2" src="/files/logos/spring-boot.jpg"/>
@@ -205,18 +235,21 @@ permalink: /portfolio/
 <br><br>
 - 파일 업로드, 다운로드
 - 파일 업로드 후 광학 문자 판독(OCR) 프로세스 
-  <br><br>
 
+  <br><br>
+![aiocr.png](/files/aiocr.png)
+<br><br>
+<hr class="divider">
 <br><br>
 <h3>표준기록관리시스템 서버 모니터링시스템
 </h3>
 <p style="font-size: 12px;color:#6e7980;">
-표준기록관리시스템으로 위탁된 서버 상태를 모니터링 하기 위한 시스템
+표준기록관리시스템으로 위탁된 서버 상태를 모니터링 하기 위한 시스템, Netty를 통한 서버-클라이언트 소켓 통신(2021.04.01 ~ 2021.12.31)
 </p>
 <br>
 <img class="circleImg sub2" src="/files/logos/spring-boot.jpg"/>
 <img class="circleImg sub2" src="/files/logos/mybatis.png"/>
-<img class="circleImg sub2" src="/files/logos/elasticsearch.jpg"/>
+<img class="circleImg sub2" src="/files/logos/elasticsearch1.jpg"/>
 <img class="circleImg sub2" src="/files/logos/html.jpg"/>
 <img class="circleImg sub2" src="/files/logos/css.jpg"/>
 <img class="circleImg sub2" src="/files/logos/js.jpg"/>
@@ -224,34 +257,16 @@ permalink: /portfolio/
 <img class="circleImg sub2" src="/files/logos/netty.png"/>
 <br><br>
 <br><br>
-<b>모니터링 웹 어플리케이션 제작</b>
+모니터링 웹 어플리케이션 제작<br>
+약 170여개의  지자체 위탁 서버 에이전트 설치 및 관리<br>
+모니터링 서버 관리 및 모니터링 웹 서비스 관리<br><br>
 <b>기능 구현 </b>
 - 시도 및 시군구 지자체 목록 
 - 서버 문제 알림 표시, 서버 상태를 주기적으로 알림
 - 서버 모니터링 정보 화면
-
 <br><br>
-<hr class="divider">
-
-
-
-
-<div class="cardWrap">
-<div class="card">
-other stack
-</div>
-</div>
-<hr class="divider">
-<div class="cardWrap">
-<div class="card">
-company projects
-</div>
-</div>
-<hr class="divider">
-<div class="cardWrap">
-<div class="card">
-private projects
-</div>
-</div>
+![apm.png](/files/apm.png)
+<br><br>
+<br><br>
 
 
