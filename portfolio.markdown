@@ -6,7 +6,7 @@ permalink: /portfolio/
 <div style="text-align:center;">
 <img class="circleImg main" src="/files/awesomedeer.png"/>
 <p>자바 백엔드 개발자 @아키브소프트 연구개발팀 주임</p>
-<p style="font-size: 12px;color:#6e7980;">의미와 뜻을 함축해서 전달하는 사람이 시인라고 하면 개발자 또한 시인이리</p>
+<p style="font-size: 12px;color:#6e7980;">아직 배울 것이 많습니다.</p>
 </div>
 <br><br>
 <hr class="divider">
@@ -267,6 +267,26 @@ permalink: /portfolio/
 <br><br>
 ![apm.png](/files/apm.png)
 <br><br>
+<hr class="divider">
 <br><br>
+<h3>그 밖에 해본것</h3>
+<img class="mainStack" src="/files/logos/spring-boot.png"/>
+<img class="mainStack" src="/files/logos/jpa-hibernate.jpg"/>
+<img class="mainStack" src="/files/logos/html,css,js.jpg"/>
+<img class="mainStack" src="/files/logos/thymeleaf-logo.png"/>
+<img class="mainStack" src="/files/logos/react-cover.png">
+<img class="mainStack" src="/files/logos/vuejs-logo.jpg">
+<img class="mainStack" src="/files/logos/electron.png">
+<img class="mainStack" src="/files/logos/elasticsearch.jpg"/>
+<img class="mainStack" src="/files/logos/1200px-Logo-mongodb.png"/>
+<img class="mainStack" src="/files/logos/mariadb.jpg"/>
+<img class="mainStack" src="/files/logos/mybatis.png"/>
+<img class="mainStack"  src="/files/logos/Gradle-1024x351.png"/>
+<img class="mainStack" src="/files/logos/jekyll-og.png">
+<img class="mainStack" src="/files/logos/mysql_PNG29.png">
+<img class="mainStack" src="/files/logos/rubylang.jpg">
+<img class="mainStack" src="/files/logos/docker.png">
+<img class="mainStack" src="/files/logos/github.png">
+<img class="mainStack" src="/files/logos/bootstrap1.jpg">
 
 
