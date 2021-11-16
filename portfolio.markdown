@@ -12,9 +12,9 @@ permalink: /portfolio/
 <hr class="divider">
 <h3>자기소개</h3>
 
-&nbsp;안녕하세요. 저는 이 업종에 들어온지 4년차인 자바 개발자입니다. 주로 SpringBoot를 활용한 웹어플리케이션을 만드는 일을 하고 있습니다. SpringFramework를 베이스로 DB를 Mybatis 혹은 JPA로 활용하고 있습니다.
+&nbsp;안녕하세요. 저는 주로 SpringBoot를 활용한 웹어플리케이션을 만드는 일을 하고 있습니다. SpringFramework를 베이스로 DB를 Mybatis 혹은 JPA로 활용하고 있습니다.
 <br><br>
-&nbsp;프론트엔드쪽도 업무를 받아 부트스트랩(Css Framework)를 사용하며 Thymeleaf로 정적페이지를 작성하는 일도 하였습니다. 그리고 Javascript, Ajax를 사용하여 페이지를 동적으로 만들기도 하였습니다.
+&nbsp;프론트엔드쪽도 업무를 받아 부트스트랩(Css Framework)를 사용하며 Thym  eleaf로 정적페이지를 작성하는 일도 하였습니다. 그리고 Javascript, Ajax를 사용하여 페이지를 동적으로 만들기도 하였습니다.
 <br><br>
 &nbsp;이러한 업무 뿐만 아니라 새로운 기술에 관심이 많아 개인적으로 프로젝트를 만들어서 학습하고 있습니다. 예전부터 ReactJs,VueJs,NodeJs 등 다양한 언어를 학습하려 하였으며,
 최근에는 Kotlin으로 SpringBoot 앱을 만들어보기도 하였습니다.
@@ -59,10 +59,12 @@ permalink: /portfolio/
 <h3>콜센터 상담 프로그램(김포시, 평택시)</h3>
 <p style="font-size: 12px;color:#6e7980;">
 콜센터 상담 업무를 웹 상에서 처리하는 프로그램
-김포시(2018.08.01 ~ 2019.01.04)
-평택시(2019.08.01 ~ 2019.10.31)
-
 </p>
+<p style="font-size: 12px;color:#6e7980;">
+김포시(2018.08.01 ~ 2019.01.04) | 평택시(2019.08.01 ~ 2019.10.31)
+</p>
+<br>
+<h3>사용 기술</h3>
 <br>
 <img class="circleImg sub2" src="/files/logos/spring-boot.jpg"/>
 <img class="circleImg sub2" src="/files/logos/jsp.png"/>
@@ -74,7 +76,8 @@ permalink: /portfolio/
 <img class="circleImg sub2" src="/files/logos/js.jpg"/>
 <img class="circleImg sub2" src="/files/logos/svn.png"/>
 <br><br>
-<br><br>
+
+<h3>담당 업무</h3>
 <b>화면 작성</b>
 - 요청 기능을 구현하기 위한 페이지 작성
 <br>
@@ -99,6 +102,7 @@ permalink: /portfolio/
 아키브소프트 내 비품관리를 위한 웹 어플리케이션(2020.01.15 ~ 2020.02.29)
 </p>
 <br>
+<h3>사용 기술</h3>
 <img class="circleImg sub2" src="/files/logos/spring-boot.jpg"/>
 <img class="circleImg sub2" src="/files/logos/jpa-hibernate.jpg"/>
 <img class="circleImg sub2" src="/files/logos/mariadb.jpg"/>
@@ -108,8 +112,8 @@ permalink: /portfolio/
 <img class="circleImg sub2" src="/files/logos/thymeleafLogo.png"/>
 <img class="circleImg sub2" src="/files/logos/bootstrap2.png"/>
 <br><br>
-<br><br>
 
+<h3>담당 업무</h3>
 <b>보안 설정</b>
 - 로그인, 로그아웃을 포함하는 계정 관리, 계정 권한에 따른 서버 접속 제한 설정, 로그인 실패 횟수 제한 설정
 <br>
@@ -135,6 +139,7 @@ permalink: /portfolio/
 무인으로 시설 관리, 관제를 하기 위한 기능들 연계한 시스템(2020.01.15 ~ 2020.10.31)
 </p>
 <br>
+<h3>사용 기술</h3>
 <img class="circleImg sub2" src="/files/logos/spring-boot.jpg"/>
 <img class="circleImg sub2" src="/files/logos/mybatis.png"/>
 <img class="circleImg sub2" src="/files/logos/mariadb.jpg"/>
@@ -144,7 +149,7 @@ permalink: /portfolio/
 <img class="circleImg sub2" src="/files/logos/thymeleafLogo.png"/>
 <img class="circleImg sub2" src="/files/logos/bootstrap2.png"/>
 <br><br>
-<br><br>
+<h3>담당 업무</h3>
 <b>보안 설정</b>
  - 로그인, 로그아웃을 포함하는 계정 관리, 계정 권한에 따른 서버 접속 제한 설정, 로그인 실패 횟수 제한 설정, 사용자 세션 유지 설정, 로그인 실패 메시지 커스텀
 
@@ -167,13 +172,14 @@ permalink: /portfolio/
 유언장 작성 및 관리 웹어플리케이션(2020.12.01 ~ 2020.12.31)
 </p>
 <br>
+<h3>사용 기술</h3>
 <img class="circleImg sub2" src="/files/logos/spring-boot.jpg"/>
 <img class="circleImg sub2" src="/files/logos/html.jpg"/>
 <img class="circleImg sub2" src="/files/logos/css.jpg"/>
 <img class="circleImg sub2" src="/files/logos/jquery.jpg"/>
 <img class="circleImg sub2" src="/files/logos/bootstrap2.png"/>
 <br><br>
-<br><br>
+<h3>담당 업무</h3>
 - 공개 키 생성, 배포
 - 블럭체인방식의 인증 프로세스 작성
 - 유언장 입력 폼 화면 작성
@@ -189,6 +195,7 @@ permalink: /portfolio/
 기관 내 정형, 비정형 기록물들을 관리 하기 위한 시스템(2021.03.01 ~ 2021.03.31)
 </p>
 <br>
+<h3>사용 기술</h3>
 <img class="circleImg sub2" src="/files/logos/spring-boot.jpg"/>
 <img class="circleImg sub2" src="/files/logos/mybatis.png"/>
 <img class="circleImg sub2" src="/files/logos/mariadb.jpg"/>
@@ -198,7 +205,7 @@ permalink: /portfolio/
 <img class="circleImg sub2" src="/files/logos/thymeleafLogo.png"/>
 <img class="circleImg sub2" src="/files/logos/bootstrap2.png"/>
 <br><br>
-<br><br>
+<h3>담당 업무</h3>
 <b>보안 설정</b>
  - 로그인, 로그아웃을 포함하는 계정 관리, 계정 권한에 따른 서버 접속 제한 설정, 사용자 세션 유지 설정, 로그인 실패 메시지 커스텀
 
@@ -226,13 +233,14 @@ permalink: /portfolio/
 학습된 데이터로 사진 속 텍스트를 읽고 데이터화, 아파치 티카를 활용(2021.04.01 ~ 2021.04.31)
 </p>
 <br>
+<h3>사용 기술</h3>
 <img class="circleImg sub2" src="/files/logos/spring-boot.jpg"/>
 <img class="circleImg sub2" src="/files/logos/html.jpg"/>
 <img class="circleImg sub2" src="/files/logos/css.jpg"/>
 <img class="circleImg sub2" src="/files/logos/js.jpg"/>
 <img class="circleImg sub2" src="/files/logos/tika.png"/>
 <br><br>
-<br><br>
+<h3>담당 업무</h3>
 - 파일 업로드, 다운로드
 - 파일 업로드 후 광학 문자 판독(OCR) 프로세스 
 
@@ -247,6 +255,7 @@ permalink: /portfolio/
 표준기록관리시스템으로 위탁된 서버 상태를 모니터링 하기 위한 시스템, Netty를 통한 서버-클라이언트 소켓 통신(2021.04.01 ~ 2021.12.31)
 </p>
 <br>
+<h3>사용 기술</h3>
 <img class="circleImg sub2" src="/files/logos/spring-boot.jpg"/>
 <img class="circleImg sub2" src="/files/logos/mybatis.png"/>
 <img class="circleImg sub2" src="/files/logos/elasticsearch1.jpg"/>
@@ -256,7 +265,7 @@ permalink: /portfolio/
 <img class="circleImg sub2" src="/files/logos/thymeleafLogo.png"/>
 <img class="circleImg sub2" src="/files/logos/netty.png"/>
 <br><br>
-<br><br>
+<h3>담당 업무</h3>
 모니터링 웹 어플리케이션 제작<br>
 약 170여개의  지자체 위탁 서버 에이전트 설치 및 관리<br>
 모니터링 서버 관리 및 모니터링 웹 서비스 관리<br><br>
@@ -281,7 +290,7 @@ permalink: /portfolio/
 <img class="mainStack" src="/files/logos/1200px-Logo-mongodb.png"/>
 <img class="mainStack" src="/files/logos/mariadb.jpg"/>
 <img class="mainStack" src="/files/logos/mybatis.png"/>
-<img class="mainStack"  src="/files/logos/Gradle-1024x351.png"/>
+<img class="mainStack" src="/files/logos/Gradle-1024x351.png"/>
 <img class="mainStack" src="/files/logos/jekyll-og.png">
 <img class="mainStack" src="/files/logos/mysql_PNG29.png">
 <img class="mainStack" src="/files/logos/rubylang.jpg">
