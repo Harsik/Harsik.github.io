@@ -166,33 +166,10 @@ permalink: /portfolio/
 <br><br>
 <hr class="divider">
 <br><br>
-<h3>NovelWill
-  </h3>
-<p style="font-size: 12px;color:#6e7980;">
-유언장 작성 및 관리 웹어플리케이션(2020.12.01 ~ 2020.12.31)
-</p>
-<br>
-<h3>사용 기술</h3>
-<img class="circleImg sub2" src="/files/logos/spring-boot.jpg"/>
-<img class="circleImg sub2" src="/files/logos/html.jpg"/>
-<img class="circleImg sub2" src="/files/logos/css.jpg"/>
-<img class="circleImg sub2" src="/files/logos/jquery.jpg"/>
-<img class="circleImg sub2" src="/files/logos/bootstrap2.png"/>
-<br><br>
-<h3>담당 업무</h3>
-- 공개 키 생성, 배포
-- 블럭체인방식의 인증 프로세스 작성
-- 유언장 입력 폼 화면 작성
-
-<br><br>
-![novel.png](/files/novel.png)
-<br><br>
-<hr class="divider">
-<br><br>
 <h3>(비)정형 데이터 관리 시스템
 </h3>
 <p style="font-size: 12px;color:#6e7980;">
-기관 내 정형, 비정형 기록물들을 관리 하기 위한 시스템(2021.03.01 ~ 2021.03.31)
+기관 내 정형, 비정형 기록물들을 관리 하기 위한 시스템(2021.03.01 ~ 2021.04.31)
 </p>
 <br>
 <h3>사용 기술</h3>
@@ -226,27 +203,6 @@ permalink: /portfolio/
 <br><br>
 ![nfa.png](/files/nfa.png)
   <br><br>
-<hr class="divider">
-  <br><br>
-<h3>AIOCR</h3>
-<p style="font-size: 12px;color:#6e7980;">
-학습된 데이터로 사진 속 텍스트를 읽고 데이터화, 아파치 티카를 활용(2021.04.01 ~ 2021.04.31)
-</p>
-<br>
-<h3>사용 기술</h3>
-<img class="circleImg sub2" src="/files/logos/spring-boot.jpg"/>
-<img class="circleImg sub2" src="/files/logos/html.jpg"/>
-<img class="circleImg sub2" src="/files/logos/css.jpg"/>
-<img class="circleImg sub2" src="/files/logos/js.jpg"/>
-<img class="circleImg sub2" src="/files/logos/tika.png"/>
-<br><br>
-<h3>담당 업무</h3>
-- 파일 업로드, 다운로드
-- 파일 업로드 후 광학 문자 판독(OCR) 프로세스 
-
-  <br><br>
-![aiocr.png](/files/aiocr.png)
-<br><br>
 <hr class="divider">
 <br><br>
 <h3>표준기록관리시스템 서버 모니터링시스템
