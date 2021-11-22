@@ -29,6 +29,8 @@ github_username:  Harsik
 github_address: https://github.com/Harsik
 portfolio_name:  포트폴리오
 portfolio_address: https://harsik.github.io/portfolio
+career_description_name:  경력기술서
+career_description_address: https://harsik.github.io/career_description.pdf
 # Build settings
 theme: minima
 plugins:
