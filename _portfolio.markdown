@@ -16,10 +16,12 @@ permalink: /portfolio/
 <hr class="divider">
 <div class="cardWrap">
 <div class="card">
-<p>안녕하세요. 저는 이 업종에 들어온지 4년차인 자바 개발자입니다. 주로 SpringBoot를 활용한 웹어플리케이션을 만드는 일을 하고 있습니다. SpringFramework를 베이스로 DB를 Mybatis 혹은 JPA로 활용하고 있습니다.</p>
-<p>프론트엔드쪽도 업무를 받아 부트스트랩(Css Framework)를 사용하며 Thymeleaf로 정적페이지를 작성하는 일도 하였습니다. 그리고 Javascript, Ajax를 사용하여 동적페이지를 작성하기도 하였습니다.</p>
-<p>이러한 업무 뿐만 아니라 새로운 기술에 관심이 많아 개인적으로 프로젝트를 만들어서 학습하고 있습니다. 예전부터 ReactJs,VueJs,NodeJs 등 다양한 언어를 학습하려 하였으며,
-최근에는 Kotlin으로 SpringBoot 앱을 만들어보기도 하였습니다.</p>
+&nbsp;안녕하세요. 저는 주로 SpringBoot를 활용한 웹어플리케이션을 만드는 일을 하고 있습니다. SpringFramework를 베이스로 DB를 Mybatis 혹은 JPA로 활용하고 있습니다.
+<br><br>
+&nbsp;프론트엔드쪽도 업무를 받아 부트스트랩(Css Framework)를 사용하며 Thym  eleaf로 정적페이지를 작성하는 일도 하였습니다. 그리고 Javascript, Ajax를 사용하여 페이지를 동적으로 만들기도 하였습니다.
+<br><br>
+&nbsp;이러한 업무 뿐만 아니라 새로운 기술에 관심이 많아 개인적으로 프로젝트를 만들어서 학습하고 있습니다. 예전부터 ReactJs,VueJs,NodeJs 등 다양한 언어를 학습하려 하였으며,
+최근에는 Kotlin으로 SpringBoot 앱을 만들어보기도 하였습니다.
 </div>
 <hr class="divider">
 </div>
