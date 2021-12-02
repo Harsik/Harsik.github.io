@@ -9,18 +9,16 @@ permalink: /portfolio/
 <p style="font-size: 12px;color:#6e7980;">아직 배울 것이 많습니다.</p>
 <br><br>
 </div>
-<br><br>
-<br>
 <hr class="divider">
+<h3>소개</h3>
 <br><br>
-<h3>자기소개</h3>
-
-&nbsp;안녕하세요. 저는 주로 SpringBoot를 활용한 웹어플리케이션을 만드는 일을 하고 있습니다. SpringFramework를 베이스로 DB를 Mybatis 혹은 JPA로 활용하고 있습니다.
+&nbsp; - Java & Spring 기반의 백엔드, Thymeleaf & JavaScript 기반의 프론트 개발자
 <br><br>
-&nbsp;프론트엔드쪽도 업무를 받아 부트스트랩(Css Framework)를 사용하며 Thym  eleaf로 정적페이지를 작성하는 일도 하였습니다. 그리고 Javascript, Ajax를 사용하여 페이지를 동적으로 만들기도 하였습니다.
-<br><br>
-&nbsp;이러한 업무 뿐만 아니라 새로운 기술에 관심이 많아 개인적으로 프로젝트를 만들어서 학습하고 있습니다. 예전부터 ReactJs,VueJs,NodeJs 등 다양한 언어를 학습하려 하였으며,
-최근에는 Kotlin으로 SpringBoot 앱을 만들어보기도 하였습니다.
+&nbsp; - Spring Security 를 통한 사용자 관리 및 서버 세선 관리, 보안 설정 가능
+  <br><br>
+&nbsp; - Elasticsearch 를 DB 로 대용량 데이터 처리 및 성능 개선 업무 수행
+  <br><br>
+&nbsp; - Git, Space 로 형상관리 및 이슈관리 경험 다수
 <br><br>
 <hr class="divider">
 <h3>사용 기술</h3>
@@ -55,7 +53,6 @@ permalink: /portfolio/
 [comment]: <> (<img class="mainStack" src="/files/logos/github.png">)
 
 [comment]: <> (<img class="mainStack" src="/files/logos/bootstrap1.jpg">)
-<br><br>
 <hr class="divider">
 <h2>경력사항</h2>
 <br><br>
